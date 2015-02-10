@@ -289,7 +289,7 @@
 		place 	{ control=GamesList region=list width=275 height=max margin=0 }
 		
 		// Body contents
-		place	{ control=welcomedetails,friendsdetails,clouddetails,communityfilesdetails,achievementsdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails region=detailsbody dir=down width=max margin-right=0 margin-top=25 margin-left=5 spacing=10 margin-bottom=10 }
+		place	{ control=screenshotsdetails,nonsteamdetails,clouddetails,communityfilesdetails,achievementsdetails,newsdetails,friendsdetails,dlcdetails,welcomedetails region=detailsbody dir=down width=max margin-right=0 margin-top=25 margin-left=5 spacing=10 margin-bottom=10 }
 		
 		// Details border
 		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
@@ -307,7 +307,7 @@
 		// Buttons and links on the right
 		place	
 		{ 
-			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
+			control=linkslabel,forumlink,gamehublink,manuallink,guideslink,achievementslink,dlclink,cdkeylink,storelink,newslink,ogglink,sendguestpasslink,guidelink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
 			region=rightcolumn 
 			dir=down 
 			width=125
