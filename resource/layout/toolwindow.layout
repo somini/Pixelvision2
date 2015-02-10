@@ -1,0 +1,140 @@
+"resource/layout/toolwindow.layout"
+{
+	controls
+	{
+		// the container
+		ToolWindowSheet	{	controlname="PropertySheet" }
+	} 
+	
+	styles
+	{
+		ToolWindow
+		{			
+			bgcolor="DialogBG"
+			render_bg
+			{
+				0="image_tiled( x0, y0+1, x1, y0 + 27, graphics/FrameTitle)"
+			}
+		}
+		
+		FrameMinimizeButton
+		{
+			inset="0 0 0 0"
+		}
+		
+		FrameMaximizeButton
+		{
+			inset="0 0 0 0"
+		}
+		
+		FrameRestoreButton
+		{
+			inset="0 0 0 0"
+		}
+		
+		FrameCloseButton
+		{
+			inset="0 0 0 0"
+		}
+		
+		Button
+		{     
+			textcolor="0 0 0 0" // don't render the + as text
+			render_bg
+			{
+				0="fill( x0 + 2, y0 + 3, x1 + 1, y1 + 0, BlackTr )"
+				1="image( x0 + 8, y0 + 8, x1, y1, graphics/new_tab)"	
+			}
+		}
+		
+		Button:hover
+		{     
+			render_bg
+			{
+				0="fill( x0 + 2, y0 + 3, x1 + 1, y1 + 0, BlackTr2 )"
+				1="image( x0 + 8, y0 + 8, x1, y1, graphics/new_tab)"	
+			}
+		}
+		
+		MenuButton
+		{ 
+			padding-top=7
+			padding-right=3
+			bgcolor=none
+			render_bg
+			{
+				0="fill( x0 + 1, y0 + 5, x1, y1 + 1, BlackTr )"
+			}
+		}
+		
+		TabMenuButtonFlash
+		{ 
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0 + 1, y0 + 5, x1, y1 + 1, PropertySheet.FlashTabColor )"
+			}
+		}
+		
+		TabMenuItemFlash
+		{
+			textcolor="PropertySheet.FlashTabColor"
+		}
+		
+		PageTab
+		{
+			inset="3 0 2 0"
+			textcolor="Labeldisabled"
+			font-style=regular,outerglow
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			padding-top=1
+			padding-left=0
+			padding-right=16
+			render_bg
+			{
+				1="image_scale( x0, y0 + 8, x1 + 3, y0 + 24, graphics/tshadow )"
+				2="image( x1 - 11, y0, x1 + 13, y0 + 24, graphics/tseperator )"
+			}
+		}
+		
+		PageTab:Selected
+		{
+			textcolor="texthover"
+			render_bg
+			{
+				// 0="image( x0 - 13, y0, x0 + 11, y0 + 24, graphics/tseperator )" // Left-Aligned Indent (Backup)
+				1="image( x1 - 11, y0, x1 + 13, y0 + 24, graphics/tseperator )"
+				2="gradient( x0 - 1, y0 - 4, x1, y1, titlebarfocus, none )"
+			}
+		}
+		
+		PageTab:Hover
+		{
+			textcolor="texthover"
+			render_bg
+			{
+				1="image( x1 - 11, y0, x1 + 13, y0 + 24, graphics/tseperator )"
+			}
+		}
+		
+		PageTab:Selected:Hover
+		{
+			textcolor="texthover"
+			render_bg
+			{
+				1="image( x1 - 11, y0, x1 + 13, y0 + 24, graphics/tseperator )"
+				2="gradient( x0 - 1, y0 - 4, x1, y1, titlebarfocus, none )"
+			}
+		}
+	}
+	
+	layout
+	{
+		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=3 spacing=-6 }
+		place [!$OSX] { control="ToolWindowSheet" x=0 y=0 height=max width=max margin-top=-2 margin-right=6 margin-bottom=3 }
+		place [$OSX] { control="ToolWindowSheet" x=8 y=23 height=max width=max margin-right=8 }
+	}
+}

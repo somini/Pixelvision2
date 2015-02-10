@@ -1,0 +1,10 @@
+"resource/styles/tweaks/ol_bg_none.styles"
+{
+	styles
+	{
+		overlaymain
+		{
+			render_bg {}
+		}
+	}
+}

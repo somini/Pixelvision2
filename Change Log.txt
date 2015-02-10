@@ -1,0 +1,23 @@
+PixelVision2 Change log
+
+Made possible thanks to Pulseh
+
+Continued by Mr. late
+
+v2015-0702	(7th of February 2015)
+
+- Per request added an override to disable the DLC menu
+- Per request added an override to change the Big Picture Mode button
+- Added an override for the Steam piston in the upper right corner
+- Fixed steam chat missing two menus
+
+v2015-0602	(6th of February 2015)
+
+- Added background, headers and borders to DLC details
+- Added a logo to the DLC header, courtesy of Jmd132
+- Moved the DLC menu under the Friends list and Achievements
+- Other minor UI tweaks
+
+v2015-0502	(5th of February 2015)
+
+- Proper support for the latest Steam beta.

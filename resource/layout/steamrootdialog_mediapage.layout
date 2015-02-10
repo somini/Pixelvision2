@@ -1,0 +1,7 @@
+"resource/layout/steamrootdialog_mediapage.layout"
+{
+	layout
+	{
+		place { control=GamesList width=max height=max margin=1 margin-top=0 }
+	}
+}

@@ -1,0 +1,15 @@
+"resource/styles/tweaks/gamegrid_al_tweak.styles"
+{
+	styles
+	{
+		"GameItem_Uninstalled ImagePanel"
+		{
+			alpha=100
+		}
+		
+		"GameItem_NotInstalled ImagePanel"
+		{
+			alpha=100
+		}
+	}
+}

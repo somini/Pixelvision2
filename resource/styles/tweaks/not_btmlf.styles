@@ -1,0 +1,8 @@
+"resource/styles/tweaks/not_btmlf.styles"
+{
+	colors
+	{
+		Notifications.PanelPosition     "BottomLeft"
+		Notifications.PanelPosition     "BottomLeft" [$OSX]
+	}
+}

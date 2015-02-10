@@ -1,0 +1,15 @@
+"resource/styles/tweaks/gametitle_ul_default.styles"
+{
+	styles
+	{
+		CDetailsGameTitleHeaderPanel
+		{
+			render
+			{
+				1="image(  x0 + 39, y1 - 15, x0 + 55, y1 + 1 , graphics/game_ulg_left )"
+				2="image(  x1 - 13, y1 - 15, x1 + 3 , y1 + 1 , graphics/game_ulg_right )"
+				3="image_scale( x0 + 55, y1 - 15, x1 - 13, y1, graphics/game_ulg_centre )"
+			}
+		}
+	}
+}

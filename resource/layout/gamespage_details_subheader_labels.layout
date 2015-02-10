@@ -1,0 +1,81 @@
+"resource/layout/gamespage_details_subheader_labels.layout"
+{
+	controls
+	{
+		totalplaytimeheader { controlname="Label" style="headertext" labeltext="#steam_details_totalplaytimeheader" zpos="2" } // Total Time Played
+		totalplaytimevalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+		
+		gameplayedheader { controlname="Label" style="headertext" labeltext="#steam_details_lastplayedheader" zpos="2" } // Last Played
+		gameplayedvalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+		
+		shareheader { controlname="Label" style="headertext" labeltext="#steam_details_sharedbyheader" zpos="2" }
+		sharevalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+	}
+	
+	styles
+	{
+		headertext
+		{
+			textcolor=Label
+			font-family=semibold
+			font-style=outerglow
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			padding-left=0
+			padding-bottom=0
+			padding-top=0
+		}
+		
+		headertext-red
+		{
+			textcolor=Label
+			font-family=semibold
+			font-style=outerglow
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			padding-left=0
+			padding-bottom=0
+			padding-top=0
+		}
+
+		headertext-green
+		{
+			textcolor=Label
+			font-family=semibold
+			font-style=outerglow
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			padding-left=0
+			padding-bottom=0
+			padding-top=0
+		}
+
+		headertext-blue
+		{
+			textcolor=Label
+			font-family=semibold
+			font-style=outerglow
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			padding-left=0
+			padding-bottom=0
+			padding-top=0
+		}
+		
+		valuetext
+		{
+			// default label
+		}
+	}
+	
+	layout
+	{
+		// Layout handled elsewhere? (very annoying!)
+		// Possibly because of the table display they're using on the playtime stats
+		// Hopefully temporary
+	}
+}

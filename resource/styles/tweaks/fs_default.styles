@@ -1,0 +1,527 @@
+"resource/styles/tweaks/fs_default.styles"
+{
+	styles
+	{
+		// -- Library
+		// ==========
+		emptylisttext // General
+		{
+			font-size="15"
+		}
+		
+		LibrarySearch
+		{
+			font-size=14
+		}
+		
+		NavLabel
+		{
+			font-size=14 [!$OSX]
+			font-size=15 [$OSX] 
+		}
+		
+		NavLabel2
+		{
+			font-size=14
+		}
+		
+		NavLabel2 [$OSX]
+		{
+			font-size=13
+		}
+		
+		headertextlarge // Game Title
+		{
+			font-size=32 // Do not modify.
+		}
+		
+		headertext // Subheader
+		{
+			font-size=13
+		}
+		
+		headertext-red
+		{
+			font-size=13
+		}
+
+		headertext-green
+		{
+			font-size=13
+		}
+
+		headertext-blue
+		{
+			font-size=13
+		}
+		
+		headertext2 // GameHub
+		{
+			font-size=13
+		}
+		
+		infolabel // Friends (+ "Locked Achievements" & Screenshots)
+		{
+			font-size=16
+		}
+		
+		mostrecent_label // Achievements
+		{
+			font-size=15
+		}
+		
+		mostrecent_name
+		{
+			font-size=17
+		}
+		
+		mostrecent_unlockedsofar
+		{
+			font-size=15
+		}
+		
+		everythinglabel
+		{
+			font-size=15
+		}
+		
+		title_label // News
+		{
+			font-size="17"
+		}
+		
+		date_and_author
+		{
+			font-size=14
+		}
+		
+		newsitem_body
+		{
+			font-size=15
+		}
+		
+		"newsitem_body url"
+		{
+			font-size=15
+		}
+		
+		more_link
+		{
+			font-size=15
+		}
+		
+		bodycontent // Welcome & Non-Steam
+		{
+			font-size=15
+		}
+		
+		// -- Music Pages
+		// ==============
+		EmptyDatabaseText
+		{
+			font-size="15"
+		}
+		
+		CrawlingText
+		{
+			font-size="15"
+		}
+		
+		"MusicPage_Details_Content ListPanel"
+		{
+			font-size=15
+		}
+		
+		"MusicPage_Details_Content ListPanelColumnHeader" [!$OSX]
+		{
+			font-size=14
+		}
+		
+		"MusicPage_Details_Content ListPanelColumnHeader" [$OSX]
+		{
+			font-size=13
+		}
+		
+		PositionLabelStyle
+		{
+			font-size=14
+		}
+		
+		TrackLabelStyle
+		{
+			font-size=15
+		}
+		
+		TracksInfoLabelStyle
+		{
+			font-size=15
+		}
+		
+		TrackStyle
+		{
+			font-size=15
+		}
+		
+		AdditionalActionButtonStyle
+		{
+			font-size=14
+			font-size=13 [$OSX]
+		}
+		
+		ActionButtonStyle
+		{
+			font-size=16
+		}
+		
+		MusicListPanelInterior
+		{
+			font-size=15
+    	}
+		
+		StatusStyle
+		{
+			font-size=14
+		}
+		
+		StatusStyleDim
+		{
+			font-size=14
+		}
+		
+		InfoLabelStyle
+		{
+			font-size=14
+		}
+		
+		// -- News Updates Dialog
+		// ======================
+		"CProductMarketingDialog Button"
+		{
+			font-size=13
+		}
+		
+		// -- steam.styles
+		// ===============
+		Button
+		{     
+			font-size=14
+		}
+		
+		CFriendsListSectionAffordance
+		{     
+			font-size=14
+		}
+		
+		CFriendsListSectionHeader
+		{
+			font-size=14
+			font-size=13 [$OSX]
+		}
+		
+		CFriendPanel
+		{
+			font-size=14
+			font-size=13 [$OSX]
+		}
+		
+		CheckButton
+		{
+			font-size=14
+		}
+		
+		ComboBox
+		{
+			font-size=14
+		}
+		
+		FrameTitle
+		{
+			font-size=14
+		}
+		
+		FriendsList
+		{
+			font-size=14
+		}
+		
+		FriendsTitle [$OSX]
+		{
+			font-size=15
+		}
+		
+		Label
+		{
+			font-size=14
+		}
+		
+		ListPanel
+		{
+			font-size=14
+		}
+		
+		"CGamesListPanel"
+		{
+			font-size=15
+		}
+		
+		"GameColumn_BigText"
+		{
+			font-size=17 // Do not modify.
+		}
+		
+		ListPanelCheckBox
+		{
+			font-size=14
+		}
+		
+		"ListPanelColumnheader ListPanelCheckBox"
+		{
+			font-size=14
+		}
+		
+		ListPanelColumnheader
+		{
+			font-size=15
+			font-size=13 [$OSX]
+		}
+		
+		"Csteamrootdialog ListPanelColumnheader"
+		{
+			font-size=16 // Do not modify.
+			font-size=13 [$OSX]
+		}
+		
+		ListPanelInterior
+		{     
+			font-size=15
+		}
+		
+		"ListPanel RichText"
+		{
+			font-size=15
+		}
+		
+		"ListPanel RichText url" 
+		{
+			font-size=15
+		}
+		
+		MainNav
+		{
+			font-size=21 // Do not modify.
+		}
+		
+		MenuButton
+		{
+			font-size=14
+		}
+		
+		MenuItem
+		{
+			font-size=14
+		}
+		
+		Notification
+		{
+			font-size=15
+		}
+		
+		PageTab
+		{
+			font-size=14
+		}
+		
+		Panel
+		{ 
+			font-size=14
+		}
+		
+		RadioButton
+		{
+			font-size=14
+		}
+		
+		RichText
+		{
+			font-size=14
+		}
+		
+		"RichText url"
+		{
+			font-size=14
+		}
+		
+		"RichText bold"
+		{
+			font-size=15
+		}
+		
+		"RichText emphasis"
+		{
+			font-size=15
+		}
+		
+		SectionedListPanel
+		{
+			font-size=14
+		}
+		
+		Slider // Structural, do not modify.
+		{
+			font-size=10
+		}
+		
+		StatusLabel
+		{
+			font-size=14
+		}
+		
+		TextEntry
+		{
+			font-size=14
+		}
+		
+		TextEntryLarge
+		{
+			font-size=24 // Do not modify.
+		}
+		
+		TextEntryURL
+		{
+			font-size=14
+		}
+		
+		ToggleButton
+		{
+			font-size=14
+		}
+		
+		tooltip_headline
+		{
+			font-size=15
+		}
+		
+		TreeNodeText
+		{
+			font-size=14
+		}
+		
+		URLLabel
+		{
+			font-size=14
+		}
+		
+		URLLabelSimple
+		{
+			font-size=14
+		}
+		
+		URLLabelSimple [$OSX]
+		{
+			font-size=13
+		}
+		
+		CConsoleHistory // Do not modify.
+		{
+			font-size=9 // Lucida Console
+			font-size=14 [$OSX] // Menlo
+		}
+		
+		WrapPanel
+		{
+			font-size=14
+		}
+		
+		"html-findbar"
+		{
+			font-size=14
+		}
+		
+		gamedetails-headerlabel
+		{
+			font-size="17" // Do not modify.
+		}
+		
+		gamedetails-headerlabel-red
+		{
+			font-size="17" // Do not modify.
+		}
+		
+		gamedetails-headerlabel-green
+		{
+			font-size="17" // Do not modify.
+		}
+		
+		gamedetails-headerlabel-blue
+		{
+			font-size="17" // Do not modify.
+		}
+		
+		console_text_error // Do not modify.
+		{
+			font-size=14
+			font-size=16 [$OSX] // Menlo
+		}
+		
+		console_text // Do not modify.
+		{
+			font-size=9 // Lucida Console
+			font-size=14 [$OSX] // Menlo
+		}
+		
+		friends_chat_text
+		{
+			font-size=14
+		}
+		
+		friends_chat_text_self
+		{
+			font-size=14
+		}
+		
+		friends_chat_event
+		{
+			font-size=14
+		}
+		
+		friends_chat_bright_event
+		{
+			font-size=14
+		}
+		
+		friends_chat_url
+		{
+			font-size=14
+		}
+		
+		friends_chat_name_ingame
+		{
+			font-size=14
+		}
+		
+		friends_chat_self
+		{
+			font-size=14
+		}
+		
+		friends_chat_name
+		{
+			font-size=14
+		}
+		
+		friends_chat_accountid
+		{
+			font-size=14
+		}
+		
+		friends_chat_securitylink
+		{
+			font-size=14
+		}
+		
+		Chat_MenuButton_withChrome
+		{
+			font-size="14"
+		}
+	}
+}

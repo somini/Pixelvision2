@@ -1,0 +1,13 @@
+"resource/styles/tweaks/piston_default.styles"
+{
+	styles
+	{
+		ClientLogo
+		{
+			inset="0 -20 0 0"
+			image="graphics/piston"
+			bgcolor=none
+			render_bg {}
+		}
+	}
+}

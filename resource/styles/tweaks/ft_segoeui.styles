@@ -1,0 +1,8 @@
+"resource/styles/tweaks/avatar.styles"
+{
+	colors
+	{
+		basefont="Segoe UI"
+		semibold="Segoe UI Semibold"
+	}
+}

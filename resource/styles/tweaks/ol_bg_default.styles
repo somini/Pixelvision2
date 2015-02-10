@@ -1,0 +1,13 @@
+"resource/styles/tweaks/ol_bg_default.styles"
+{
+	styles
+	{
+		overlaymain
+		{
+			render_bg
+			{
+				0="image_tiled( x0, y0, x1+168, y1+128, resource/hex_dark )"
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+"resource/styles/tweaks/gametitle_bg_tweak.styles"
+{
+	styles
+	{
+		CDetailsGameTitleHeaderPanel
+		{
+			render_bg
+			{
+				1="fill( x0 + 2, y0 + 1, x1 - 2, y1 - 1, BlackTr )"
+				2="dashedrect( x0 + 2, y0 + 1, x1 - 2, y1 - 1, Black )"
+				
+				0="image(  x0 + 5 , y0 + 2 , x0 + 47, y0 + 44, graphics/game_ibg )"
+			}
+		}
+	}
+}

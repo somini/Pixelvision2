@@ -1,0 +1,8 @@
+"resource/styles/tweaks/not_toplf.styles"
+{
+	colors
+	{
+		Notifications.PanelPosition     "TopLeft"
+		Notifications.PanelPosition     "TopLeft" [$OSX]
+	}
+}

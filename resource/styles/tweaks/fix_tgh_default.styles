@@ -1,0 +1,7 @@
+"resource/styles/tweaks/fix_tgh_default.styles"
+{
+	colors
+	{
+		GameDetailsTitleHeader.HorizontalSpacing=10
+	}
+}

@@ -1,0 +1,10 @@
+"resource/styles/tweaks/gametitle_ul_tweak.styles"
+{
+	styles
+	{
+		CDetailsGameTitleHeaderPanel
+		{
+			render {}
+		}
+	}
+}

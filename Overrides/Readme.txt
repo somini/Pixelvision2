@@ -1,0 +1,1 @@
+Just copy the resource folder to the main PixelVision2 folder and you're done

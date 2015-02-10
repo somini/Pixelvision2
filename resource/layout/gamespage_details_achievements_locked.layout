@@ -1,0 +1,82 @@
+"resource/layout/gamespage_details_achievements_locked.layout"
+{
+	controls
+	{
+		locked_area { controlname="CAchievementsLockedPanel" style="lockedarea" }
+		
+		imageexplanation { controlname="Label" style="infolabel" labeltext="#Steam_AchievementsLocked" }
+		achievementlabelmore { controlname="Label" style="achievementlabelmore" labeltext="#Steam_MoreAchievements" textAlignment="center" tooltiptext="#Steam_ViewAllAchievements" }
+	}
+	
+	colors
+	{
+		// Note, the below values are used for dynamic layout in code, and must match the values from place
+		// commands below for layout to work correctly.
+		
+		// ImageAreaSpacing must be the spacing between achievement images
+		GameDetailsAchievements.ImageAreaSpacing "9"
+		
+		// ImageWidth must be the width of an achievement image in the display
+		GameDetailsAchievements.ImageWidth "46"
+		
+		// Size of the border around locked achievement images
+		GameDetailsAchievements.LockedImageBorder "3"
+		
+		Tooltip.Anchor=Parent
+	}
+	
+	styles
+	{
+		lockedarea
+		{ 
+			minimum-height="73"
+		}
+		
+		infolabel
+		{
+			textcolor=Text
+		}
+		
+		achievementlabelmore
+		{
+			inset="-3 -17 0 0"
+			font-size=18
+			textcolor="Text2"
+			font-family=basefont
+			font-style=outerglow
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+		    render_bg
+		    {
+				0="image( x0, y0 + 22, x1, y1, graphics/achievements_button )"
+    		}
+    	}   
+		
+		achievementlabelmore:hover
+		{
+			textcolor="Text"
+		    render_bg
+		    {
+				0="image( x0, y0 + 22, x1, y1, graphics/achievements_button_hover )"
+    		}
+    	}     
+		
+		achievementimagebg
+		{
+			inset="1 0 0 0"
+      		image="graphics/achievementbg"
+			bgcolor=none
+		}
+	}
+	
+	layout
+	{
+		region { name=body margin=0 width=max height=max }
+		region { name=images region=body x=0 y=20 margin=0 width=max height=48 }
+		
+		place { region=body control=imageexplanation y=0 }
+		
+		place { region=images control=*achievementimage,achievementlabelmore dir=right width=46 height=46 spacing=9 }
+	}
+}

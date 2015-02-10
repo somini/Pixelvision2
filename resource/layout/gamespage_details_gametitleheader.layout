@@ -1,0 +1,39 @@
+"resource/layout/gamespage_details_gametitleheader.layout"
+{
+	controls
+	{
+		gametitlelabel { controlname="Label" style="headertextlarge" labeltext="" }
+		iconimage { controlname="ImagePanel" style="gameicon" }
+	}
+	
+	colors
+	{
+		// GameDetailsTitleHeader.HorizontalSpacing = [settings.ini]
+	}
+	
+	styles
+	{
+		// CDetailsGameTitleHeaderPanel {} [settings.ini]
+		
+		headertextlarge
+		{
+			textcolor=Text
+			font-family=basefont
+			font-weight=500
+			font-style="outerglow"
+			font-outerglow-color="TextD"
+			font-outerglow-offset=3
+			font-outerglow-filtersize=7
+			padding-bottom=5
+			padding-top=3
+			bgcolor=none
+		}
+	}
+	
+	layout
+	{
+		region { name="header" y=0 x=0 width=max height=max }
+		
+		place { control=iconimage,gametitlelabel region=header dir=right align=left-center margin-left=10 margin-right=10 spacing=10 }
+	}
+}
