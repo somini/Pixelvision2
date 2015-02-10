@@ -106,7 +106,8 @@
 		//region { name=body margin=10 width=max height=max }
 		region { name=body margin=10 margin-bottom=5 margin-top=6 margin-right=2 width=max height=max }
 		
-		place { control=workshopdetails,*communityfile region=body width=max y=4 dir=right spacing=20 margin=0 }		
+		place { control=workshopdetails region=body width=max y=4 dir=right spacing=20 margin=0 }
+		place { control=*communityfile region=body x=220 y=4 dir=right spacing=20 margin=0 }		
 		place { control=viewall region=body align=bottom height=18 }
 	}
 }
