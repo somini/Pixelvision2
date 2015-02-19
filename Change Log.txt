@@ -4,6 +4,12 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late
 
+v2015-1402	(14th of February 2015)
+
+-More tweaks to the DLC menu
+-Tweaked the workshop feature
+-Added an override for Centered star rating on workshop files
+
 v2015-0702	(7th of February 2015)
 
 - Per request added an override to disable the DLC menu

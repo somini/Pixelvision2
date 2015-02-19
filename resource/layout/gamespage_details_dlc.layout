@@ -3,12 +3,11 @@
 	controls
 	{
 		dlcdetails { controlname="CGamesPage_Details_DLC" style="dlcdetails" }
-		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_DLC_Details" }
+		headerlabel { controlname="Label" style="" labeltext="Downloadable Content" }
 		latestimage { controlname="ImagePanel" style="mostrecentimage" }
 		overlayimage { controlname"ImagePanel" style="overlayimage" zpos=2 image="resource/dlc_overlay" }
 		latesttimelabel { controlname="Button" style="mostrecenttime" labeltext="#Steam_DLC_LatestItemAdded" }
 		dlclist { controlname="ListPanel" style="dlclist" }
-		managedlc { controlname="Button" labeltext="#Steam_ManageDLC" command="ManageDLC" }
 		moredlc { controlname="Button" labeltext="#Steam_FindDLCInStore" command="FindDLCInStore" }
 	}
 
@@ -34,7 +33,7 @@
 				2="image( x0 + 3, y0 + 3, x1 - 3, y0 + 21, graphics/headerbg )"			// Background Pattern
 				3="fill( x0 + 2, y0 + 2 , x1 - 2, y0 + 22, BlackTr )"					// Pattern Mask
 				3="fill( x1 - 3, y0 + 2 , x1 - 2, y0 + 22, BMask )"						// Right Border Mask
-				4="image( x0 + 4, y0 + 4, x0 + 20, y0 + 20, graphics/icon_dlc )"	// Icon
+				4="image( x0 + 4, y0 + 4, x0 + 20, y0 + 20, graphics/icon_dlc )"		// Icon
 				
 				// Outter Border
 				5="fill( x0 + 0, y0 + 0 , x1 - 0, y0 + 1 , Black )"	// Top
@@ -67,6 +66,61 @@
 			
 			bgcolor=BackgroundStart
 		}
+		
+		Button
+		{
+			inset="8 0 0 0"
+			textcolor="Label"
+			font-size=13
+			font-family=semibold
+			font-style="outerglow, uppercase"
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			render_bg
+			{
+				0="image( x0 - 2, y0 + 3, x0 + 14, y0 + 17, graphics/harrow )"
+			}
+		}
+		
+		Button:Hover
+		{
+			font-style="outerglow, uppercase"
+			font-outerglow-color="TextGlowHover"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			textcolor="Text"
+			render_bg
+			{
+				0="image( x0 - 2, y0 + 3, x0 + 14, y0 + 17, graphics/harrow_hover )"
+			}
+		}
+		
+		Button:Active
+		{
+			font-style="outerglow, uppercase"
+			font-outerglow-color="TextH"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			textcolor="White"
+			render_bg
+			{
+				0="image( x0 - 2, y0 + 3, x0 + 14, y0 + 17, graphics/harrow_active )"
+			}
+		}
+		
+		Button:Selected
+		{
+			font-style="outerglow, uppercase"
+			font-outerglow-color="TextD"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+			textcolor="Label"
+			render_bg
+			{
+				0="image( x0 - 2, y0 + 3, x0 + 14, y0 + 17, graphics/harrow )"
+			}
+		}
 
 		bodycontent
 		{
@@ -91,13 +145,13 @@
 
 	layout
 	{
-		region { name=body margin=8 margin=8 margin-bottom=5 margin-top=6 margin-right=5 width=max height=max }
-		place { region=body control=headerlabel margin-left=14 margin-top=-3 width=max }
-		place { region=body y=26 control=latestimage width=270 height=125 }
-		place { region=body y=26 control=overlayimage width=270 height=125 }
-		place { region=body y=159 control=latesttimelabel }
-		place { region=body y=26 x=280 control=dlclist height=125 width=1020 dir=down}
-		place { region=body y=159 x=280 control=moredlc }
+		region { name=body margin=7 margin-bottom=0 margin-top=2 margin-right=7 width=max height=max }
+		place { region=body y=1 control=headerlabel margin-left=15 width=max }
+		place { region=body y=31 control=latestimage width=276 height=129 }
+		place { region=body y=31 control=overlayimage width=276 height=129 }
+		place { region=body y=165 x=84 control=latesttimelabel }
+		place { region=body y=31 x=281 control=dlclist height=143 width=max dir=down}
+		place { region=body y=173 x=280 control=moredlc }
 	}
 
 }
