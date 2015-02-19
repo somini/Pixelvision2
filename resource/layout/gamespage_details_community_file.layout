@@ -36,7 +36,7 @@
 			font-outerglow-filtersize=1
 			render_bg
 			{
-				0="image( x0, y0, x1, y1, graphics/harrow_hover )"
+				0="image( x0, y0 + 1, x1, y1, graphics/harrow_hover )"
 			}
 		}
 
@@ -66,7 +66,7 @@
 		place { region=body control=communityfile_image_border x=0 y=0 width=160 height=90 }
 		place { region=body control=communityfile_image x=0 y=0 width=160 height=90 }
 		place { region=body control=communityfile_rating_image_background x=0 y=66 width=160 height=21 }
-		place { region=body control=communityfile_rating_image x=8 y=70 width=81 height=13 }
+		place { region=body control=communityfile_rating_image x=0 y=70 width=max height=13 margin-right=4}
 		place { region=body control=friendimage width=42 height=40 spacing=10 x=117 y=47 }
 	}
 }
