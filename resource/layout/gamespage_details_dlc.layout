@@ -18,8 +18,6 @@
 		RichText.InsetY "3" 
 		GameDetailsDLC.ExtraVerticalSpacing "187"
 		BMask="5 5 5 255"
-		ScreenB3="34 37 40 255"
-		ScreenB4="42 47 51 255"
 	}
 
 	styles
