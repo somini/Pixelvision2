@@ -175,6 +175,7 @@ steam.styles
 		ScreenB="60 66 72 155"
 		ScreenB2="60 66 72 125"
 		ScreenB3="34 37 40 255"
+		ScreenB4="42 47 51 255"
 		MultiplyB="17 19 20 255"
 		
 		// -- More & ViewAll
@@ -979,14 +980,14 @@ steam.styles
 			render
 			{
 				// Outer Border
-				1="fill( x0 + 0, y0    , x1 - 0, y0 + 1, ScreenB )"	// Top
-				2="fill( x0 + 0, y1 - 1, x1 - 0, y1    , ScreenB )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB )"	// Right
+				1="fill( x0 + 0, y0    , x1 - 0, y0 + 1, ScreenB4 )"	// Top
+				2="fill( x0 + 0, y1 - 1, x1 - 0, y1    , ScreenB4 )"	// Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB4 )"	// Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB4 )"	// Right
 			
 				// Inner Border
 				5="fill( x0 + 1, y0 + 1 , x1 - 1, y0 + 2 , Black )"	// Top 1
-				6="fill( x0 + 2, y0 + 19, x1 - 2, y0 + 20, Black )"	// Top 2
+				//6="fill( x0 + 2, y0 + 19, x1 - 2, y0 + 20, Black )"	// Top 2
 				7="fill( x0 + 1, y1 - 2 , x1 - 1, y1 - 1 , Black )"	// Bottom
 				8="fill( x0 + 1, y0 + 2 , x0 + 2, y1 - 2 , Black )"	// Left
 				9="fill( x1 - 2, y0 + 2 , x1 - 1, y1 - 2 , Black )"	// Right
@@ -1213,6 +1214,11 @@ steam.styles
 			{
 				0="fill ( x0, y0 + 3, x1, y1, DialogBGL )"
 			}
+
+			render
+			{
+				0="fill( x0, y1 - 1, x1, y1, Black )" //Bottom
+			}
 		}
 		
 		ListPanelColumnHeader:hover
@@ -1259,6 +1265,7 @@ steam.styles
 			{
 				0="fill( x0 + 1, y0 + 2, x1 - 2, y1 - 1, DialogBGL )"  
 				1="image( x0 + 1, y0 + 2, x1, y1, graphics/gear )"
+				2="fill( x0, y1 - 1, x1, y1, Black )" //Bottom
 			}
 		}
 		
