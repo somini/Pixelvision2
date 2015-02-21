@@ -1211,7 +1211,7 @@ steam.styles
 			bgcolor="none"
 			render_bg
 			{
-				0="fill ( x0 + 1, y0 + 3, x1, y1, DialogBGL )"
+				0="fill ( x0, y0 + 3, x1, y1, DialogBGL )"
 			}
 		}
 		
