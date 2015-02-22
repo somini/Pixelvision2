@@ -1,0 +1,35 @@
+"resource/styles/tweaks/bp_button_tweak.styles"
+{
+    styles
+    {
+
+        FullscreenButton
+        {
+            bgcolor=none
+            render_bg={}
+            image="graphics/icon_controller_bpm"
+        }
+
+
+        FullscreenButton:hover
+        {
+            bgcolor=none
+            render_bg={}
+            image="graphics/icon_controller_bpm_over"
+        }
+
+        FullscreenButton:active
+        {
+            bgcolor=none
+            render_bg={}
+            image="graphics/icon_controller_bpm_down"
+        }
+
+        FullscreenButton:disabled
+        {
+            bgcolor=none
+            render_bg={}
+            image="graphics/icon_controller_bpm_disabled"
+        }
+    }
+}
