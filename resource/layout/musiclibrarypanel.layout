@@ -31,25 +31,20 @@
 	colors
 	{
 		dialogbgtrans="38 38 38 100"
+		searchbg="12 13 14 255"
+		ScreenB_Opaque="44 49 53 255"
 	}
 	
 	styles
 	{
 		CMusicLibraryPanel
 		{
-			bgcolor=none
+			bgcolor=DialogBG
 			
 			minimum-width = 296
 			minimum-height = 300
 			
-			render_bg
-			{
-				// top area and graphic
-				0="gradient( x0, y0, x1, y0+275, ClientBG, DialogBG )"
-				2="image( x0, y0, x1, y0+175, graphics/clienttexture2)"
-				// fill in the bottom area
-				3="fill( x0, y0 + 275, x1, y1, DialogBG )"
-			}
+			render_bg{}
 		}
 		
 		ClientTitle [!$OSX]
@@ -59,7 +54,6 @@
 			font-weight=400
 			textcolor="labeldisabled"
 			bgcolor="none"
-			inset="12 6 0 0"
 		}
 		
 		ClientTitle [$OSX]
@@ -77,9 +71,8 @@
 			font-family=basefont
 			font-size=14
 			font-weight=400
-			textcolor="label"
+			textcolor="texthover"
 			bgcolor="none"
-			inset="12 6 0 0"
 		}
 		
 		ClientTitle:FrameFocus [$OSX]
@@ -95,7 +88,7 @@
 		LibrarySearch
 		{
 			padding-left=0
-			inset="2 4 0 0"
+			//inset="2 4 0 0"
 			font-family=basefont
 			font-size=14
 			font-weight=400
@@ -104,28 +97,28 @@
 		}
 		
 		LibrarySearch:empty
-		{
-			inset="2 10 0 0"
-			font-style=italic
+		{			
+			//inset="2 10 0 0"
+			font-style=none
 			textcolor="LabelDisabled"
 		}
 		
 		LibrarySearch:hover
-		{
-			inset="2 4 0 0"
+		{			
+			//inset="2 4 0 0"
 			textcolor="texthover"
 		}
 		
 		LibrarySearch:empty:hover
-		{
-			inset="2 10 0 0"
-			font-style=italic
+		{			
+			//inset="2 10 0 0"
+			font-style=none
 			textcolor="texthover"
 		}
 		
 		LibrarySearch:disabled
 		{
-			inset="2 10 0 0"
+			//inset="2 10 0 0"
 			font-style=italic
 			textcolor="None"
 		}
@@ -134,7 +127,10 @@
 		{
 			bgcolor="none"
 			inset="10 0 0 0"
-			render_bg {}
+			render_bg 
+			{
+				0="fill(x0 + 8, y0 - 4, x1 - 3, y1 + 2, searchbg)"
+			}
 			image="graphics/icon_button_search"
 		}
 		
@@ -203,7 +199,7 @@
 		
 		NavLabel2 [!$OSX]
 		{
-			inset="0 2 0 0"
+			inset="0 0 0 0"
 			font-family=basefont
 			font-size=14
 			font-weight=400
@@ -213,7 +209,7 @@
 		
 		NavLabel2 [$OSX]
 		{
-			inset="0 2 0 0"
+			inset="0 0 0 0"
 			font-family=basefont
 			font-size=13
 			font-weight=400
@@ -223,7 +219,7 @@
 		
 		NavLabel2:hover
 		{
-			inset="0 2 0 0"
+			inset="0 0 0 0"
 			textcolor="texthover"
 			font-style="outerglow,uppercase"
 			font-outerglow-color="TextGlowHover"
@@ -233,7 +229,7 @@
 		
 		NavLabel2:selected
 		{
-			inset="0 2 0 0"
+			inset="0 0 0 0"
 			textcolor="white"
 			font-style="outerglow,uppercase"
 			font-outerglow-color="TextGlowHover"
@@ -247,7 +243,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 + 2, y0 + 1, x1 - 10, y1 - 1, dialogbgtrans )"
+				0="fill( x0 + 281, y0 + 2, x1 - 8, y1 - 2, searchbg )"
 			}
 		}
 	}
