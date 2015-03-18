@@ -32,7 +32,6 @@
 	{
 		dialogbgtrans="38 38 38 100"
 		searchbg="12 13 14 255"
-		ScreenB_Opaque="44 49 53 255"
 	}
 	
 	styles
