@@ -242,7 +242,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0 + 281, y0 + 2, x1 - 8, y1 - 2, searchbg )"
+				0="fill( x0 + 278, y0 + 2, x1 - 8, y1 - 2, searchbg )"
 			}
 		}
 	}
