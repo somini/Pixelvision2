@@ -32,6 +32,7 @@
 	{
 		dialogbgtrans="38 38 38 100"
 		searchbg="12 13 14 255"
+		basefont2="Segoe UI"
 	}
 	
 	styles
@@ -87,9 +88,7 @@
 		LibrarySearch
 		{
 			padding-left=0
-			//inset="2 4 0 0"
-			font-family=basefont
-			font-size=14
+			font-family=basefont2
 			font-weight=400
 			textcolor="text"
 			render {}
@@ -97,27 +96,23 @@
 		
 		LibrarySearch:empty
 		{			
-			//inset="2 10 0 0"
-			font-style=none
+			font-style=italic
 			textcolor="LabelDisabled"
 		}
 		
 		LibrarySearch:hover
 		{			
-			//inset="2 4 0 0"
 			textcolor="texthover"
 		}
 		
 		LibrarySearch:empty:hover
 		{			
-			//inset="2 10 0 0"
-			font-style=none
+			font-style=italic
 			textcolor="texthover"
 		}
 		
 		LibrarySearch:disabled
 		{
-			//inset="2 10 0 0"
 			font-style=italic
 			textcolor="None"
 		}
