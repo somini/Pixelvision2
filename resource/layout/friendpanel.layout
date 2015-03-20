@@ -188,19 +188,19 @@
 		
 		WebStatusStyle
 		{
-			image="skins/PixelVision/Graphics/icon_status_wbc"
+			image="Graphics/icon_status_wbc"
 			padding-left=4
 		}
 	
 		BigPictureStatusStyle
 		{
-			image="skins/PixelVision/Graphics/icon_status_bpm"
+			image="Graphics/icon_status_bpm"
 			padding-left=4
 		}
 		
 		MobileStatusStyle
 		{
-			image="skins/PixelVision/Graphics/icon_status_mbl"
+			image="Graphics/icon_status_mbl"
 			padding-left=4
 		}
 	}
