@@ -6,7 +6,7 @@
 		"InviteLabel"		{	ControlName="Label"		labeltext="#friends_game_invite"		mouseinputenabled=0		}
 		"GameLabel"			{	ControlName="Label"		labeltext="%game%"						mouseinputenabled=0		}
 		"ClickHereLabel"	{	ControlName="Label"		labeltext="#friends_game_invite_action"	mouseinputenabled=0		}
-		"InviteImage"		{	ControlName="ImagePanel" image="skins/PixelVision/resource/invite"				mouseinputenabled=0		}
+		"InviteImage"		{	ControlName="ImagePanel" image="resource/invite"				mouseinputenabled=0		}
 		"CloseButton"		{	ControlName="Button"	labeltext="X"	command="Close"	}
 	}
 	
