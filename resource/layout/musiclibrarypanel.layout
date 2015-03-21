@@ -32,7 +32,6 @@
 	{
 		dialogbgtrans="38 38 38 100"
 		searchbg="12 13 14 255"
-		basefont2="Segoe UI"
 	}
 	
 	styles
@@ -88,7 +87,7 @@
 		LibrarySearch
 		{
 			padding-left=0
-			font-family=basefont2
+			font-family=basefont
 			font-weight=400
 			textcolor="text"
 			render {}
