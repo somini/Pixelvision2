@@ -173,17 +173,6 @@
 		{
 			style="WebPanelStyle"
 		}
-
-		BroadcastPanelMinimized
-		{
-			bgcolor="none"
-			textcolor="label"
-			inset="0 0 0 0"
-			render_bg 
-			{
-				0="fill( x0, y0, x1, y1, almostblack )" // bg
-			}
-		}
 		
 		library_filters	   { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=library align=right }
 		library_search	   { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
@@ -626,6 +615,17 @@
 				6="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, Black )"	// Bottom
 				7="fill( x0 + 1, y0 + 2, x0 + 2, y1 - 2, Black )"	// Left
 				8="fill( x1 - 2, y0 + 2, x1 - 1, y1 - 2, Black )"	// Right
+			}
+		}
+
+		BroadcastPanelMinimized
+		{
+			bgcolor="none"
+			textcolor="label"
+			inset="0 0 0 0"
+			render_bg 
+			{
+				0="fill( x0, y0, x1, y1, almostblack )" // bg
 			}
 		}
 		
