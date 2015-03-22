@@ -627,6 +627,19 @@
 			{
 				0="fill( x0, y0, x1, y1, almostblack )" // bg
 			}
+
+			render
+			{
+				// Outer Border
+				0="fill( x0 + 0, y1 - 1, x1 - 0, y1    , ScreenB )"	// Bottom
+				1="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB )"	// Left
+				2="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB )"	// Right
+				
+				// Inner Border
+				3="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, Black )"	// Bottom
+				4="fill( x0 + 1, y0 + 2, x0 + 2, y1 - 2, Black )"	// Left
+				5="fill( x1 - 2, y0 + 2, x1 - 1, y1 - 2, Black )"	// Right
+			}
 		}
 		
 		TextEntryURL
