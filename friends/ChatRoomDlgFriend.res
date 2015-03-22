@@ -213,17 +213,17 @@
 		
 		CChatActionsButton
 		{
-			image="skins/PixelVision2/graphics/mega_btn_off"
+			image="graphics/mega_btn_off"
 		}
 		
 		CChatActionsButton:hover
 		{
-			image="skins/PixelVision2/graphics/mega_btn_on"
+			image="graphics/mega_btn_on"
 		}
 
 		CChatActionsButton:selected
 		{
-			image="skins/PixelVision2/graphics/mega_btn_sel"
+			image="graphics/mega_btn_sel"
 		}
 		
 		label

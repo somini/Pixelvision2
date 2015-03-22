@@ -37,7 +37,11 @@
 		
 		DownloadsPageStyle
 		{
-			bgcolor=PropertySheetBG
+			bgcolor=none
+			render_bg
+			{
+				0="fill( x0 + 1, y0, x1 - 1, y1 - 1, PropertySheetBG )"
+			}
 		}
 		
 		ListPanelStyle

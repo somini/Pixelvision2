@@ -1,0 +1,28 @@
+"resource/styles/tweaks/bp_button_default.styles"
+{
+    styles
+    {
+        FullscreenButton
+    	{
+    		inset="-5 -1 0 0"
+    		image="graphics/icon_button_fullscreen"
+    		bgcolor=none
+    		render_bg {}
+    	}
+
+    	FullscreenButton:hover
+    	{
+    		image="graphics/icon_button_fullscreen_over"
+    	}
+
+    	FullscreenButton:active
+    	{
+    		image="graphics/icon_button_fullscreen_down"
+    	}
+
+    	FullscreenButton:disabled
+    	{
+    		image="graphics/icon_button_fullscreen_disabled"
+    	}
+    }
+}

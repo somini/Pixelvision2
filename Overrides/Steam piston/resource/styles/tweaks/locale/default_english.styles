@@ -23,8 +23,7 @@
 				7="image( x0 + 192, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
 				8="image( x0 + 312, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
 				9="image( x0 + 474, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
-				10="image( x1 - 340, y0, x1, y0 + 200, graphics/piston )"			//Steam Logo
-				
+				10="image( x1 - 340, y0, x1, y0 + 200, graphics/piston )"			//Steam Logo				
 			}
 		}
 	}

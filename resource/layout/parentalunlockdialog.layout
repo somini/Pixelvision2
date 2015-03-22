@@ -9,11 +9,13 @@
 
 		Password { controlname="TextEntry" style="Password" command="DoParentalUnlock" tabposition=1 }
 		KeyImage { controlname="Label" style="Key" zpos=-4 }
-		
+
+		Recovery { controlname="URLLabel" labeltext="#steam_parental_norecoveryemail" command="ShowRecoveryDialog" }
+
 		OK { controlname="Button" tabposition=2 command="DoParentalUnlock" labeltext="#PropertyDialog_OK" default=1 }
 		Cancel { controlname="Button" tabposition=3 command="Close" labeltext="#PropertyDialog_Cancel" }
 	}
-	
+
 	styles
 	{
 		ParentalUnlockDialog
@@ -21,26 +23,26 @@
 			minimum-width=400
 			minimum-height=250
 		}
-		
+
 		Password
 		{
 			minimum-height=50
 			font-size=40
 			bgcolor="PropertySheetBG"
 		}
-		
+
 		Hey
 		{
 			font-size=18
 			textcolor=Text //"213 214 215 255"
 		}
-		
+
 		Hey2
 		{
 			font-size=16
 			textcolor=Label //"213 214 215 212"
 		}
-		
+
 		Key
 		{
 			inset="20 20 0 0"
@@ -49,19 +51,20 @@
 			render_bg {}
 		}
 	}
-	
+
 	layout
 	{
 		region { name="top"		width=max height=260 margin=10 margin-top=40 }
 		region { name="bottom"	width=max height=36  align=bottom }
-		
+
 		place { control="KeyImage" region="top" align=left x=160 y=0 width=max height=max margin-top=-30 margin-right=0}
-		
+
 		place { control="Instructions,Instructions2" region="top" x=20 y=10 spacing=8 width=max dir=down }
-		
+
 		place { control="Password" margin-top="75" region="top" margin-left=125 width=130 }
-		
+
+		place { control="Recovery" region="bottom" margin-left=10 margin-top=5 }
+
 		place { control="OK,Cancel" region="bottom" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10 }
 	}
 }
-
