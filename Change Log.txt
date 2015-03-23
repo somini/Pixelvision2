@@ -4,20 +4,30 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late
 
-v2015-0702	(7th of February 2015)
+v2015-21-03 (21st of March 2015)
+
+- The download page border had an extra outer dark gray border on the left, bottom, and right side of the panel. 
+  This has been fixed to match the borders of the other panels. 
+- Converted status icon images from .png to .tga and edited the friendpanel.layout so those who name there skin 
+  folder anything other than "PixelVision" can see the status icons. 
+- The hint text "Search" in the Music Library panel search bar was not italic to match the rest. This has now been fixed. 
+- Removed the version number of the skin. 
+- Updated for latest Steam beta update to add a couple new broadcast viewing features.
+
+v2015-07-02	(7th of February 2015)
 
 - Per request added an override to disable the DLC menu
 - Per request added an override to change the Big Picture Mode button
 - Added an override for the Steam piston in the upper right corner
 - Fixed steam chat missing two menus
 
-v2015-0602	(6th of February 2015)
+v2015-06-02	(6th of February 2015)
 
 - Added background, headers and borders to DLC details
 - Added a logo to the DLC header, courtesy of Jmd132
 - Moved the DLC menu under the Friends list and Achievements
 - Other minor UI tweaks
 
-v2015-0502	(5th of February 2015)
+v2015-05-02	(5th of February 2015)
 
 - Proper support for the latest Steam beta.
