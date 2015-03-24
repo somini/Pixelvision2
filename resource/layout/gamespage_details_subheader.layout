@@ -19,8 +19,8 @@
 		{
 			render_bg
 			{
-				0="fill( x0 + 2, y0 + 2, x1 - 2, y1, BlackTr )"
-				1="dashedrect( x0 + 2, y0 + 2, x1 - 2, y1, Black )"
+				0="fill( x0 + 2, y0 + 2, x1 - 2, y1 - 2, BlackTr )"
+				1="dashedrect( x0 + 2, y0 + 2, x1 - 2, y1 - 2, Black )"
 			}
 		}
 		
