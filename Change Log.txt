@@ -4,6 +4,24 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late
 
+v2015-2303 (23rd of March 2015)
+
+- Screenshot Folder button from In-Game settings and Delete All Browser Cookies button from Web Browser settings have been 
+  re-sized so their height matches the other buttons
+- Games page details subheader (displays game info such as: time played, last played, etc.) dark background 
+  fixed to expand and shrink properly depending on what text is listed
+- Added In-Home Streaming information to games page details subheader
+
+v2015-2103 (21st of March 2015)
+
+- The download page border had an extra outer dark gray border on the left, bottom, and right side of the panel; 
+  Fixed to match the borders of the other panels 
+- Converted status icon images from .png to .tga and edited the friendpanel.layout so those who name there skin 
+  folder anything other than "PixelVision" can see the status icons 
+- Fixed hint text "Search" in the Music Library panel search bar that was not italic to match the rest 
+- Removed the version number of the skin 
+- Updated for latest Steam beta update to add a couple new broadcast viewing features
+
 v2015-0702	(7th of February 2015)
 
 - Per request added an override to disable the DLC menu
