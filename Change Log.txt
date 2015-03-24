@@ -4,6 +4,10 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late
 
+v2015-2403 (24th of March 2015)
+
+- Fixed incomplete rendering of broadcast panel border after latest Steam client beta update
+
 v2015-2303 (23rd of March 2015)
 
 - Screenshot Folder button from In-Game settings and Delete All Browser Cookies button from Web Browser settings have been 
