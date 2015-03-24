@@ -27,20 +27,6 @@
 			zpos=-1
 		}
 		
-		Clock
-		{
-			controlname="Label"
-			labeltext="10:43"
-			style=topbar
-		}
-		
-		ClockSuffix
-		{
-			controlname="Label"
-			labeltext="am"
-			style=clocksuffix
-		}
-		
 		GameName
 		{
 			controlname="Label"
@@ -64,10 +50,6 @@
 		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" }
 		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style=hotkey }
 		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 }
-		
-		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
-		TwoWeeksText { controlname=label style=TimeStrings }
-		ForeverText { controlname=label style=TimeStrings }
 	}
 	
 	colors
@@ -107,28 +89,10 @@
 			bgcolor = "backgroundOverlay"
 		}
 		
-		clocksuffix
-		{
-			font-size=24
-			padding-top=10
-			font-weight=400
-			font-style=uppercase;
-		}
-		
 		topbar
 		{
 			font-size=40
 			textcolor=text
-		}
-		
-		timeStrings
-		{
-			inset-left=16
-			textcolor="texthover"
-			render_bg
-			{
-				0="image( x0 - 1, y0, x1, y1, graphics/harrow_hover )"
-			}
 		}
 	}
 	
@@ -142,8 +106,6 @@
 		
 		place { control="TopFadePanel" align=top width=max height=150 }
 		place { control="BottomFadePanel" align=bottom width=max height=130 }
-		place { control="Clock,ClockSuffix" region=topbar }
-		place { control="SessionText,TwoWeeksText,ForeverText" dir=down region=overlay y=45 }
 		place { control="CloseButton" start=ForeverText region=overlay width=1 height=1 }
 		place { control="HotkeyLabel" start=CloseButton region=overlay width=1 height=1 }
 		place { control="HotkeyExplain" start=HotkeyLabel region=overlay width=1 height=1 }

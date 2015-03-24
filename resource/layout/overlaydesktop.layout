@@ -24,6 +24,12 @@
 		CommunityHubDetailPanel { controlname="COverlay_Details_CommunityHub_Panel" style="detailsbox" }
 		CommunityDiscussionsDetailPanel { controlname="COverlay_Details_CommunityDiscussions_Panel" style="detailsbox" }
 		BroadcastDetailPanel { controlname="COverlay_Details_Broadcast_Panel" style="detailsbox" }
+
+		Clock { controlname="Label" labeltext="10:43" style=topbar }
+		ClockSuffix { controlname="Label" labeltext="am" style=clocksuffix }
+		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
+		TwoWeeksText { controlname=label style=TimeStrings }
+		ForeverText { controlname=label style=TimeStrings }
 	}
 	
 	styles
@@ -43,11 +49,37 @@
 		{
 			textcolor=Text
 		}
+
+		topbar
+		{
+			font-family=basefont
+			font-size=46
+			textcolor=text
+		}
+
+		clocksuffix
+		{
+			font-size=24
+			padding-top=10
+			font-weight=400
+			font-style=uppercase;
+		}
+
+		timeStrings
+		{
+			inset-right=16
+			textcolor=Label
+			render_bg
+			{
+				0="image( x1 - 15, y0, x1, y1, graphics/harrow_rt )"
+			}
+		}
 	}
 	
 	layout
 	{
-		region { name=overlay width=max align=top-center margin-top=10 margin-bottom=10 }
+		region { name=overlay width=max align=top-center margin-top=10 margin-bottom=10 } //width=1010 on default
+		region { name="mid" region=overlay width=400 height=max margin-top=2 align=top-center }
 		region { name=detailpanelsoverlay width=1010 align=top-center margin-top=10 margin-bottom=10 }
 		region { name="broadcastpanel" region=detailpanelsoverlay align=bottom width=max height=382 }
 		region { name="detailpanels" region=detailpanelsoverlay align=bottom width=max height=285 }
@@ -58,5 +90,8 @@
 		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" y=74 align=left region=overlay dir=down spacing=7 margin-left=20 width=200 }
 		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=187 spacing=10 }
 		place { controls="CommunityHubDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel" region=detailpanels2 align=top-center width=245 height=74 spacing=10 }
+
+		place { control="Clock,ClockSuffix" region=mid align=top-center margin-top=-2 }
+		place { control="SessionText,TwoWeeksText,ForeverText" dir=down region=overlay align=right margin-right=20 spacing=7 y=74 }
 	}
 }
