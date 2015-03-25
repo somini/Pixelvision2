@@ -322,7 +322,7 @@
 		place { region="column4" control="pauseresumebutton" height=22 width=26 margin-top=44 align=right margin-right=26 }
 		
 		// Obsolete
-		place { control="workshopminibanner" x=9999 y=9999 }
+		place { control="workshopminibanner" height=0 width=0 }
 		place { control="GraphPanel"         x=9999 y=9999 }
 		place { control="graphdownloadrate"  x=9999 y=9999 }
 	}

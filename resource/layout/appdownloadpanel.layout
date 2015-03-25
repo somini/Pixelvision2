@@ -362,6 +362,6 @@
 		place { region="column4" control="topofqueuebutton" height=48 width=48 margin-top=71 align=right margin-right=59 }
 
 		// Obsolete
-		place { control="workshopbanner" x=9999 y=9999 } 
+		place { control="workshopbanner" height=0 width=0 } 
 	}
 }
