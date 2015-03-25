@@ -360,5 +360,8 @@
 		place { region="column4" control="updatetypelabel" margin-top=45 align=right margin-right=60 }
 		place { region="column4" control="removefromqueuebutton" height=22 width=26 margin-top=44 align=right margin-right=26 }
 		place { region="column4" control="topofqueuebutton" height=48 width=48 margin-top=71 align=right margin-right=59 }
+
+		// Obsolete
+		place { control="workshopbanner" x=9999 y=9999 } 
 	}
 }
