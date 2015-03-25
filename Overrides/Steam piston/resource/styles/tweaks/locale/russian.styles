@@ -19,10 +19,10 @@
 				4="fill( x0, y1 - 76, x1, y1, DialogBG )"
 				
 				// Navigation Icons
-				6="image( x0 + 82 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
+				6="image( x0 + 84 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
 				7="image( x0 + 223, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
-				8="image( x0 + 396, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
-				9="image( x0 + 572, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
+				8="image( x0 + 390, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
+				9="image( x0 + 563, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 				10="image( x1 - 340, y0, x1, y0 + 200, graphics/piston )"			//Steam Logo
 			}
 		}
