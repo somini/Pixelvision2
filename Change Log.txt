@@ -4,6 +4,11 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late
 
+v2015-2503 (25th of March 2015)
+
+- Removed the workshop banner that showed up on the download page whenever someone was downloading an update to a workshop mod
+  they had previously installed
+
 v2015-2403 (24th of March 2015)
 
 - Fixed incomplete rendering of broadcast panel border after latest Steam client beta update
