@@ -131,7 +131,7 @@
 		
 		HTML
 		{
-			inset="2 2 2 4"
+			inset="2 2 2 2"
 		}
 		
 		"HTML Scrollbar"
