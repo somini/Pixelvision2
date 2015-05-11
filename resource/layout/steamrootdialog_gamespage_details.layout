@@ -296,8 +296,9 @@
 		
 		// Main header image is at the bottom, then one of three color overlays is visible, and finally the 
 		// horizontal fade out gradient on the top.  We have an a and a b image, which we crossfade between.
-		place 	{ control=headerimagea width=1024 height=550 x=120 y=2 }
-		place 	{ control=headerimageb width=1024 height=550 x=120 y=2 }
+		// Align to top-right for wide displays
+		place 	{ control=headerimagea width=1024 height=550 x=120 y=2 align=top-center }
+		place 	{ control=headerimageb width=1024 height=550 x=120 y=2 align=top-center }
 		
 		// Header text
 		place 	{ control=gametitleheader region=headertext dir=down height=46 }
