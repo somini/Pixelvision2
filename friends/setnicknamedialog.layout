@@ -53,7 +53,7 @@
 		region { name="bottomrow" align=bottom height=36 }
 		place { control="OKButton,CloseButton" region=bottomrow align=right spacing=8 margin-right=24 }
 		place { control=Details x=20 y=34 width=348 margin-right=20 height=40 }
-		place { control=NicknameEdit x=20 y=70 width=345 height=24 }
+		place { control=NicknameEdit x=20 y=77 width=345 height=24 }
 	}
 }
 
