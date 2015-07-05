@@ -24,6 +24,8 @@
 		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="ShowWhileDownloading" }
 		timecompletedlabel	{ controlname="Label"	labelText="#steam_downloads_timecompleted" style="label2" group="ShowWhenComplete" }
 		timecompletedfield	{ controlname="Label"	labelText="%time_completed%"  style="label" group="ShowWhenComplete" }
+		pausereasonlabel	{ controlname="Label"	labelText="#steam_downloads_pausedreason" style="label2" group="ShowWhenPaused" }
+		pausereasonfield	{ controlname="Label"	labelText="" style="label3" group="ShowWhenPaused" }
 		
 		// right column
 		updatetypelabel	{ controlname="Label"	labelText="#steam_downloads_suspended" style=ModuleHeading2 }
@@ -362,6 +364,7 @@
 		place { region="column4" control="topofqueuebutton" height=48 width=48 margin-top=71 align=right margin-right=59 }
 
 		// Obsolete
-		place { control="workshopbanner" height=0 width=0 } 
+		place { control="workshopbanner" height=0 width=0 }
+		place { control="pausereasonlabel,pausereasonfield" height=0 width=0 }
 	}
 }
