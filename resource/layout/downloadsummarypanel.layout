@@ -266,8 +266,8 @@
 		//place { control="GraphPanel" x=11 width="max" height="107" margin-top=10 margin-right=11 }
 
 		// graph
-		place { control="net_graphpanel" region=head x=182 y=0 width="max" height="104" margin-right=112 }				   
-		place { control="disc_graphpanel" region=head x=182 y=0 width="max" height="104" margin-right=112 }
+		place { control="net_graphpanel" region=head x=112 y=0 width="max" height="104" margin-right=112 }				   
+		place { control="disc_graphpanel" region=head x=112 y=0 width="max" height="104" margin-right=112 }
 		
 		// graph legend
 		place { control="net_legend_panel" region=legend y=3 x=0 width=9 height=9 }
