@@ -5,6 +5,10 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late
 
+Outstanding issues
+-----
+The SteamVR button is hidden while a solution is found. Check out issue [#43](https://github.com/somini/Pixelvision2/issues/43) for discussion
+
 Fonts
 -----
 The skin requires a set of fonts installed on your system, of the SegoeWP family.
