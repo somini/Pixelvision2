@@ -635,5 +635,8 @@
 		
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=30 }
+
+		// hide vr button
+		place { control="startvr, exitvr" height=0 width=0 }
 	}
 }
