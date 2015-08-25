@@ -124,7 +124,13 @@
 		"disk_legend_panel" { ControlName="Panel" style="diskLegendPanel" }
 		"net_legend_panel" { ControlName="Panel" style="netLegendPanel" }
     }
-    
+
+    colors
+    {
+        panelBackground = none
+        panelBackgroundTransparent = none
+    }
+
     styles
     {
         CDownloadSummaryPanel
