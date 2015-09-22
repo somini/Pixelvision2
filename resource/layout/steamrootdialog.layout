@@ -617,7 +617,7 @@
 		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right y=78 height=23 margin-right=9 width=109 }
 		
 		place { control="InboxButton" height=12 y=52 margin-right=51 align=right }
-		place { control="ParentalLockButton" align=right end-right="account_balance" margin-top=35 margin-right=10 height=26 }
+		place { control="ParentalLockButton" align=right end-right="account_URL" margin-top=35 margin-right=50 height=26 }
 		place { control="SupportAlert" y=3 align=right end-right="ParentalLockButton" margin-right=10 height=26 }
 		
 		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=2 spacing=-6 }
