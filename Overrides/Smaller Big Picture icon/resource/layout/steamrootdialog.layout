@@ -587,6 +587,16 @@
 				0="image( x1 - 12, y0 + 6, x1, y1, resource/account_arrow )"
 			}
 		}
+
+		AccountURLStyle:disabled
+		{
+			textcolor=labelfocus
+			render
+			{
+				0="image( x1 - 12, y0 + 6, x1, y1, resource/account_arrow )"
+			}
+			padding-right=9
+		}
 		
 		AccountURLStyle:selected
 		{
