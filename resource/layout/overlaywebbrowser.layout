@@ -2,22 +2,22 @@
 {
 	controls
 	{
-		WebBrowser { controlname="COverlayWebBrowser" frametitle="#Overlay_WebBrowserTitle" }
-		HTMLField { controlname="HTML" zpos=1 }
-		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
-		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }
-		URLBar { controlname="TextEntry" style="TextEntryURL" }
-		StatusText { controlname="Label" }
-		
-		HomeButton { controlname="Button" command="WebHome" labeltext="" style="HomeButton" }
-		StopButton { controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
-		ReloadButton { controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
+		WebBrowser     { controlname="COverlayWebBrowser" frametitle="#Overlay_WebBrowserTitle" }
+		HTMLField      { controlname="HTML" zpos=1 }
+		URLStatusImage { controlname="ImagePanel" style="URLStatusImage"  }
+		EVCert         { controlname="Label" style="LabelEVCert" visible=false }
+		URLBar         { controlname="TextEntry" style="TextEntryURL" }
+		StatusText     { controlname="Label" }
+
+		HomeButton    { controlname="Button" command="WebHome" labeltext="" style="HomeButton" }
+		StopButton    { controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
+		ReloadButton  { controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
 		ForwardButton { controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
-		BackButton { controlname="Button" command="WebBack" style="BackButtonSm" }
-		
+		BackButton    { controlname="Button" command="WebBack" style="BackButtonSm" }
+
 		PageLoadThrobber { controlname="ImagePanel" image="graphics/rampDown_4" }
 	}
-	
+
 	styles
 	{
 		COverlayWebBrowser
@@ -27,73 +27,73 @@
 			{
 				// Background
 				0="fill( x0 + 7, y0 + 9, x1 - 1, y0 + 49, PropertySheetBG )"
-				
+
 				// Border
-				1="fill( x0 + 6, y0 + 8 , x1    , y0 + 9 , Divider )"	// Top
-				2="fill( x0 + 6, y0 + 49, x1    , y0 + 50, Divider )"	// Bottom
-				3="fill( x0 + 6, y0 + 9 , x0 + 7, y0 + 49, Divider )"	// Left
-				4="fill( x1 - 1, y0 + 9 , x1    , y0 + 49, Divider )"	// Right
+				1="fill( x0 + 6, y0 + 8 , x1    , y0 + 9 , Divider )" // Top
+				2="fill( x0 + 6, y0 + 49, x1    , y0 + 50, Divider )" // Bottom
+				3="fill( x0 + 6, y0 + 9 , x0 + 7, y0 + 49, Divider )" // Left
+				4="fill( x1 - 1, y0 + 9 , x1    , y0 + 49, Divider )" // Right
 			}
 			render
 			{
-				1="fill( x0 + 6, y0 + 55, x1    , y0 + 56, Divider )"	// Top
-				2="fill( x0 + 6, y1 - 14, x1    , y1 - 13, Divider )"	// Bottom
-				3="fill( x0 + 6, y0 + 56, x0 + 7, y1 - 14, Divider )"	// Left
-				4="fill( x1 - 1, y0 + 56, x1    , y1 - 14, Divider )"	// Right
-				
-				6="fill( x0 + 7, y0 + 56, x1 - 1, y0 + 57, Black )"		// Top
-				7="fill( x0 + 7, y1 - 15, x1 - 1, y1 - 14, Black )"		// Bottom
-				8="fill( x0 + 7, y0 + 57, x0 + 8, y1 - 15, Black )"		// Left
-				9="fill( x1 - 2, y0 + 57, x1 - 1, y1 - 15, Black )"		// Right
+				1="fill( x0 + 6, y0 + 55, x1    , y0 + 56, Divider )" // Top
+				2="fill( x0 + 6, y1 - 14, x1    , y1 - 13, Divider )" // Bottom
+				3="fill( x0 + 6, y0 + 56, x0 + 7, y1 - 14, Divider )" // Left
+				4="fill( x1 - 1, y0 + 56, x1    , y1 - 14, Divider )" // Right
+
+				6="fill( x0 + 7, y0 + 56, x1 - 1, y0 + 57, Black )" // Top
+				7="fill( x0 + 7, y1 - 15, x1 - 1, y1 - 14, Black )" // Bottom
+				8="fill( x0 + 7, y0 + 57, x0 + 8, y1 - 15, Black )" // Left
+				9="fill( x1 - 2, y0 + 57, x1 - 1, y1 - 15, Black )" // Right
 			}
 		}
-		
+
 		BackButtonSm // Browser Back Button
 		{
 			inset="-5 0 0 0"
 			image="graphics/icon_button_back"
 			bgcolor=none
-			render_bg {}
+			render_bg { }
 		}
-		
+
 		BackButtonSm:hover
 		{
 			image="graphics/icon_button_back_over"
 		}
-		
+
 		BackButtonSm:active
 		{
 			image="graphics/icon_button_back_down"
 		}
-		
+
 		BackButtonSm:disabled
 		{
 			image="graphics/icon_button_back_disabled"
 		}
-		
+
 		ForwardButtonSm // Browser Forward Button
 		{
 			inset="-5 0 0 0"
 			image="graphics/icon_button_forward"
 			bgcolor=none
-			render_bg {}
+			render_bg { }
 		}
-		
+
 		ForwardButtonSm:hover
 		{
 			image="graphics/icon_button_forward_over"
 		}
-		
+
 		ForwardButtonSm:active
 		{
 			image="graphics/icon_button_forward_down"
 		}
-		
+
 		ForwardButtonSm:disabled
 		{
 			image="graphics/icon_button_forward_disabled"
 		}
-		
+
 		TextEntryURL // Address Bar
 		{
 			inset-left=2
@@ -104,21 +104,21 @@
 			shadowtextcolor="Text"	// this is the cursor color
 			bgcolor="none"
 			render_bg
-		    {
-				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBG )"	// Background
-				
-				1="fill( x0    , y0    , x1    , y0 + 1, ScreenB )"		// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , ScreenB )"		// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB )"		// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB )"		// Right
-		    }
+			{
+				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBG )" // Background
+
+				1="fill( x0    , y0    , x1    , y0 + 1, ScreenB )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , ScreenB )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB )" // Right
+			}
 		}
-		
+
 		TextEntryURL:Hover
 		{
 			textcolor="text"
 		}
-		
+
 		Label
 		{
 			font-size=13
@@ -128,17 +128,17 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
 		}
-		
+
 		HTML
 		{
 			inset="2 2 2 2"
 		}
-		
+
 		"HTML Scrollbar"
 		{
 			inset="0 -1 0 -3"
 		}
-		
+
 		LabelEVCert
 		{
 			inset-left=4
@@ -148,33 +148,33 @@
 			textcolor="BackgroundStart"
 			bgcolor="html.secureurl"
 		}
-		
+
 		URLStatusImage
 		{
 			scaling=panel // ?? console brings this up as an unknown key
 			inset="0 0 0 0"
 			image="graphics/html_lock_disabled"
 			bgcolor=none
-			render_bg {}
- 		}
-		
+			render_bg { }
+		}
+
 		URLBarSecure
 		{
 			textcolor="html.secureurl"
 		}
-		
+
 		URLBarBrokenSecure
 		{
 			textcolor="html.insecureurl"
 		}
 	}
-	
+
 	layout
 	{
 		place { control="URLStatusImage,EVCert,URLBar" x=92 y=19 width=max margin-right=60 height=20 }
 		place { control="HTMLField" width=max height=max margin-top=55 margin-left=6 margin-right=0 margin-bottom=13 }
 		place { control="StatusText" align=bottom height=24 margin-left=7 margin-bottom=-6 }
-		place { control="ReloadButton,StopButton,PageLoadThrobber" align=right margin-top=18 margin-right=8 width=20 height=20 spacing=7 }	
+		place { control="ReloadButton,StopButton,PageLoadThrobber" align=right margin-top=18 margin-right=8 width=20 height=20 spacing=7 }
 		place { control="BackButton,ForwardButton" x=11 y=16 height=26 width=26 spacing=1 margin-right=10 }
 		place { control="HomeButton" x=64 y=14 }
 	}

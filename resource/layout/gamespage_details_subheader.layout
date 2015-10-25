@@ -3,44 +3,44 @@
 	controls
 	{
 		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
-		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
-		clientlist { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
+		launchbutton    { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
+		clientlist      { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
 	}
-	
+
 	colors
 	{
 		GameDetailsSubHeader.HorizontalSpacing=10
 		GameDetailsSubHeader.VerticalMargin=10
 	}
-	
+
 	styles
 	{
 		CDetailsGameSubHeaderPanel
 		{
 			render_bg
 			{
-				0="fill( x0 + 2, y0 + 2, x1 + 2, y1 - 2, BlackTr )"
+				0="fill( x0 + 2      , y0 + 2, x1 + 2, y1 - 2, BlackTr )"
 				1="dashedrect( x0 + 2, y0 + 2, x1 + 2, y1 - 2, Black )"
 			}
 		}
-		
+
 		ClientListButton {}
-		
+
 		// DetailsButton {} [settings.ini]
-		
+
 		// DetailsLaunchButton {} [settings.ini]
-		
+
 		// DetailsInstallButton {} [settings.ini]
-		
+
 		// DetailsBuyButton {} [settings.ini]
 	}
-	
+
 	layout
 	{
 		// Y offset here should match the vertical padding value above in the colors section
 		region { name="header" y=0 x=0 width=max height=max }
-		
-		place { 
+
+		place {
 			control=launchbutton
 			region=header
 			dir=right
@@ -51,7 +51,7 @@
 			margin-bottom=10
 			spacing=0
 		}
-		place { 
+		place {
 			start=launchbutton
 			control=clientlist
 			region=header
@@ -61,7 +61,7 @@
 			margin-right=0
 			spacing=0
 		}
-		place { 
+		place {
 			start=clientlist
 			control=subheaderlabels
 			region=header

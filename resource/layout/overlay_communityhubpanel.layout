@@ -3,33 +3,33 @@
 	controls
 	{
 		CommunityHubDetailPanel { controlname="COverlay_Details_CommunityHub_Panel" style=detailsbox }
-		
-		TitleText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_Title" style=detailsboxtitle }
-		NumContributionsText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_NumContributions" style=highlight }
-		
-		ViewCommunityHub { controlname="Button" labeltext="#Overlay_View_CommunityHub" command="viewcommunityhub" }
+
+		TitleText               { controlname="label" labeltext="#Overlay_CommunityHub_Panel_Title" style=detailsboxtitle }
+		NumContributionsText    { controlname="label" labeltext="#Overlay_CommunityHub_Panel_NumContributions" style=highlight }
+
+		ViewCommunityHub        { controlname="Button" labeltext="#Overlay_View_CommunityHub" command="viewcommunityhub" }
 	}
-	
+
 	colors
 	{
 		linkidle="255 255 255 51"
 		linkover="255 255 255 128"
 	}
-	
+
 	styles
 	{
 		DetailsBox
 		{
 			bgcolor="none"
-			render_bg {}
-			render {}
+			render_bg { }
+			render { }
 		}
-		
+
 		DetailsBoxTitle
 		{
 			textcolor=none
 		}
-		
+
 		Button
 		{
 			inset=2
@@ -46,7 +46,7 @@
 				1="image( x0 + 5, y0 + 5, x1, y1, graphics/icon_ol_gamehub )"
 			}
 		}
-		
+
 		Button:hover
 		{
 			textcolor=linkover
@@ -55,13 +55,13 @@
 				0="image( x0 + 5, y0 + 5, x1, y1, graphics/icon_ol_gamehub_over )"
 			}
 		}
-		
+
 		highlight
 		{
 			textcolor=highlight2r
 		}
 	}
-	
+
 	layout
 	{
 		place { control="TitleText" width=1 height=1 }

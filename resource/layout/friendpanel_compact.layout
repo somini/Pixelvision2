@@ -6,14 +6,26 @@
 		{
 			style=menuButtonStyle
 		}
-		
-		AvatarOverlayImage { zpos=2 }
-		
-		AcceptLink { style="inviteLinkStyle" }
-		IgnoreLink { style="inviteLinkStyle" }
-		BlockLink { style="inviteLinkStyle" }
+
+		AvatarOverlayImage
+		{
+			zpos=2
+		}
+
+		AcceptLink
+		{
+			style="inviteLinkStyle"
+		}
+		IgnoreLink
+		{
+			style="inviteLinkStyle"
+		}
+		BlockLink
+		{
+			style="inviteLinkStyle"
+		}
 	}
-	
+
 	styles
 	{
 		CFriendPanel:selected  //only used in non-avatar view for friends
@@ -22,50 +34,50 @@
 			{
 				0="gradient_horizontal( x0 - 1, y0 + 2, x1    , y0 + 3, focus3, none )"
 				1="gradient_horizontal( x0 - 1, y1 - 2, x1    , y1 - 1, focus3, none )"
-				2="image( x0 - 16, y0 + 5, x1 + 0, y1 - 0, graphics/icon_right_default )"
+				2="image( x0 - 16             , y0 + 5, x1 + 0, y1 - 0, graphics/icon_right_default )"
 			}
 		}
-		
+
 		SelfPanel
 		{
 			render_bg
 			{
-				1="fill( x0 - 5, y0 + 2, x1 + 13, y1 - 2, DialogBGL )"
-				
-				2="fill( x0 - 5, y1 - 2, x1 + 13, y1 - 1, Shade1 )"
-				3="fill( x0 - 5, y1 - 1, x1 + 13, y1 + 0, Shade2 )"
-				4="fill( x0 - 5, y1 + 0, x1 + 13, y1 + 1, Shade3 )"
-				5="fill( x0 - 5, y1 + 1, x1 + 13, y1 + 2, Shade4 )"
-				6="fill( x0 - 5, y1 + 2, x1 + 13, y1 + 3, Shade5 )"
-				7="fill( x0 - 5, y1 + 3, x1 + 13, y1 + 4, Shade6 )"
-				8="fill( x0 - 5, y1 + 4, x1 + 13, y1 + 5, Shade7 )"
-				9="fill( x0 - 5, y1 + 5, x1 + 13, y1 + 6, Shade8 )"
-				
+				1="fill( x0 - 5 , y0 + 2, x1 + 13, y1 - 2, DialogBGL )"
+
+				2="fill( x0 - 5 , y1 - 2, x1 + 13, y1 - 1, Shade1 )"
+				3="fill( x0 - 5 , y1 - 1, x1 + 13, y1 + 0, Shade2 )"
+				4="fill( x0 - 5 , y1 + 0, x1 + 13, y1 + 1, Shade3 )"
+				5="fill( x0 - 5 , y1 + 1, x1 + 13, y1 + 2, Shade4 )"
+				6="fill( x0 - 5 , y1 + 2, x1 + 13, y1 + 3, Shade5 )"
+				7="fill( x0 - 5 , y1 + 3, x1 + 13, y1 + 4, Shade6 )"
+				8="fill( x0 - 5 , y1 + 4, x1 + 13, y1 + 5, Shade7 )"
+				9="fill( x0 - 5 , y1 + 5, x1 + 13, y1 + 6, Shade8 )"
+
 				10="fill( x0 - 5, y1 + 6, x1 + 13, y1 + 7, DividerD2 )"
 				11="fill( x0 - 5, y1 + 7, x1 + 13, y1 + 8, DividerL2 )"
 			}
 		}
-		
+
 		SelfPanel:hover
 		{
 			render_bg
 			{
-				1="fill( x0 - 5, y0 + 2, x1 + 13, y1 - 2, DialogBGL )"
-				
-				2="fill( x0 - 5, y1 - 2, x1 + 13, y1 - 1, Shade1 )"
-				3="fill( x0 - 5, y1 - 1, x1 + 13, y1 + 0, Shade2 )"
-				4="fill( x0 - 5, y1 + 0, x1 + 13, y1 + 1, Shade3 )"
-				5="fill( x0 - 5, y1 + 1, x1 + 13, y1 + 2, Shade4 )"
-				6="fill( x0 - 5, y1 + 2, x1 + 13, y1 + 3, Shade5 )"
-				7="fill( x0 - 5, y1 + 3, x1 + 13, y1 + 4, Shade6 )"
-				8="fill( x0 - 5, y1 + 4, x1 + 13, y1 + 5, Shade7 )"
-				9="fill( x0 - 5, y1 + 5, x1 + 13, y1 + 6, Shade8 )"
-				
+				1="fill( x0 - 5 , y0 + 2, x1 + 13, y1 - 2, DialogBGL )"
+
+				2="fill( x0 - 5 , y1 - 2, x1 + 13, y1 - 1, Shade1 )"
+				3="fill( x0 - 5 , y1 - 1, x1 + 13, y1 + 0, Shade2 )"
+				4="fill( x0 - 5 , y1 + 0, x1 + 13, y1 + 1, Shade3 )"
+				5="fill( x0 - 5 , y1 + 1, x1 + 13, y1 + 2, Shade4 )"
+				6="fill( x0 - 5 , y1 + 2, x1 + 13, y1 + 3, Shade5 )"
+				7="fill( x0 - 5 , y1 + 3, x1 + 13, y1 + 4, Shade6 )"
+				8="fill( x0 - 5 , y1 + 4, x1 + 13, y1 + 5, Shade7 )"
+				9="fill( x0 - 5 , y1 + 5, x1 + 13, y1 + 6, Shade8 )"
+
 				10="fill( x0 - 5, y1 + 6, x1 + 13, y1 + 7, DividerD2 )"
 				11="fill( x0 - 5, y1 + 7, x1 + 13, y1 + 8, DividerL2 )"
 			}
 		}
-		
+
 		menuButtonStyle
 		{
 			minimum-width=14
@@ -74,7 +86,7 @@
 			padding-right=2
 			padding-left=1
 		}
-		
+
 		menuButtonStyle:hover
 		{
 			render_bg
@@ -82,35 +94,35 @@
 				0="image( x0, y0 - 3, x1, y1, resource/friend_arrow_hover )"
 			}
 		}
-		
+
 		downarrow:hover
 		{
 			render_bg
 			{
 				// Background
 				0="fill( x0 + 2, y0 + 1 , x1 - 1, y1 - 1, buttonfaceactive )"
-				
+
 				// Border
 				1="fill( x0 + 1, y0 + 2, x0 + 2, y1 - 2, buttonfaceactive )"  // Left
 				2="fill( x1 - 1, y0 + 2, x1    , y1 - 2, buttonfaceactive )"  // Right
-				3="image( x0, y0, x1, y1, graphics/icon_down_hover )"
+				3="image( x0   , y0    , x1    , y1    , graphics/icon_down_hover )"
 			}
 		}
-		
+
 		inviteLinkStyle
 		{
 			textcolor=Text2
 			font-style=""
 			padding-left=2
 		}
-		
+
 		inviteLinkStyle:hover
 		{
 			textcolor=White
 			font-style=underline
 		}
 	}
-	
+
 	layout
 	{
 		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore,MenuButton" x=1 y=1 spacing=4 }

@@ -4,41 +4,41 @@
 	{
 		// -- Play Button
 		// ==============
-		PlayBG1="88 94 104 255"			// Background Gradient Start
-		PlayBG2="64 66 71 255"			// Background Gradient Finish
-		PlayBGH="98 104 114 255"		// Background Gradient Hover
-		
-		PlayTP="118 124 136 255"		// Top
-		PlayBT="80 84 93 255"			// Bottom
-		PlaySD1="118 124 136 255"		// Side Gradient Start
-		PlaySD2="80 84 93 255"			// Side Gradient Finish
-		
-		PlayTL="118 124 136 255"		// Top Left Corner
-		PlayTR="118 124 136 255"		// Top Right Corner
-		PlayBL="80 84 93 255"			// Bottom Left Corner
-		PlayBR="80 84 93 255"			// Bottom Right Corner
-		
+		PlayBG1="88 94 104 255"      // Background Gradient Start
+		PlayBG2="64 66 71 255"       // Background Gradient Finish
+		PlayBGH="98 104 114 255"     // Background Gradient Hover
+
+		PlayTP="118 124 136 255"     // Top
+		PlayBT="80 84 93 255"        // Bottom
+		PlaySD1="118 124 136 255"    // Side Gradient Start
+		PlaySD2="80 84 93 255"       // Side Gradient Finish
+
+		PlayTL="118 124 136 255"     // Top Left Corner
+		PlayTR="118 124 136 255"     // Top Right Corner
+		PlayBL="80 84 93 255"        // Bottom Left Corner
+		PlayBR="80 84 93 255"        // Bottom Right Corner
+
 		// -- Install Button
 		// =================
-		InstallBG1="88 94 104 255"		// Background Gradient Start
-		InstallBG2="64 66 71 255"		// Background Gradient Finish
-		InstallBGH="98 104 114 255"		// Background Gradient Hover
-		
-		InstallTP="118 124 136 255"		// Top
-		InstallBT="80 84 93 255"		// Bottom
-		InstallSD1="118 124 136 255"	// Side Gradient Start
-		InstallSD2="80 84 93 255"		// Side Gradient Finish
-		
-		InstallTL="118 124 136 255"		// Top Left Corner
-		InstallTR="118 124 136 255"		// Top Right Corner
-		InstallBL="80 84 93 255"		// Bottom Left Corner
-		InstallBR="80 84 93 255"		// Bottom Right Corner
+		InstallBG1="88 94 104 255"   // Background Gradient Start
+		InstallBG2="64 66 71 255"    // Background Gradient Finish
+		InstallBGH="98 104 114 255"  // Background Gradient Hover
+
+		InstallTP="118 124 136 255"  // Top
+		InstallBT="80 84 93 255"     // Bottom
+		InstallSD1="118 124 136 255" // Side Gradient Start
+		InstallSD2="80 84 93 255"    // Side Gradient Finish
+
+		InstallTL="118 124 136 255"  // Top Left Corner
+		InstallTR="118 124 136 255"  // Top Right Corner
+		InstallBL="80 84 93 255"     // Bottom Left Corner
+		InstallBR="80 84 93 255"     // Bottom Right Corner
 	}
-	
+
 	styles
 	{
 		DetailsButton	// Library Details, Game Hub (+ Activate Guest Pass?)
-		{   
+		{
 			inset="2 -1 0 1"
 			textcolor="Text"
 			font-size=16
@@ -50,33 +50,33 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightB, DarkB )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )" // Right
 			}
 			render {}
 		}
-		
+
 		DetailsButton:hover
 		{
 			textcolor="TextHover"
 			render_bg
-			{     
+			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightBHover, DarkBHover )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )" // Right
 			}
 			render {}
 		}
-		
+
 		DetailsLaunchButton	// Library Details, Play
 		{
 			inset="23 0 0 0"
@@ -90,39 +90,39 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightB, DarkB )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
 			}
 		}
-		
+
 		DetailsLaunchButton:Hover
 		{
 			textcolor="TextHover"
 			render_bg
-			{     
+			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightBHover, DarkBHover )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play_hover )"
 			}
 		}
-		
+
 		DetailsInstallButton	// Library Details, Install or Preload
 		{
 			inset="23 0 0 0"
@@ -136,39 +136,39 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightB, DarkB )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_install)"
 			}
 		}
-		
+
 		DetailsInstallButton:hover
 		{
 			textcolor="TextHover"
 			render_bg
-			{     
+			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightBHover, DarkBHover )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_install_hover )"
 			}
 		}
-		
+
 		DetailsBuyButton	// Library Details, Purchase
 		{
 			inset="23 0 0 0"
@@ -182,124 +182,124 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightB, DarkB )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_buy )"
 			}
 		}
-		
+
 		DetailsBuyButton:hover
 		{
 			textcolor="TextHover"
 			render_bg
-			{     
+			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightBHover, DarkBHover )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_buy_hover )"
 			}
 		}
-		
+
 		ResumeButton // Downloads, Resume All
-        {   
+        {
             inset="23 0 0 0"
 			textcolor="Text"
 			font-size=16
 			font-family=semibold
 			font-weight=400
 			font-style=uppercase
-			bgcolor=none   
+			bgcolor=none
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightB, DarkB )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_install )"
 			}
         }
-		
+
         ResumeButton:Hover
-        {   
+        {
 			textcolor="TextHover"
 			render_bg
-			{     
+			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightBHover, DarkBHover )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_install_hover )"
 			}
         }
-		
+
 		PauseButton // Downloads, Pause All
-        {   
+        {
             inset="23 0 0 0"
 			textcolor="Text"
 			font-size=16
 			font-family=semibold
 			font-weight=400
 			font-style=uppercase
-			bgcolor=none   
+			bgcolor=none
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightB, DarkB )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB1 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB2 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB1 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB2 )" // Right
 			}
 			render
 			{
 				0="image( x0 + 6, y0 + 4, x1, y1, graphics/icon_pause )"
 			}
         }
-		
+
         PauseButton:Hover
-        {   
+        {
 			textcolor="TextHover"
 			render_bg
-			{     
+			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightBHover, DarkBHover )"
-				
+
 				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, BorderB3 )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , BorderB1 )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, BorderB3 )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, BorderB1 )" // Right
 			}
 			render
 			{

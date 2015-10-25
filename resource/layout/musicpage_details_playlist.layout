@@ -3,9 +3,9 @@
 	controls
 	{
 		PlaylistTitleLabel { controlname="Label" style="PlaylistTitleStyle" }
-		TracksInfoLabel { controlname="Label" style="TracksInfoLabelStyle" }
-		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit }
-		
+		TracksInfoLabel    { controlname="Label" style="TracksInfoLabelStyle" }
+		CoverImage         { controlname="ImagePanel" style="CoverStyle" scaling=fit }
+
 		PlayPlaylistButton
 		{
 			controlname="Button"
@@ -13,7 +13,7 @@
 			style="ActionButtonStyle"
 			command="PlaylistPlayAction"
 		}
-		
+
 		AddPlaylistToQueueButton
 		{
 			controlname="Button"
@@ -21,7 +21,7 @@
 			style="AdditionalActionButtonStyle"
 			command="PlaylistAddToQueueAction"
 		}
-		
+
 		AddRandomTracksToPlaylistButton
 		{
 			controlname="Button"
@@ -30,14 +30,14 @@
 			command="PlaylistAddRandomTracksAction"
 		}
 	}
-	
+
 	styles
 	{
 		CMusicPage_Details_Playlist
 		{
 			bgcolor=none
 		}
-		
+
 		PlaylistTitleStyle
 		{
 			padding-bottom=8
@@ -50,7 +50,7 @@
 			font-weight=400
 			bgcolor=BackgroundStart
 		}
-		
+
 		TracksInfoLabelStyle
 		{
 			padding-bottom=10
@@ -63,7 +63,7 @@
 			font-weight=400
 			bgcolor=none
 		}
-		
+
 		TrackStyle
 		{
 			padding-bottom=10
@@ -74,14 +74,14 @@
 			font-weight=400
 			bgcolor=none
 		}
-		
+
 		TrackStyle:hover
 		{
 			textcolor="text"
 		}
-		
-		CoverStyle {}
-		
+
+		CoverStyle { }
+
 		AdditionalActionButtonStyle
 		{
 			//font-size=14
@@ -92,14 +92,14 @@
 			padding-left=-6
 			padding-top=6
 			padding-bottom=-6
-			render_bg {}
+			render_bg { }
 		}
-		
+
 		AdditionalActionButtonStyle:hover
 		{
 			textcolor="labelfocus"
 		}
-		
+
 		ActionButtonStyle
 		{
 			inset="23 1 0 0"
@@ -119,7 +119,7 @@
 				1="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
 			}
 		}
-		
+
 		ActionButtonStyle:hover
 		{
 			textcolor="white"
@@ -133,7 +133,7 @@
 				0="image( x0 + 6, y0 + 5, x1, y1, graphics/icon_play )"
 			}
 		}
-		
+
 		ActionButtonStyle:active
 		{
 			textcolor="white"
@@ -148,18 +148,18 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		region { name=bodyregion x=10 y=10 width=max height=max overflow=scroll-vertical }
 		region { name=headerregion x=10 y=20 width=max height=max overflow=scroll-vertical }
 		region { name=leftcolumn x=20 width=200 overflow=scroll-vertical }
 		region { name=trackcolumn width=max overflow=scroll-vertical }
-		
-		place { control="CoverImage" align=top width=200 height=200 }
-		place { region=headerregion control=PlaylistTitleLabel,TracksInfoLabel,leftcolumn dir=down }
-		place { region=leftcolumn control=CoverImage,PlayPlaylistButton dir=down start=TracksInfoLabel spacing=10 }
-		place { region=leftcolumn control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton dir=down start=PlayPlaylistButton }
-		place { region=trackcolumn control=*MusicPageDetailsPlaylistTrack dir=down start=TracksInfoLabel x=230 width=max }
+
+		place  { control="CoverImage" align=top width=200 height=200 }
+		place  { region=headerregion control=PlaylistTitleLabel,TracksInfoLabel,leftcolumn dir=down }
+		place  { region=leftcolumn control=CoverImage,PlayPlaylistButton dir=down start=TracksInfoLabel spacing=10 }
+		place  { region=leftcolumn control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton dir=down start=PlayPlaylistButton }
+		place  { region=trackcolumn control=*MusicPageDetailsPlaylistTrack dir=down start=TracksInfoLabel x=230 width=max }
 	}
 }

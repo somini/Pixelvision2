@@ -2,11 +2,11 @@
 {
 	controls
 	{
-		screenshotsarea { controlname="CScreenshotsPanel" style="screenshotsarea" }
+		screenshotsarea      { controlname="CScreenshotsPanel" style="screenshotsarea" }
 
 		screenshotslabelmore { controlname="Label" style="screenshotslabelmore" labeltext="#Steam_MoreScreenshots" textAlignment="center" tooltiptext="#Steam_ViewAllScreenshots" }
 	}
-	
+
 	colors
 	{
 		// Note, the below values are used for dynamic layout in code, and must match the values from place
@@ -23,42 +23,42 @@
 
 		Tooltip.Anchor=Parent
 	}
-	
+
 	styles
 	{
 		imagepanel
 		{
 			render
 			{
-				1="fill( x0    , y0    , x1    , y0 + 1, Black )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , Black )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, Black )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, Black )"	// Right
+				1="fill( x0    , y0    , x1    , y0 + 1, Black )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , Black )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, Black )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, Black )" // Right
 			}
 		}
-		
+
 		infolabel
 		{
 			textcolor=Text
 		}
-		
+
 		screenshotsarea
 		{
 			minimum-height=112
 		}
-		
+
 		screenshotslabelmore
 		{
 			inset="-3 -8 0 0"
 			textcolor="Text2"
 			font-size=18
 			font-family=basefont
-	     	render_bg
-	     	{
+			render_bg
+			{
 				0="image( x0 - 8, y0 - 8, x1, y1, graphics/screenshots_button )"
 			}
 		}
-	    
+
 		screenshotslabelmore:hover
 		{
 			textcolor="Text"
@@ -66,9 +66,9 @@
 			{
 				0="image( x0 - 8, y0 - 8, x1, y1, graphics/screenshots_button_hover )"
 			}
-		}     
+		}
 	}
-	
+
 	layout
 	{
 		region { name=body margin=0 width=max height=max }

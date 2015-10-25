@@ -2,51 +2,51 @@
 {
 	controls
 	{
-		FriendsDetailPanel 
-		{ 
-			controlname="COverlay_Details_Friends" 
+		FriendsDetailPanel
+		{
+			controlname="COverlay_Details_Friends"
 			style=detailsbox
 		}
-		
+
 		AllFriendsButton
 		{
 			controlname=button
 			labeltext="#Overlay_Friends_ViewAll"
 		}
-		
+
 		ViewPlayersButton
 		{
 			controlname=button
 			labeltext="#Overlay_Friends_ViewPlayers"
 		}
-		
+
 		TitleText { controlname="label" labeltext="#Overlay_Taskbar_Friends" style=detailsboxtitle }
-		
+
 		TextThisManyFriends { controlname=label style=highlight labeltext="#Overlay_Friends_ThisManyOnline" }
-		
+
 		grid
 		{
-			alignment=justify		
+			alignment=justify
 			interiorspacing=2
 			style=FriendsGrid
 		}
 	}
-	
+
 	colors
 	{
 		linkidle="255 255 255 51"
 		linkover="255 255 255 128"
 	}
-	
+
 	styles
 	{
 		DetailsBox
 		{
 			bgcolor="BlackTr1"
-			render_bg {}
-			render {}
+			render_bg { }
+			render { }
 		}
-		
+
 		Button
 		{
 			inset=2
@@ -54,13 +54,13 @@
 			font-family=semibold
 			font-style=uppercase
 			textcolor=linkidle
-			render_bg {}
+			render_bg { }
 			render
 			{
 				1="image( x0 + 5, y0 + 5, x1, y1, graphics/icon_ol_players )"
 			}
 		}
-		
+
 		Button:hover
 		{
 			textcolor=linkover
@@ -69,26 +69,26 @@
 				0="image( x0 + 5, y0 + 5, x1, y1, graphics/icon_ol_players_over )"
 			}
 		}
-		
+
 		highlight
 		{
 			textcolor=highlight2r
 		}
-		
+
 		FriendsGrid
 		{
-			render_bg {}
-		}	
+			render_bg { }
+		}
 	}
-	
+
 	layout
 	{
 		region { name=box margin-top=2 margin-left=10 margin-right=10 width=max height=max }
 		region { name=bottom region=box align=bottom width=max height=35 }
-		
-		place { control="TitleText" region=box align=top-center }
-		place { control=TextThisManyFriends region=box align=top-center margin-top=32 }
-		place { control=grid width=330 height=110 margin-top=47 }
-		place { control=AllFriendsButton,ViewPlayersButton region=bottom height=35 align=top-center }
+
+		place  { control="TitleText" region=box align=top-center }
+		place  { control=TextThisManyFriends region=box align=top-center margin-top=32 }
+		place  { control=grid width=330 height=110 margin-top=47 }
+		place  { control=AllFriendsButton,ViewPlayersButton region=bottom height=35 align=top-center }
 	}
 }

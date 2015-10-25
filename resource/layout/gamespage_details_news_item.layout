@@ -2,12 +2,12 @@
 {
 	controls
 	{
-		newsitem_title { controlname="Label" style="title_label" }
+		newsitem_title         { controlname="Label" style="title_label" }
 		newsitem_dateandauthor { controlname="Label" style="date_and_author" }
-		newsitem_body { controlname="RichText" style="newsitem_body" }
-		newsitem_more { controlname="URLLabel" style="more_link" labeltext="#steam_newscontinued" }
+		newsitem_body          { controlname="RichText" style="newsitem_body" }
+		newsitem_more          { controlname="URLLabel" style="more_link" labeltext="#steam_newscontinued" }
 	}
-	
+
 	colors
 	{
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
@@ -17,9 +17,9 @@
 
 		// Override base style rich text x inset inside this control
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
-	
+
 	styles
 	{
 		title_label
@@ -27,39 +27,39 @@
 			textcolor="Text"
 			font-family=semibold
 		}
-		
+
 		date_and_author
 		{
 			textcolor="labeldisabled"
 			font-family=semibold
 		}
-		
+
 		newsitem_body
 		{
 			textcolor="Text"
-			selectedtextcolor="Label"	
+			selectedtextcolor="Label"
 			font-family=basefont
-			render_bg {}
+			render_bg { }
 		}
-		
+
 		"newsitem_body url"
 		{
 			selectedtextcolor="Label"
 			font-style="underline"
 		}
-		
+
 		"newsitem_body url:hover"
 		{
 			textcolor="text"
 		}
-		
+
 		"newsitem_body bold"
 		{
 			font-weight=1000
 			textcolor="Label"
-			selectedtextcolor="Label"	
+			selectedtextcolor="Label"
 		}
-		
+
 		more_link
 		{
 			textcolor="labeldisabled"
@@ -75,7 +75,7 @@
 				0="image( x1 + 3, y0 + 3, x1 + 13, y1, graphics/mlink )"
 			}
 		}
-		
+
 		more_link:hover
 		{
 			textcolor="text"
@@ -86,13 +86,13 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		region { name=body margin=0 width=max }
-		place { region=body control=newsitem_title x=0 y=0 width=max height=24 }
-		place { region=body y=17 control=newsitem_dateandauthor width=max height=24 }
-		place { region=body y=36 control=newsitem_body width=max }
-		place { region=body control=newsitem_more align=bottom margin-bottom=15 }
+		place  { region=body control=newsitem_title x=0 y=0 width=max height=24 }
+		place  { region=body y=17 control=newsitem_dateandauthor width=max height=24 }
+		place  { region=body y=36 control=newsitem_body width=max }
+		place  { region=body control=newsitem_more align=bottom margin-bottom=15 }
 	}
 }

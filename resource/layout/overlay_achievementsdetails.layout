@@ -2,40 +2,40 @@
 {
 	controls
 	{
-		AchievementsDetailPanel 
-		{ 
-			controlname="COverlay_Details_Acheivements" 
+		AchievementsDetailPanel
+		{
+			controlname="COverlay_Details_Acheivements"
 			style=detailsbox
 		}
-		
+
 		TitleText { controlname="label" labeltext="#Overlay_Achievement_Title" style=detailsboxtitle }
-		
+
 		ViewAchievementsButton
 		{
 			controlname=button
 			labeltext="#Overlay_Friends_ViewAchievements"
 		}
-		
+
 		progressbackground { controlname="ImagePanel" style="progressbackground" }
-		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+		progressbarimage   { controlname="ImagePanel" style="progressbarimage" }
 		ProgressTextEarned { controlname=label style=highlight labeltext="#Overlay_Achievement_Progress" }
 	}
-	
+
 	colors
 	{
 		linkidle="255 255 255 51"
 		linkover="255 255 255 128"
 	}
-	
+
 	styles
 	{
 		DetailsBox
 		{
 			bgcolor="BlackTr1"
-			render_bg {}
-			render {}
+			render_bg { }
+			render { }
 		}
-		
+
 		Button
 		{
 			inset=2
@@ -43,13 +43,13 @@
 			font-family=semibold
 			font-style=uppercase
 			textcolor=linkidle
-			render_bg {}
+			render_bg { }
 			render
 			{
 				1="image( x0 + 4, y0 + 5, x1, y1, graphics/icon_ol_achievements )"
 			}
 		}
-		
+
 		Button:hover
 		{
 			textcolor=linkover
@@ -58,12 +58,12 @@
 				0="image( x0 + 4, y0 + 5, x1, y1, graphics/icon_ol_achievements_over )"
 			}
 		}
-		
+
 		Highlight
 		{
 			textcolor=highlight2r
 		}
-		
+
 		progressbackground
 		{
 			bgcolor=none
@@ -75,25 +75,25 @@
 				3="fill( x1 - 1, y0    , x1    , y1    , Label )"
 			}
 		}
-		
+
 		progressbarimage
 		{
 			bgcolor="Label"
-			render_bg {}
+			render_bg { }
 		}
 	}
-	
+
 	layout
 	{
 		region { name=box margin-top=2 margin-left=10 margin-right=10 width=max height=max }
 		region { name=progresstext region=box y=40 width=max }
 		region { name=bottom region=box align=bottom width=max height=35 }
-		
-		place { control="TitleText" region=box align=top-center }
-		place { control=progressbackground region=box y=35 width=max height=18 }
-		place { control=progressbarimage region=box y=39 height=10 margin-left=4 margin-right=4 }
-		place { control=*achievement region=box y=84 x=0 width=155 height=70 }
-		place { controls=ProgressTextEarned region=box y=60 align=top-center }
-		place { controls=ViewAchievementsButton region=bottom align=top-center height=35 }
+
+		place  { control="TitleText" region=box align=top-center }
+		place  { control=progressbackground region=box y=35 width=max height=18 }
+		place  { control=progressbarimage region=box y=39 height=10 margin-left=4 margin-right=4 }
+		place  { control=*achievement region=box y=84 x=0 width=155 height=70 }
+		place  { controls=ProgressTextEarned region=box y=60 align=top-center }
+		place  { controls=ViewAchievementsButton region=bottom align=top-center height=35 }
 	}
 }

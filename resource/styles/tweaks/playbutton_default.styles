@@ -4,57 +4,57 @@
 	{
 		// -- Play Button
 		// ==============
-		PlayBG1="150 201 86 255"		// Background Gradient Start
-		PlayBG2="75 105 35 255"			// Background Gradient Finish
-		PlayBGH="170 221 106 255"		// Background Gradient Hover
-		
-		PlayTP="182 215 144 255"		// Top
-		PlayBT="71 95 40 255"			// Bottom
-		PlaySD1="177 216 128 255"		// Side Gradient Start
-		PlaySD2="78 107 36 255"			// Side Gradient Finish
-		
-		PlayTL="172 201 139 255"		// Top Left Corner
-		PlayTR="175 204 141 255"		// Top Right Corner
-		PlayBL="68 87 45 255"			// Bottom Left Corner
-		PlayBR="69 89 44 255"			// Bottom Right Corner
-		
+		PlayBG1="150 201 86 255"     // Background Gradient Start
+		PlayBG2="75 105 35 255"      // Background Gradient Finish
+		PlayBGH="170 221 106 255"    // Background Gradient Hover
+
+		PlayTP="182 215 144 255"     // Top
+		PlayBT="71 95 40 255"        // Bottom
+		PlaySD1="177 216 128 255"    // Side Gradient Start
+		PlaySD2="78 107 36 255"      // Side Gradient Finish
+
+		PlayTL="172 201 139 255"     // Top Left Corner
+		PlayTR="175 204 141 255"     // Top Right Corner
+		PlayBL="68 87 45 255"        // Bottom Left Corner
+		PlayBR="69 89 44 255"        // Bottom Right Corner
+
 		// -- Install Button
 		// =================
-		InstallBG1="145 176 216 255"	// Background Gradient Start
-		InstallBG2="53 81 123 255"		// Background Gradient Finish
-		InstallBGH="165 196 236 255"	// Background Gradient Hover
-		
-		InstallTP="166 197 237 255"		// Top
-		InstallBT="35 72 102 255"		// Bottom
-		InstallSD1="168 199 239 255"	// Side Gradient Start
-		InstallSD2="51 86 121 255"		// Side Gradient Finish
-		
-		InstallTL="150 181 221 255"		// Top Left Corner
-		InstallTR="157 183 227 255"		// Top Right Corner
-		InstallBL="31 68 98 255"		// Bottom Left Corner
-		InstallBR="31 68 98 255"		// Bottom Right Corner
-		
+		InstallBG1="145 176 216 255" // Background Gradient Start
+		InstallBG2="53 81 123 255"   // Background Gradient Finish
+		InstallBGH="165 196 236 255" // Background Gradient Hover
+
+		InstallTP="166 197 237 255"  // Top
+		InstallBT="35 72 102 255"    // Bottom
+		InstallSD1="168 199 239 255" // Side Gradient Start
+		InstallSD2="51 86 121 255"   // Side Gradient Finish
+
+		InstallTL="150 181 221 255"  // Top Left Corner
+		InstallTR="157 183 227 255"  // Top Right Corner
+		InstallBL="31 68 98 255"     // Bottom Left Corner
+		InstallBR="31 68 98 255"     // Bottom Right Corner
+
 		// -- Game Hub Button
 		// ==================
-		GameHubBG1="68 90 123 255"		// Background Gradient Start
-		GameHubBG2="55 74 100 255"		// Background Gradient Finish
-		GameHubBGH="88 110 143 255"		// Background Gradient Hover
-		
-		GameHubTP="86 114 156 255"		// Top
-		GameHubBT="55 74 100 255"		// Bottom
-		GameHubSD1="81 107 145 255"		// Side Gradient Start
-		GameHubSD2="54 72 97 255"		// Side Gradient Finish
-		
-		GameHubTL="76 99 134 255"		// Top Left Corner
-		GameHubTR="76 99 134 255"		// Top Right Corner
-		GameHubBL="50 65 88 255"		// Bottom Left Corner
-		GameHubBR="50 65 88 255"		// Bottom Right Corner
+		GameHubBG1="68 90 123 255"   // Background Gradient Start
+		GameHubBG2="55 74 100 255"   // Background Gradient Finish
+		GameHubBGH="88 110 143 255"  // Background Gradient Hover
+
+		GameHubTP="86 114 156 255"   // Top
+		GameHubBT="55 74 100 255"    // Bottom
+		GameHubSD1="81 107 145 255"  // Side Gradient Start
+		GameHubSD2="54 72 97 255"    // Side Gradient Finish
+
+		GameHubTL="76 99 134 255"    // Top Left Corner
+		GameHubTR="76 99 134 255"    // Top Right Corner
+		GameHubBL="50 65 88 255"     // Bottom Left Corner
+		GameHubBR="50 65 88 255"     // Bottom Right Corner
 	}
-	
+
 	styles
 	{
 		DetailsButton	// Library Details, Game Hub (+ Activate Guest Pass?)
-		{   
+		{
 			inset="2 -1 0 1"
 			textcolor="White"
 			font-size=16
@@ -66,44 +66,44 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GameHubBG1, GameHubBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, GameHubTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , GameHubBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, GameHubSD1, GameHubSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, GameHubSD1, GameHubSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, GameHubTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , GameHubBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, GameHubSD1, GameHubSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, GameHubSD1, GameHubSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, GameHubTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, GameHubTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , GameHubBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , GameHubBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, GameHubTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, GameHubTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , GameHubBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , GameHubBR )" // Bottom Right
 			}
 			render {}
 		}
-		
+
 		DetailsButton:hover
 		{
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GameHubBGH, GameHubBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, GameHubTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , GameHubBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, GameHubSD1, GameHubSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, GameHubSD1, GameHubSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, GameHubTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , GameHubBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, GameHubSD1, GameHubSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, GameHubSD1, GameHubSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, GameHubTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, GameHubTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , GameHubBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , GameHubBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, GameHubTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, GameHubTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , GameHubBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , GameHubBR )" // Bottom Right
 			}
 			render {}
 		}
-		
+
 		DetailsLaunchButton	// Library Details, Play
 		{
 			inset="25 0 0 0"
@@ -117,50 +117,50 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, PlayBG1, PlayBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, PlayTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , PlayBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, PlaySD1, PlaySD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, PlaySD1, PlaySD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, PlayTP )"           // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , PlayBT )"           // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, PlaySD1, PlaySD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, PlaySD1, PlaySD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, PlayTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, PlayTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , PlayBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , PlayBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, PlayTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, PlayTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , PlayBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , PlayBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 4, y0, x1, y1, graphics/lib_play )"
 			}
 		}
-		
+
 		DetailsLaunchButton:Hover
 		{
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, PlayBGH, PlayBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, PlayTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , PlayBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, PlaySD1, PlaySD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, PlaySD1, PlaySD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, PlayTP )"           // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , PlayBT )"           // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, PlaySD1, PlaySD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, PlaySD1, PlaySD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, PlayTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, PlayTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , PlayBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , PlayBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, PlayTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, PlayTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , PlayBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , PlayBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 4, y0, x1, y1, graphics/lib_play_hover )"
 			}
 		}
-		
+
 		DetailsInstallButton	// Library Details, Install or Preload
 		{
 			inset="29 0 0 0"
@@ -174,50 +174,50 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBG1, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_install )"
 			}
 		}
-		
+
 		DetailsInstallButton:hover
 		{
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBGH, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_install_hover )"
 			}
 		}
-		
+
 		DetailsBuyButton	// Library Details, Purchase
 		{
 			inset="29 0 0 0"
@@ -231,157 +231,157 @@
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBG1, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_generic )"
 			}
 		}
-		
+
 		DetailsBuyButton:hover
 		{
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBGH, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_generic_hover )"
 			}
 		}
-		
+
 		ResumeButton // Downloads, Resume All
-        {   
+        {
             inset="29 0 0 0"
 			textcolor="White"
 			font-size=16
 			font-family=semibold
 			font-weight=400
 			font-style=uppercase
-			bgcolor=none   
+			bgcolor=none
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBG1, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_install )"
 			}
         }
-		
+
         ResumeButton:Hover
-        {   
+        {
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBGH, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_install_hover )"
 			}
         }
-		
+
 		PauseButton // Downloads, Pause All
-        {   
+        {
             inset="29 0 0 0"
 			textcolor="White"
 			font-size=16
 			font-family=semibold
 			font-weight=400
 			font-style=uppercase
-			bgcolor=none   
+			bgcolor=none
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBG1, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{
 				0="image( x0 + 3, y0, x1, y1, graphics/lib_pause )"
 			}
         }
-		
+
         PauseButton:Hover
-        {   
+        {
 			render_bg
 			{
 				// Background
 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, InstallBGH, InstallBG2 )"
-                
+
 				// Border
-				1="fill( x0 + 1, y0    , x1 - 1, y0 + 1, InstallTP )"	// Top
-				2="fill( x0 + 1, y1 - 1, x1 - 1, y1    , InstallBT )"	// Bottom
-				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )"	// Left
-				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )"	// Right
-				
+				1="fill( x0 + 1    , y0    , x1 - 1, y0 + 1, InstallTP )"              // Top
+				2="fill( x0 + 1    , y1 - 1, x1 - 1, y1    , InstallBT )"              // Bottom
+				3="gradient( x0    , y0 + 1, x0 + 1, y1 - 1, InstallSD1, InstallSD2 )" // Left
+				4="gradient( x1 - 1, y0 + 1, x1    , y1 - 1, InstallSD1, InstallSD2 )" // Right
+
 				// Corners
-				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )"	// Top Left
-				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )"	// Top Right
-				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )"	// Bottom Left
-				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )"	// Bottom Right
+				5="fill( x0    , y0    , x0 + 1, y0 + 1, InstallTL )" // Top Left
+				6="fill( x1 - 1, y0    , x1    , y0 + 1, InstallTR )" // Top Right
+				7="fill( x0    , y1 - 1, x0 + 1, y1    , InstallBL )" // Bottom Left
+				8="fill( x1 - 1, y1 - 1, x1    , y1    , InstallBR )" // Bottom Right
 			}
 			render
 			{

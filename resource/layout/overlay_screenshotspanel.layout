@@ -3,34 +3,34 @@
 	controls
 	{
 		ScreenshotsDetailPanel { controlname="COverlay_Screenshots_Panel" style=detailsbox }
-		
-		TitleText { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
-		InstructionText { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=highlight }
 
-		ViewScreenshots { controlname="Button" labeltext="#Overlay_View_Screenshots" command="viewscreenshots" }
-		SetShortcut { controlname="Button" labeltext="#Overlay_Set_Shortcut" command="setshortcut" }
+		TitleText              { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
+		InstructionText        { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=highlight }
+
+		ViewScreenshots        { controlname="Button" labeltext="#Overlay_View_Screenshots" command="viewscreenshots" }
+		SetShortcut            { controlname="Button" labeltext="#Overlay_Set_Shortcut" command="setshortcut" }
 	}
-	
+
 	colors
 	{
 		linkidle="255 255 255 51"
 		linkover="255 255 255 128"
 	}
-	
+
 	styles
 	{
 		DetailsBox
 		{
 			bgcolor="none"
-			render_bg {}
-			render {}
+			render_bg { }
+			render { }
 		}
-		
+
 		DetailsBoxTitle
 		{
 			textcolor=none
 		}
-		
+
 		Button
 		{
 			inset=2
@@ -47,7 +47,7 @@
 				1="image( x0 + 5, y0 + 5, x1, y1, graphics/icon_ol_screenshots )"
 			}
 		}
-		
+
 		Button:hover
 		{
 			textcolor=linkover
@@ -56,13 +56,13 @@
 				0="image( x0 + 5, y0 + 5, x1, y1, graphics/icon_ol_screenshots_over )"
 			}
 		}
-		
+
 		highlight
 		{
 			textcolor=highlight2r
 		}
 	}
-	
+
 	layout
 	{
 		place { control="TitleText" width=1 height=1 }

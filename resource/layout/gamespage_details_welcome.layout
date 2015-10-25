@@ -3,77 +3,77 @@
 	controls
 	{
 		welcomedetails { controlname="CGamesPage_Details_Welcome" style="nonsteamdetails" }
-		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Welcome" }
-		bodybasic { controlname="RichText" style="bodycontent" }
-		bodynofriends { controlname="RichText" style="bodycontent" }
-		bodyhelp { controlname="RichText" style="bodycontent" }
+		headerlabel    { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Welcome" }
+		bodybasic      { controlname="RichText" style="bodycontent" }
+		bodynofriends  { controlname="RichText" style="bodycontent" }
+		bodyhelp       { controlname="RichText" style="bodycontent" }
 	}
-	
+
 	colors
 	{
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 		GameDetailsWelcome.ExtraVerticalSpacing "48"
 		GameDetailsWelcome.WelcomeTextSpacing "0"
-		
+
 		BMask="5 5 5 255"
 		ScreenB3="34 37 40 255"
 	}
-	
+
 	styles
 	{
-		nonsteamdetails 
+		nonsteamdetails
 		{
 			render_bg
 			{
 				// -- Header
-				1="fill( x0 + 1, y0 + 1 , x1 - 1, y0 + 23, BackgroundStart )"			// Background
-				2="image( x0 + 3, y0 + 3, x1 - 3, y0 + 21, graphics/headerbg )"	// Background Pattern
-				3="fill( x0 + 2, y0 + 2 , x1 - 2, y0 + 22, BlackTr )"					// Pattern Mask
-				3="fill( x1 - 3, y0 + 2 , x1 - 2, y0 + 22, BMask )"						// Right Border Mask
-				4="image( x0 + 4, y0 + 4, x0 + 20, y0 + 20, graphics/icon_welcome )"	// Icon
-				
+				1="fill( x0 + 1 , y0 + 1, x1 - 1 , y0 + 23, BackgroundStart )"       // Background
+				2="image( x0 + 3, y0 + 3, x1 - 3 , y0 + 21, graphics/headerbg )"     // Background Pattern
+				3="fill( x0 + 2 , y0 + 2, x1 - 2 , y0 + 22, BlackTr )"               // Pattern Mask
+				3="fill( x1 - 3 , y0 + 2, x1 - 2 , y0 + 22, BMask )"                 // Right Border Mask
+				4="image( x0 + 4, y0 + 4, x0 + 20, y0 + 20, graphics/icon_welcome )" // Icon
+
 				// Outter Border
-				5="fill( x0 + 0, y0 + 0 , x1 - 0, y0 + 1 , Black )"	// Top
-				6="fill( x0 + 0, y0 + 23, x1 - 0, y0 + 24, Black )"	// Bottom
-				7="fill( x0 + 0, y0 + 1 , x0 + 1, y0 + 23, Black )"	// Left
-			    8="fill( x1 - 1, y0 + 1 , x1 - 0, y0 + 23, Black )"	// Right
-				
+				5="fill( x0 + 0, y0 + 0 , x1 - 0, y0 + 1 , Black )" // Top
+				6="fill( x0 + 0, y0 + 23, x1 - 0, y0 + 24, Black )" // Bottom
+				7="fill( x0 + 0, y0 + 1 , x0 + 1, y0 + 23, Black )" // Left
+				8="fill( x1 - 1, y0 + 1 , x1 - 0, y0 + 23, Black )" // Right
+
 				// Inner Border
-				9="fill( x0 + 1, y0 + 1 , x1 - 1, y0 + 2 , ScreenB  )"	// Top
+				9="fill( x0 + 1 , y0 + 1 , x1 - 1, y0 + 2 , ScreenB  )" // Top
 				10="fill( x0 + 1, y0 + 22, x1 - 1, y0 + 23, ScreenB2 )" // Bottom
-				11="fill( x0 + 1, y0 + 2 , x0 + 2, y0 + 22, ScreenB  )"	// Left
-			    12="fill( x1 - 2, y0 + 2 , x1 - 1, y0 + 22, ScreenB3 )"	// Right - No transparency
-				
+				11="fill( x0 + 1, y0 + 2 , x0 + 2, y0 + 22, ScreenB  )" // Left
+				12="fill( x1 - 2, y0 + 2 , x1 - 1, y0 + 22, ScreenB3 )" // Right - No transparency
+
 				// -- Content
-				13="fill( x0 + 1, y0 + 26, x1 - 1, y1 - 1 , BackgroundStart )" // Background
-				
+				13="fill( x0 + 1, y0 + 26, x1 - 1, y1 - 1, BackgroundStart )" // Background
+
 				// Outer Border
-				14="fill( x0 + 0, y0 + 26, x1 - 0, y0 + 27, Black )"	// Top
-			    15="fill( x0 + 0, y1 - 1 , x1 - 0, y1 - 0 , Black )"	// Bottom
-			    16="fill( x0 + 0, y0 + 27, x0 + 1, y1 - 1 , Black )"	// Left
-			    17="fill( x1 - 1, y0 + 27, x1 - 0, y1 - 1 , Black )"	// Right
-				
+				14="fill( x0 + 0, y0 + 26, x1 - 0, y0 + 27, Black )" // Top
+				15="fill( x0 + 0, y1 - 1 , x1 - 0, y1 - 0 , Black )" // Bottom
+				16="fill( x0 + 0, y0 + 27, x0 + 1, y1 - 1 , Black )" // Left
+				17="fill( x1 - 1, y0 + 27, x1 - 0, y1 - 1 , Black )" // Right
+
 				// Inner Border
-				18="fill( x0 + 1, y0 + 27, x1 - 1, y0 + 28, ScreenB  )"	// Top
-			    19="fill( x0 + 1, y1 - 2 , x1 - 1, y1 - 1 , ScreenB2 )"	// Bottom
-			    20="fill( x0 + 1, y0 + 28, x0 + 2, y1 - 2 , ScreenB  )"	// Left
-			    21="fill( x1 - 2, y0 + 28, x1 - 1, y1 - 2 , ScreenB2 )"	// Right
+				18="fill( x0 + 1, y0 + 27, x1 - 1, y0 + 28, ScreenB  )" // Top
+				19="fill( x0 + 1, y1 - 2 , x1 - 1, y1 - 1 , ScreenB2 )" // Bottom
+				20="fill( x0 + 1, y0 + 28, x0 + 2, y1 - 2 , ScreenB  )" // Left
+				21="fill( x1 - 2, y0 + 28, x1 - 1, y1 - 2 , ScreenB2 )" // Right
 			}
 		}
-		
+
 		bodycontent
 		{
 			textcolor="Label"
-			selectedtextcolor="Label"	
-			render_bg {}
+			selectedtextcolor="Label"
+			render_bg { }
 		}
 	}
-	
+
 	layout
 	{
 		region { name=body margin=10 margin-top=6 width=max height=max }
-		place { region=body control=headerlabel margin-left=12 margin-top=-3 width=max }
-		place { region=body y=27 control=bodybasic,bodynofriends,bodyhelp dir=down width=max spacing=2 }
+		place  { region=body control=headerlabel margin-left=12 margin-top=-3 width=max }
+		place  { region=body y=27 control=bodybasic,bodynofriends,bodyhelp dir=down width=max spacing=2 }
 	}
 }

@@ -3,15 +3,15 @@
 	controls
 	{
 		subheaderlabels { controlname="CDetailsSubHeaderLabelsRightPanel" }
-		gamehubbutton { controlname="Button" labeltext="#steam_gamehub" style="DetailsButton" }
+		gamehubbutton   { controlname="Button" labeltext="#steam_gamehub" style="DetailsButton" }
 	}
-	
+
 	colors
 	{
 		GameDetailsSubHeader.HorizontalSpacing=10
 		GameDetailsSubHeader.VerticalMargin=0
 	}
-	
+
 	styles
 	{
 		CDetailsGameSubHeaderRightPanel
@@ -22,15 +22,15 @@
 				1="dashedrect( x0 + 2, y0 + 2, x1 - 2, y1 - 2, Black )"
 			}
 		}
-		
+
 		// DetailsButton {} [settings.ini]
 	}
-	
+
 	layout
 	{
 		// Y offset here should match the vertical padding value above in the colors section
 		region { name="header" y=0 x=0 width=max height=max }
-		
-		place { control=subheaderlabels,gamehubbutton region=header dir=right align=left-center margin-left=10 margin-right=10 spacing=10 }
+
+		place  { control=subheaderlabels,gamehubbutton region=header dir=right align=left-center margin-left=10 margin-right=10 spacing=10 }
 	}
 }

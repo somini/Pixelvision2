@@ -2,19 +2,19 @@
 {
 	controls
 	{
-		HTMLPopup { controlname="HTMLPopup" frametitle="" }
-		htmlpopupchild	{ controlname="HTML" zpos=1 }
-		URLBar		{ controlname="TextEntry" style="TextEntryURL" enabled=false }
-		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }
-		StatusText { controlname="Label" }
-		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
-		StopButton	{ controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
-		ReloadButton	{ controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
-		ForwardButton	{ controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
-		BackButton	{ controlname="Button" command="WebBack" style="BackButtonSm" }
+		HTMLPopup        { controlname="HTMLPopup" frametitle="" }
+		htmlpopupchild   { controlname="HTML" zpos=1 }
+		URLBar           { controlname="TextEntry" style="TextEntryURL" enabled=false }
+		EVCert           { controlname="Label" style="LabelEVCert" visible=false }
+		StatusText       { controlname="Label" }
+		URLStatusImage   { controlname="ImagePanel" style="URLStatusImage"  }
+		StopButton       { controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
+		ReloadButton     { controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
+		ForwardButton    { controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
+		BackButton       { controlname="Button" command="WebBack" style="BackButtonSm" }
 		PageLoadThrobber { controlname="ImagePanel" image="graphics/rampDown_4" }
 	}
-	
+
 	styles
 	{
 		BackButtonSm
@@ -24,28 +24,28 @@
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		BackButtonSm:hover
 		{
 			image="steam/cached/icon_button_back_over_sm"
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		BackButtonSm:active
 		{
 			image="steam/cached/icon_button_back_down_sm"
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		BackButtonSm:disabled
 		{
 			image="steam/cached/icon_button_back_disabled_sm"
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		ForwardButtonSm
 		{
 			inset="-1 0 0 0"
@@ -53,7 +53,7 @@
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		ForwardButtonSm:hover
 		{
 			inset="-1 0 0 0"
@@ -61,7 +61,7 @@
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		ForwardButtonSm:active
 		{
 			inset="-1 0 0 0"
@@ -69,7 +69,7 @@
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		ForwardButtonSm:disabled
 		{
 			inset="-1 0 0 0"
@@ -77,7 +77,7 @@
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		TextEntryURL
 		{
 			inset-left=2
@@ -85,15 +85,15 @@
 			textcolor="label"
 			selectedtextcolor="TextEntrySelected"
 			selectedbgcolor="TextSelectedBG"
-			shadowtextcolor="Text"	// this is the cursor color
+			shadowtextcolor="Text" // this is the cursor color
 			bgcolor="none"
 		}
-		
+
 		TextEntryURL:Hover
 		{
 			textcolor="text"
 		}
-		
+
 		LabelEVCert
 		{
 			inset-left=4
@@ -103,7 +103,7 @@
 			textcolor="BackgroundStart"
 			bgcolor="html.secureurl"
 		}
-		
+
 		URLStatusImage
 		{
 			scaling=fit // ?? console brings this up as an unknown key
@@ -112,23 +112,23 @@
 			bgcolor=none
 			render_bg={}
 		}
-		
+
 		URLBarSecure
 		{
 			textcolor="html.secureurl"
 		}
-		
+
 		URLBarBrokenSecure
 		{
 			textcolor="html.insecureurl"
 		}
 	}
-	
+
 	layout
 	{
-		place { control="htmlpopupchild"  	width=max height=max margin-top=60 margin-left=6 margin-right=6 margin-bottom=16 }
-		place { control="StatusText" align=bottom height=24 margin-left=9 margin-bottom=1 }
-		place { control="PageLoadThrobber" align=right margin-top=34 margin-right=8 width=20 height=20 }	
+		place { control="htmlpopupchild"                                                                width=max height=max margin-top=60 margin-left=6 margin-right=6 margin-bottom=16 }
+		place { control="StatusText"                                                                    align=bottom height=24 margin-left=9 margin-bottom=1 }
+		place { control="PageLoadThrobber"                                                              align=right margin-top=34 margin-right=8 width=20 height=20 }
 		place { control="BackButton,ForwardButton,ReloadButton,StopButton,URLStatusImage,EVCert,URLBar" x=0 y=33 height=22 width=max spacing=4 margin-right=30 }
 	}
 }

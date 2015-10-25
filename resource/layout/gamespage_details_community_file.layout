@@ -2,13 +2,13 @@
 {
 	controls
 	{
-		communityfile { controlname="CCommunityFilePanel" }
-		communityfile_image_border { controlname="Panel" style="communityfile_image_border" }
-		communityfile_image { controlname="ImagePanel" image=resource/icon_community_preview zpos=-1 style="communityfile_image" }
-		communityfile_name { controlname="Label" style="communityfile_name" labeltext="" }
+		communityfile                         { controlname="CCommunityFilePanel" }
+		communityfile_image_border            { controlname="Panel" style="communityfile_image_border" }
+		communityfile_image                   { controlname="ImagePanel" image=resource/icon_community_preview zpos=-1 style="communityfile_image" }
+		communityfile_name                    { controlname="Label" style="communityfile_name" labeltext="" }
 		communityfile_rating_image_background { controlname="Panel" zpos=-1 style="communityfile_rating_image_background" }
-		communityfile_rating_image { controlname="ImagePanel" zpos=2 image=resource/1_star style="communityfile_rating_image" }
-		friendimage { controlname="ImagePanel" zpos=2 }
+		communityfile_rating_image            { controlname="ImagePanel" zpos=2 image=resource/1_star style="communityfile_rating_image" }
+		friendimage                           { controlname="ImagePanel" zpos=2 }
 	}
 
 	colors
@@ -42,12 +42,12 @@
 
 		communityfile_image_border
 		{
-		    render_bg
+			render_bg
 			{
-				0="fill( x0    , y0    , x1    , y0 + 3, Divider )"	// Top
-				1="fill( x0    , y1 - 3, x1    , y1    , Divider )"	// Bottom
-				2="fill( x0    , y0    , x0 + 3, y1    , Divider )"	// Left
-				3="fill( x1 - 3, y0    , x1    , y1    , Divider )"	// Right
+				0="fill( x0    , y0    , x1    , y0 + 3, Divider )" // Top
+				1="fill( x0    , y1 - 3, x1    , y1    , Divider )" // Bottom
+				2="fill( x0    , y0    , x0 + 3, y1    , Divider )" // Left
+				3="fill( x1 - 3, y0    , x1    , y1    , Divider )" // Right
 			}
 		}
 

@@ -1,15 +1,19 @@
-"steam/cached/SettingsSubVoice.res" {
-	layout {
-		place {
+"steam/cached/SettingsSubVoice.res"
+{
+	layout
+	{
+		place
+		{
 			control="Label1"
 			dir=down
 			width=max
-			x=18 
+			x=18
 			y=21
-			margin-right=43		
+			margin-right=43
 		}
-		
-		place {
+
+		place
+		{
 			control="DeviceName"
 			dir=down
 			width=235
@@ -17,8 +21,9 @@
 			start=Label1
 			y=8
 		}
-		
-		place {
+
+		place
+		{
 			control="ChangeDeviceButton"
 			dir=right
 			width=190
@@ -27,7 +32,8 @@
 			x=30
 		}
 
-		place {
+		place
+		{
 			control="ReinitAudio"
 			dir=down
 			width=156
@@ -36,15 +42,17 @@
 			y=35
 		}
 
-		place {
+		place
+		{
 			control="RepairAudio"
 			dir=right
 			start=ReinitAudio
 			x=10
 			y=-1
 		}
-		
-		place {
+
+		place
+		{
 			control="Divider1"
 			dir=down
 			start=ReinitAudio
@@ -53,7 +61,8 @@
 			margin-right=43
 		}
 
-		place {
+		place
+		{
 			control="MicrophoneLabel"
 			dir=down
 			width=156
@@ -61,7 +70,8 @@
 			y=16
 		}
 
-		place {
+		place
+		{
 			control="MicrophoneVolume"
 			dir=down
 			width=164
@@ -69,7 +79,8 @@
 			y=8
 		}
 
-		place {
+		place
+		{
 			control="SpeakerLabel"
 			dir=down
 			width=156
@@ -77,15 +88,17 @@
 			y=16
 		}
 
-		place {
+		place
+		{
 			control="SpeakerVolume"
 			dir=down
 			width=164
 			start=SpeakerLabel
 			y=8
 		}
-			
-		place {
+
+		place
+		{
 			control="TestMicrophone"
 			dir=right
 			width=190
@@ -93,8 +106,9 @@
 			start=MicrophoneVolume
 			x=100
 		}
-		
-		place {
+
+		place
+		{
 			control="MicMeter"
 			dir=down
 			start=TestMicrophone
@@ -102,8 +116,9 @@
 			height=24
 			width=160
 		}
-		
-		place {
+
+		place
+		{
 			control="MicMeter2"
 			dir=down
 			start=TestMicrophone
@@ -111,15 +126,17 @@
 			height=24
 			width=160
 		}
-		
-		place {
+
+		place
+		{
 			control="MicBoost"
 			dir=down
 			start=MicMeter
 			y=2
 		}
 
-		place {
+		place
+		{
 			control="Divider2"
 			dir=down
 			start=SpeakerVolume
@@ -128,22 +145,25 @@
 			margin-right=43
 		}
 
-		place {
+		place
+		{
 			control="WhenActiveLabel"
 			dir=down
 			start=Divider2
 			y=16
 		}
-		
-		place {
+
+		place
+		{
 			control="TransmitMethodRadioButton1,TransmitMethodRadioButton2"
 			dir=down
 			start=WhenActiveLabel
 			y=4
 			spacing=-4
 		}
-		
-		place {
+
+		place
+		{
 			control="PushToTalkKeyEntry"
 			dir=down
 			width=207

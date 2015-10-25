@@ -2,13 +2,13 @@
 {
 	controls
 	{
-		SettingsDialog	{ controlname="CDialogSettings" }
-		okbutton		{ controlname="OKButton" }	 
-		cancelbutton	{ controlname="CancelButton" }	 
-		settingslist	{ controlname="SettingsList" style="SettingsList" wide=180 }
-		sheet			{ controlname="Sheet" style="PropertySheet" }
+		SettingsDialog { controlname="CDialogSettings" }
+		okbutton       { controlname="OKButton" }
+		cancelbutton   { controlname="CancelButton" }
+		settingslist   { controlname="SettingsList" style="SettingsList" wide=180 }
+		sheet          { controlname="Sheet" style="PropertySheet" }
 	}
-	
+
 	styles
 	{
 		CDialogSettings
@@ -16,17 +16,17 @@
 			minimum-width="740"
 			minimum-height="585"
 			render_bg
-			{     
-				0="fill( x0 + 190, y0 + 37, x1 - 10, y0 + 38, Divider )"     
+			{
+				0="fill( x0 + 190, y0 + 37, x1 - 10, y0 + 38, Divider )"
 			}
 		}
-		
+
 		PropertySheet
 		{
 			minimum-width="525"
 			minimum-height="499"
 		}
-		
+
 		"SettingsList"
 		{
 			inset="-3 -2 0 0"
@@ -35,20 +35,20 @@
 			padding=7
 			padding-top=10
 		}
-		
+
 		ListPanel
 		{
 			render_bg {}
 			render {}
 		}
 	}
-	
+
 	layout
 	{
 		region { name="buttons" width=max height=36 align="bottom" }
-		region { name="body" margin-left=10 margin-right=10 margin-bottom=46 margin-top=38 }		
-		
-		place { control="settingslist,sheet" region=body width=max height=max spacing=0  }
-		place { control="okbutton,cancelbutton" region="buttons" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10 }
+		region { name="body" margin-left=10 margin-right=10 margin-bottom=46 margin-top=38 }
+
+		place  { control="settingslist,sheet" region=body width=max height=max spacing=0  }
+		place  { control="okbutton,cancelbutton" region="buttons" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10 }
 	}
 }

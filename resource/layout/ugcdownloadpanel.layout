@@ -3,43 +3,43 @@
 	controls
 	{
 		// this just sets the height
-		appsubscriptionsdownloadpanel {	tall="145" }
-		ugcdownloadpanel { style="panelStyle" }
-		
+		appsubscriptionsdownloadpanel { tall="145" }
+		ugcdownloadpanel              { style="panelStyle" }
+
 		// black fill, used on the background
 		workshopminibanner { controlname="ImagePanel" zpos="2" image="resource/workshop_minibanner" }
-		
+
 		// top row
-		namelabel	{ controlname="Label"	labelText="#steam_subscribed_files" style="ModuleHeading" }
-		dashlabel	{ controlname="Label"	labelText="" }
-		updatetypelabel	{ controlname="Label"	labelText="#steam_downloads_updating" style=ModuleHeading2 }
-		starttimelabel	{ controlname="Label"	labelText="#steam_downloads_initiated" style=Label2}
-		starttimefield	{ controlname="Label"	labelText="%time_started%" style=Label}
-		pauseresumebutton	{ controlname="Button" style="SmPauseButton" tooltiptext="#steam_downloads_pause" }
-		
+		namelabel         { controlname="Label" labelText="#steam_subscribed_files" style="ModuleHeading" }
+		dashlabel         { controlname="Label" labelText="" }
+		updatetypelabel   { controlname="Label" labelText="#steam_downloads_updating" style=ModuleHeading2 }
+		starttimelabel    { controlname="Label" labelText="#steam_downloads_initiated" style=Label2}
+		starttimefield    { controlname="Label" labelText="%time_started%" style=Label}
+		pauseresumebutton { controlname="Button" style="SmPauseButton" tooltiptext="#steam_downloads_pause" }
+
 		// second row
-		downloadtotallabel	{ controlname="Label"	labelText="#steam_downloads_gamesize_update" style="label2" }
-		downloadtotalfield	{ controlname="Label"	labelText="%download_totals%" style="label" }
+		downloadtotallabel { controlname="Label" labelText="#steam_downloads_gamesize_update" style="label2" }
+		downloadtotalfield { controlname="Label" labelText="%download_totals%" style="label" }
 		downloadfileslabel { controlname="Label" labelText="#steam_subscribed_files_complete" style="Label2" }
 		downloadfilesfield { controlname="Label" labeltext="%download_files_totals%" style="label" }
-		
-		timeremaininglabel	{ controlname="Label"	labelText="#steam_downloads_timeremaining" style="label2" group="HideOnCompletion" }
-		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="HideOnCompletion" }
-		
-		downloadprogressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="HideOnCompletion" }
-		
+
+		timeremaininglabel { controlname="Label" labelText="#steam_downloads_timeremaining" style="label2" group="HideOnCompletion" }
+		timeremainingfield { controlname="Label" labelText="%time_remaining%"  style="label" group="HideOnCompletion" }
+
+		downloadprogressbar { controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="HideOnCompletion" }
+
 		// right pane
-		graphdownloadrate	{ controlname="Label"	labelText="#steam_downloads_currentrate" zpos="1" style="test" group="HideOnCompletion" }
-		
+		graphdownloadrate { controlname="Label" labelText="#steam_downloads_currentrate" zpos="1" style="test" group="HideOnCompletion" }
+
 		viewmodsbutton { controlname="Button" labelText="#steam_downloads_view_on_workshop" style=ViewModsButton command=ViewMods }
 	}
-	
+
 	colors
 	{
-		dark_blue_grad = "12 27 38 255"
-		light_blue_grad = "32 72 102 255"
+		dark_blue_grad="12 27 38 255"
+		light_blue_grad="32 72 102 255"
 	}
-	
+
 	styles
 	{
 		panelStyle
@@ -48,106 +48,106 @@
 			render_bg
 			{
 				// -- Header
-				0="fill ( x0 + 10, y0 + 3, x1 - 12, y0 + 25, BackgroundStart )"			// Background
-				1="image( x0 + 12, y0 + 5, x1 - 14, y0 + 23, graphics/headerbg )"		// Background Pattern
-				2="fill ( x1 - 11, y0 + 4, x1     , y0 + 24, PropertySheetBG )"			// Background Mask
-				3="fill ( x0 + 11, y0 + 4, x1 - 13, y0 + 24, BlackTr )"					// Pattern Mask
-				4="fill ( x1 - 14, y0 + 4, x1 - 13, y0 + 24, BMask )"					// Right Border Mask
-				5="image( x0 + 13, y0 + 6, x0 + 29, y0 + 22, graphics/harrow_hover )"	// Icon
-				
+				0="fill ( x0 + 10, y0 + 3, x1 - 12, y0 + 25, BackgroundStart )"       // Background
+				1="image( x0 + 12, y0 + 5, x1 - 14, y0 + 23, graphics/headerbg )"     // Background Pattern
+				2="fill ( x1 - 11, y0 + 4, x1     , y0 + 24, PropertySheetBG )"       // Background Mask
+				3="fill ( x0 + 11, y0 + 4, x1 - 13, y0 + 24, BlackTr )"               // Pattern Mask
+				4="fill ( x1 - 14, y0 + 4, x1 - 13, y0 + 24, BMask )"                 // Right Border Mask
+				5="image( x0 + 13, y0 + 6, x0 + 29, y0 + 22, graphics/harrow_hover )" // Icon
+
 				// Outter Border
-				6="fill( x0 + 9 , y0 + 2 , x1 - 11, y0 + 3 , Black )"	// Top
-				7="fill( x0 + 9 , y0 + 25, x1 - 11, y0 + 26, Black )"	// Bottom
-				8="fill( x0 + 9 , y0 + 3 , x0 + 10, y0 + 25, Black )"	// Left
-			    9="fill( x1 - 12, y0 + 3 , x1 - 11, y0 + 25, Black )"	// Right
-				
+				6="fill( x0 + 9 , y0 + 2 , x1 - 11, y0 + 3 , Black )" // Top
+				7="fill( x0 + 9 , y0 + 25, x1 - 11, y0 + 26, Black )" // Bottom
+				8="fill( x0 + 9 , y0 + 3 , x0 + 10, y0 + 25, Black )" // Left
+				9="fill( x1 - 12, y0 + 3 , x1 - 11, y0 + 25, Black )" // Right
+
 				// Inner Border
-				10="fill( x0 + 10, y0 + 3 , x1 - 12, y0 + 4 , ScreenB  )"	// Top
-				11="fill( x0 + 10, y0 + 24, x1 - 12, y0 + 25, ScreenB2 )"	// Bottom
-				12="fill( x0 + 10, y0 + 4 , x0 + 11, y0 + 24, ScreenB  )"	// Left
-			    13="fill( x1 - 13, y0 + 4 , x1 - 12, y0 + 24, ScreenB3 )"	// Right - No transparency
-				
+				10="fill( x0 + 10, y0 + 3 , x1 - 12, y0 + 4 , ScreenB  )" // Top
+				11="fill( x0 + 10, y0 + 24, x1 - 12, y0 + 25, ScreenB2 )" // Bottom
+				12="fill( x0 + 10, y0 + 4 , x0 + 11, y0 + 24, ScreenB  )" // Left
+				13="fill( x1 - 13, y0 + 4 , x1 - 12, y0 + 24, ScreenB3 )" // Right - No transparency
+
 				// -- Body
-				14="fill( x0 + 11, y0 + 30, x1 - 13, y1 - 3, DialogBG )"	// Background
-				
+				14="fill( x0 + 11, y0 + 30, x1 - 13, y1 - 3, DialogBG )" // Background
+
 				// Outer Border
-				15="fill( x0 + 9 , y0 + 28, x1 - 11, y0 + 29, Black )"	// Top
-				16="fill( x0 + 9 , y1 - 2 , x1 - 11, y1 - 1 , Black )"	// Bottom
-				17="fill( x0 + 9 , y0 + 29, x0 + 10, y1 - 2 , Black )"	// Left
-				18="fill( x1 - 12, y0 + 29, x1 - 11, y1 - 2 , Black )"	// Right
-				
+				15="fill( x0 + 9 , y0 + 28, x1 - 11, y0 + 29, Black )" // Top
+				16="fill( x0 + 9 , y1 - 2 , x1 - 11, y1 - 1 , Black )" // Bottom
+				17="fill( x0 + 9 , y0 + 29, x0 + 10, y1 - 2 , Black )" // Left
+				18="fill( x1 - 12, y0 + 29, x1 - 11, y1 - 2 , Black )" // Right
+
 				// Inner Border
-				19="fill( x0 + 10, y0 + 29, x1 - 12, y0 + 30, ScreenB  )"	// Top
-				20="fill( x0 + 10, y1 - 3 , x1 - 12, y1 - 2 , ScreenB2 )"	// Bottom
-				21="fill( x0 + 10, y0 + 30, x0 + 11, y1 - 3 , ScreenB  )"	// Left
-				22="fill( x1 - 13, y0 + 30, x1 - 12, y1 - 3 , ScreenB2 )"	// Right
-				
+				19="fill( x0 + 10, y0 + 29, x1 - 12, y0 + 30, ScreenB  )" // Top
+				20="fill( x0 + 10, y1 - 3 , x1 - 12, y1 - 2 , ScreenB2 )" // Bottom
+				21="fill( x0 + 10, y0 + 30, x0 + 11, y1 - 3 , ScreenB  )" // Left
+				22="fill( x1 - 13, y0 + 30, x1 - 12, y1 - 3 , ScreenB2 )" // Right
+
 				// Hidden Progress Bar
-				23="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, PropertySheetBG )"	// Progress Bar BG
-				24="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, Focus )"			// Progress Bar Fill
-				25="fill( x0 + 226, y0 + 46, x0 + 428, y0 + 47, black )"			// Top Border
-				26="fill( x0 + 226, y0 + 63, x0 + 428, y0 + 64, black )"			// Bottom Border
-				27="fill( x0 + 226, y0 + 47, x0 + 227, y0 + 63, black )"			// Left Border
-				28="fill( x0 + 427, y0 + 47, x0 + 428, y0 + 63, black )"			// Right Border
-				
+				23="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, PropertySheetBG )" // Progress Bar BG
+				24="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, Focus )"           // Progress Bar Fill
+				25="fill( x0 + 226, y0 + 46, x0 + 428, y0 + 47, black )"           // Top Border
+				26="fill( x0 + 226, y0 + 63, x0 + 428, y0 + 64, black )"           // Bottom Border
+				27="fill( x0 + 226, y0 + 47, x0 + 227, y0 + 63, black )"           // Left Border
+				28="fill( x0 + 427, y0 + 47, x0 + 428, y0 + 63, black )"           // Right Border
+
 				// Game Image Border
 				29="fill( x0 + 20, y0 + 39, x0 + 205, y0 + 110, Black )"
 			}
 		}
-		
+
 		panelStyleHighlight
 		{
 			minimum-height=146
 			render_bg
 			{
 				// -- Header
-				0="fill ( x0 + 10, y0 + 3, x1 - 12, y0 + 25, BackgroundStart )"			// Background
-				1="image( x0 + 12, y0 + 5, x1 - 14, y0 + 23, graphics/headerbg )"		// Background Pattern
-				2="fill ( x1 - 11, y0 + 4, x1     , y0 + 24, PropertySheetBG )"			// Background Mask
-				3="fill ( x0 + 11, y0 + 4, x1 - 13, y0 + 24, BlackTr )"					// Pattern Mask
-				4="fill ( x1 - 14, y0 + 4, x1 - 13, y0 + 24, BMask )"					// Right Border Mask
-				5="image( x0 + 13, y0 + 6, x0 + 29, y0 + 22, graphics/harrow_hover )"	// Icon
-				
+				0="fill ( x0 + 10, y0 + 3, x1 - 12, y0 + 25, BackgroundStart )"       // Background
+				1="image( x0 + 12, y0 + 5, x1 - 14, y0 + 23, graphics/headerbg )"     // Background Pattern
+				2="fill ( x1 - 11, y0 + 4, x1     , y0 + 24, PropertySheetBG )"       // Background Mask
+				3="fill ( x0 + 11, y0 + 4, x1 - 13, y0 + 24, BlackTr )"               // Pattern Mask
+				4="fill ( x1 - 14, y0 + 4, x1 - 13, y0 + 24, BMask )"                 // Right Border Mask
+				5="image( x0 + 13, y0 + 6, x0 + 29, y0 + 22, graphics/harrow_hover )" // Icon
+
 				// Outter Border
-				6="fill( x0 + 9 , y0 + 2 , x1 - 11, y0 + 3 , Black )"	// Top
-				7="fill( x0 + 9 , y0 + 25, x1 - 11, y0 + 26, Black )"	// Bottom
-				8="fill( x0 + 9 , y0 + 3 , x0 + 10, y0 + 25, Black )"	// Left
-			    9="fill( x1 - 12, y0 + 3 , x1 - 11, y0 + 25, Black )"	// Right
-				
+				6="fill( x0 + 9 , y0 + 2 , x1 - 11, y0 + 3 , Black )" // Top
+				7="fill( x0 + 9 , y0 + 25, x1 - 11, y0 + 26, Black )" // Bottom
+				8="fill( x0 + 9 , y0 + 3 , x0 + 10, y0 + 25, Black )" // Left
+				9="fill( x1 - 12, y0 + 3 , x1 - 11, y0 + 25, Black )"     // Right
+
 				// Inner Border
-				10="fill( x0 + 10, y0 + 3 , x1 - 12, y0 + 4 , ScreenB  )"	// Top
-				11="fill( x0 + 10, y0 + 24, x1 - 12, y0 + 25, ScreenB2 )"	// Bottom
-				12="fill( x0 + 10, y0 + 4 , x0 + 11, y0 + 24, ScreenB  )"	// Left
-			    13="fill( x1 - 13, y0 + 4 , x1 - 12, y0 + 24, ScreenB3 )"	// Right - No transparency
-				
+				10="fill( x0 + 10, y0 + 3 , x1 - 12, y0 + 4 , ScreenB  )" // Top
+				11="fill( x0 + 10, y0 + 24, x1 - 12, y0 + 25, ScreenB2 )" // Bottom
+				12="fill( x0 + 10, y0 + 4 , x0 + 11, y0 + 24, ScreenB  )" // Left
+				13="fill( x1 - 13, y0 + 4 , x1 - 12, y0 + 24, ScreenB3 )"     // Right - No transparency
+
 				// -- Body
-				14="fill( x0 + 11, y0 + 30, x1 - 13, y1 - 3, DialogBG )"	// Background
-				
+				14="fill( x0 + 11, y0 + 30, x1 - 13, y1 - 3, DialogBG )" // Background
+
 				// Outer Border
-				15="fill( x0 + 9 , y0 + 28, x1 - 11, y0 + 29, Black )"	// Top
-				16="fill( x0 + 9 , y1 - 2 , x1 - 11, y1 - 1 , Black )"	// Bottom
-				17="fill( x0 + 9 , y0 + 29, x0 + 10, y1 - 2 , Black )"	// Left
-				18="fill( x1 - 12, y0 + 29, x1 - 11, y1 - 2 , Black )"	// Right
-				
+				15="fill( x0 + 9 , y0 + 28, x1 - 11, y0 + 29, Black )" // Top
+				16="fill( x0 + 9 , y1 - 2 , x1 - 11, y1 - 1 , Black )" // Bottom
+				17="fill( x0 + 9 , y0 + 29, x0 + 10, y1 - 2 , Black )" // Left
+				18="fill( x1 - 12, y0 + 29, x1 - 11, y1 - 2 , Black )" // Right
+
 				// Inner Border
-				19="fill( x0 + 10, y0 + 29, x1 - 12, y0 + 30, ScreenB  )"	// Top
-				20="fill( x0 + 10, y1 - 3 , x1 - 12, y1 - 2 , ScreenB2 )"	// Bottom
-				21="fill( x0 + 10, y0 + 30, x0 + 11, y1 - 3 , ScreenB  )"	// Left
-				22="fill( x1 - 13, y0 + 30, x1 - 12, y1 - 3 , ScreenB2 )"	// Right
-				
+				19="fill( x0 + 10, y0 + 29, x1 - 12, y0 + 30, ScreenB  )" // Top
+				20="fill( x0 + 10, y1 - 3 , x1 - 12, y1 - 2 , ScreenB2 )" // Bottom
+				21="fill( x0 + 10, y0 + 30, x0 + 11, y1 - 3 , ScreenB  )" // Left
+				22="fill( x1 - 13, y0 + 30, x1 - 12, y1 - 3 , ScreenB2 )" // Right
+
 				// Hidden Progress Bar
-				23="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, PropertySheetBG )"	// Progress Bar BG
-				24="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, Focus )"			// Progress Bar Fill
-				25="fill( x0 + 226, y0 + 46, x0 + 428, y0 + 47, black )"			// Top Border
-				26="fill( x0 + 226, y0 + 63, x0 + 428, y0 + 64, black )"			// Bottom Border
-				27="fill( x0 + 226, y0 + 47, x0 + 227, y0 + 63, black )"			// Left Border
-				28="fill( x0 + 427, y0 + 47, x0 + 428, y0 + 63, black )"			// Right Border
-				
+				23="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, PropertySheetBG )" // Progress Bar BG
+				24="fill( x0 + 227, y0 + 47, x0 + 427, y0 + 63, Focus )"           // Progress Bar Fill
+				25="fill( x0 + 226, y0 + 46, x0 + 428, y0 + 47, black )"           // Top Border
+				26="fill( x0 + 226, y0 + 63, x0 + 428, y0 + 64, black )"           // Bottom Border
+				27="fill( x0 + 226, y0 + 47, x0 + 227, y0 + 63, black )"           // Left Border
+				28="fill( x0 + 427, y0 + 47, x0 + 428, y0 + 63, black )"           // Right Border
+
 				// Game Image Border
 				29="fill( x0 + 20, y0 + 39, x0 + 205, y0 + 110, Black )"
 			}
 		}
-		
+
 		links
 		{
 			textcolor="text"
@@ -158,31 +158,31 @@
 			padding-top=0
 			padding-bottom=0
 		}
-		
+
 		links:hover
 		{
 			textcolor="white"
 		}
-		
+
 		rightcolumnlink:hover
 		{
 			textcolor=TextHover
 		}
-		
+
 		Label
 		{
 			textcolor="Text"
 			font-size=14
 			font-family=basefont
 		}
-		
+
 		label2
 		{
 			textcolor="Label"
 			font-size=14
 			font-family=basefont
 		}
-		
+
 		ModuleHeading
 		{
 			textcolor="GameDetailsBlue"
@@ -192,7 +192,7 @@
 			padding-top="0"
 			bgcolor="none"
 		}
-		
+
 		ModuleHeading2
 		{
 			textcolor="Highlight2"
@@ -206,9 +206,9 @@
 			padding-top="0"
 			bgcolor="none"
 		}
-		
+
 		SmResumeButton // Small Button: Resume
-		{   
+		{
 			inset="30 0 0 0"
 			bgcolor=none
 			render
@@ -216,15 +216,15 @@
 				0="image( x0, y0, x1, y1, graphics/dl_resume )"
 			}
 		}
-		
+
 		SmResumeButton:Hover
-		{   
+		{
 			render
 			{
 				0="image( x0, y0, x1, y1, graphics/dl_resume_hover )"
 			}
 		}
-		
+
 		SmPauseButton // Small Button: Pause
 		{
 			inset="30 0 0 0"
@@ -234,17 +234,17 @@
 				0="image( x0, y0, x1, y1, graphics/dl_pause )"
 			}
 		}
-		
+
 		SmPauseButton:Hover
-		{   
+		{
 			render
 			{
 				0="image( x0, y0, x1, y1, graphics/dl_pause_hover )"
 			}
 		}
-		
+
 		SmRemoveButton // Small Button: Close
-		{   
+		{
 			inset="30 0 0 0"
 			bgcolor=none
 			render
@@ -252,25 +252,25 @@
 				0="image( x0, y0, x1, y1, graphics/dl_close )"
 			}
 		}
-		
+
 		SmRemoveButton:Hover
-		{   
+		{
 			render
 			{
 				0="image( x0, y0, x1, y1, graphics/dl_close_hover )"
 			}
 		}
-		
+
 		SlimProgressBar
 		{
 			textcolor=Focus
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, PropertySheetBG )"	// Background
+				0="fill( x0, y0, x1, y1, PropertySheetBG )" // Background
 			}
 			render {}
 		}
-		
+
 		ViewModsButton
 		{
 			inset="75 0 0 0"
@@ -287,40 +287,40 @@
 				0="image( x0, y0, x1, y1, resource/ugcview )"
 			}
 		}
-		
+
 		ViewModsButton:Hover
-		{   
+		{
 			render_bg
 			{
 				// Background
 				0="image( x0, y0, x1, y1, resource/ugcview_over )"
-			}	
+			}
 		}
 	}
-	
+
 	layout
-	{		
+	{
 		region { name="column1" x=0 width=max }
 		region { name="column2" x=210 width=290 }
 		region { name="column3" x=497 width=max }
 		region { name="column4" x=700 width=max overflow=allow-horizontal }
-		
+
 		// left column
-		place { region="column1" control="namelabel" margin-top=5 margin-left=30 }
-		place { region="column1" control="gameimage" margin-left=21 margin-top=40 width=183 height=69 }
+		place { region="column1" control="namelabel"      margin-top=5 margin-left=30 }
+		place { region="column1" control="gameimage"      margin-left=21 margin-top=40 width=183 height=69 }
 		place { region="column1" control="viewmodsbutton" x=20 y=114 height=20 width=184 }
-		
+
 		// left-mid column
-		place { region="column2" control="downloadprogressbar" x=17 y=47 height=16 width=200 }
+		place { region="column2" control="downloadprogressbar"                   x=17 y=47 height=16 width=200 }
 		place { region="column2" control="downloadtotallabel,downloadtotalfield" x=23 align=top margin-top=47  spacing=6 }
 		place { region="column2" control="downloadfileslabel,downloadfilesfield" x=23 align=top margin-top=71  spacing=6 }
 		place { region="column2" control="starttimelabel,starttimefield"         x=23 align=top margin-top=93  spacing=6 }
 		place { region="column2" control="timeremaininglabel,timeremainingfield" x=23 align=top margin-top=115 spacing=6 }
-		
+
 		// right column
-		place { region="column4" control="updatetypelabel" margin-top=45 align=right margin-right=60 }
+		place { region="column4" control="updatetypelabel"   margin-top=45 align=right margin-right=60 }
 		place { region="column4" control="pauseresumebutton" height=22 width=26 margin-top=44 align=right margin-right=26 }
-		
+
 		// Obsolete
 		place { control="workshopminibanner" height=0 width=0 }
 		place { control="GraphPanel"         x=9999 y=9999 }

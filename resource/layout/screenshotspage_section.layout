@@ -2,16 +2,16 @@
 {
 	controls
 	{
-		SectionLabel { controlname="Label" }
+		SectionLabel   { controlname="Label" }
 		SectionDivider { controlname="Divider" }
 	}
-	
+
 	layout
 	{
 		region { name="body" width=max overflow=grow-vertical }
-		
-		place { region=body y=12 control=SectionLabel }
-		place { region=body control=SectionDivider start=SectionLabel y=4 x=4 width=max }
-		place { region=body y=24 control=*Screenshot dir=right-wrap spacing=8 }
+
+		place  { region=body y=12 control=SectionLabel }
+		place  { region=body control=SectionDivider start=SectionLabel y=4 x=4 width=max }
+		place  { region=body y=24 control=*Screenshot dir=right-wrap spacing=8 }
 	}
 }

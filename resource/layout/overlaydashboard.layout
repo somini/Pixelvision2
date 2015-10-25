@@ -2,17 +2,17 @@
 {
 	controls
 	{
-		BaseDashboardPanel 
-		{ 
-			controlname="EditablePanel" 
-			style="overlaymain"	
+		BaseDashboardPanel
+		{
+			controlname="EditablePanel"
+			style="overlaymain"
 		}
-		
-		TaskbarPanel	
-		{ 
-			controlname="EditablePanel" 
+
+		TaskbarPanel
+		{
+			controlname="EditablePanel"
 		}
-		
+
 		TopFadePanel
 		{
 			controlname="EditablePanel"
@@ -20,14 +20,14 @@
 			zpos=-1
 			mouseinputenabled=0
 		}
-		
+
 		BottomFadePanel
 		{
 			controlname="EditablePanel"
 			style=bottomfade
 			zpos=-1
-		}	
-		
+		}
+
 		GameName
 		{
 			controlname="Label"
@@ -35,54 +35,54 @@
 			style=topbar
 			textalignment=east
 		}
-		
+
 		PowerMeterDim
 		{
-			controlname=	"ImagePanel"
-			image=			"resource/battery_dim"
+			controlname="ImagePanel"
+			image="resource/battery_dim"
 		}
-		
+
 		PowerMeterBright
 		{
-			controlname=	"ImagePanel"
-			image=			"resource/battery_bright"
-		}		
-		
-		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" style="OverlayURLLabel"}
-		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style="hotkey" }										
+			controlname="ImagePanel"
+			image="resource/battery_bright"
+		}
+
+		CloseButton   { controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" style="OverlayURLLabel"}
+		HotkeyLabel   { controlname="Label" labeltext="%hotkey%" style="hotkey" }
 		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 style="LabelOverlay"}
-		
+
 	}
-	
+
 	colors
 	{
 		backgroundOverlay="12 13 14 96"
 		backgroundOverlayTop="49 65 89 90"
 	}
-	
+
 	styles
 	{
 		// overlaymain {} [settings.ini]
-		
+
 		topfade
 		{
 			render_bg
 			{
-				0="fill( x0, y0, x1, y0+71, BlackTr1 )"
-				1="image( x0, y0+70, x1, y1, resource/ol_links_lbg )"
-				2="image( x1-350, y0+70, x1, y1, resource/ol_links_rbg )"
-				3="image_tiled( x0, y0+70, x1, y0 + 235, resource/topfade )"
+				0="fill( x0       , y0     , x1, y0 + 71 , BlackTr1 )"
+				1="image( x0      , y0 + 70, x1, y1      , resource/ol_links_lbg )"
+				2="image( x1 - 350, y0 + 70, x1, y1      , resource/ol_links_rbg )"
+				3="image_tiled( x0, y0 + 70, x1, y0 + 235, resource/topfade )"
 			}
 		}
-		
+
 		bottomfade
 		{
 			render_bg
 			{
-				0="fill( x0, y1 - 98, x1, y1, BlackTr1 )"
+				0="fill( x0      , y1 - 98, x1, y1, BlackTr1 )"
 				1="image( x0 + 22, y1 - 75, x1, y1, resource/steam_logo_semi )"
 			}
-			
+
 			render
 			{
 				0="image( x1 - 159, y1 - 235, x1, y1, graphics/icon_ol_music )"
@@ -90,14 +90,14 @@
 				2="image( x1 - 159, y1 - 141, x1, y1, graphics/icon_ol_settings )"
 			}
 		}
-		
+
 		topbar
 		{
 			font-family=basefont
 			font-size=46
 			textcolor=text
 		}
-		
+
 		OverlayURLLabel // "Click here to return to the game"
 		{
 			textcolor=none
@@ -106,7 +106,7 @@
 				0="image( x0, y0, x1, y1, resource/olclose )"
 			}
 		}
-		
+
 		OverlayURLLabel:Hover
 		{
 			render_bg
@@ -114,20 +114,20 @@
 				0="image( x0, y0, x1, y1, resource/olclose_over )"
 			}
 		}
-		
+
 		hotkey // "SHIFT+TAB"
 		{
 			textcolor=highlight2r
 			font-size=14
 			font-style=uppercase
 		}
-		
+
 		LabelOverlay // "also closes the overlay"
 		{
 			textcolor=text2
 		}
 	}
-	
+
 	layout
 	{
 		region { name=overlay width=max align=top-center margin-top=10 margin-bottom=10 }
@@ -136,13 +136,13 @@
 		region { name="topbar" region=overlay width="max" height=50 }
 		region { name="above_taskbar" region=overlay align=bottom width=max height=140 margin-bottom=105 }
 		region { name="powermeter" region=above_taskbar align=left width=120 }
-		
-		place { control="TopFadePanel" align=top width=max height=600 }
-		place { control="BottomFadePanel" align=bottom width=max height=130 }
-		place { control="CloseButton" region=topbar align=right margin-right=22 width=28 height=28 y=12 }
-		place { control="HotkeyLabel,HotkeyExplain" region=topbar align=right margin-right=57 dir=down y=11 spacing=-1 }
-		place { controls="gamename" region=topbar margin-left=23 }
-		place { control="PowerMeterDim" region=powermeter align=right }
-		place { control="TaskbarPanel" region=right align=bottom height=233 width=max } // height=186
+
+		place  { control="TopFadePanel" align=top width=max height=600 }
+		place  { control="BottomFadePanel" align=bottom width=max height=130 }
+		place  { control="CloseButton" region=topbar align=right margin-right=22 width=28 height=28 y=12 }
+		place  { control="HotkeyLabel,HotkeyExplain" region=topbar align=right margin-right=57 dir=down y=11 spacing=-1 }
+		place  { controls="gamename" region=topbar margin-left=23 }
+		place  { control="PowerMeterDim" region=powermeter align=right }
+		place  { control="TaskbarPanel" region=right align=bottom height=233 width=max } // height=186
 	}
 }

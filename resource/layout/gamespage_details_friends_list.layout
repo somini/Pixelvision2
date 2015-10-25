@@ -2,14 +2,14 @@
 {
 	controls
 	{
-		infolabelplural	{ controlname="Label" style="infolabel" }
+		infolabelplural   { controlname="Label" style="infolabel" }
 		infolabelsingular { controlname="Label" style="infolabel" }
-		friendlabelmore { controlname="Label" style="friendlabelmore" labeltext="#Steam_MoreFriends" textAlignment="center" tooltiptext="#Steam_ViewAllFriends" }
+		friendlabelmore   { controlname="Label" style="friendlabelmore" labeltext="#Steam_MoreFriends" textAlignment="center" tooltiptext="#Steam_ViewAllFriends" }
 	}
-	
+
 	colors
 	{
-		// Note the margin/spacing/width values here must match what is used in placement below 
+		// Note the margin/spacing/width values here must match what is used in placement below
 		// for the image region.  The margin value should be computed by adding the margin of all containing
 		// regions for the images.  All these values also must be positive integers.
 		GameDetailsFriends.ImageAreaMargin "2"
@@ -17,7 +17,7 @@
 		GameDetailsFriends.ImageWidth "42"
 		Tooltip.Anchor=Parent
 	}
-	
+
 	styles
 	{
 		friendlabelmore
@@ -30,36 +30,36 @@
 			font-outerglow-color="TextD"
 			font-outerglow-offset=1
 			font-outerglow-filtersize=1
-		    render_bg
-		    {
+			render_bg
+			{
 				0="image( x0 + 2, y0 + 2, x1, y1, graphics/friends_button )"
 			}
-    	}   
-		
+	}
+
 		friendlabelmore:hover
 		{
 			textcolor="Text"
-		    render_bg
-		    {
+			render_bg
+			{
 				0="image( x0 + 2, y0 + 2, x1, y1, graphics/friends_button_hover )"
-    		}
-    	}
-		
+			}
+		}
+
 		infolabel
 		{
 			textcolor=Label
-		}	
+		}
 	}
-	
+
 	layout
 	{
 		region { name=body margin=0 width=max height=max }
 		region { name=images region=body margin=0 margin-left=-1 x=0 y=20 width=max }
 
-		place { region=images control=*friendimage,friendlabelmore dir=right width=42 height=42 spacing=2 }
+		place  { region=images control=*friendimage,friendlabelmore dir=right width=42 height=42 spacing=2 }
 
 		// Only one of the next two will be visible at once
-		place { region=body control=infolabelplural y=0 width=max }
-		place { region=body control=infolabelsingular y=0 width=max }
+		place  { region=body control=infolabelplural y=0 width=max }
+		place  { region=body control=infolabelsingular y=0 width=max }
 	}
 }

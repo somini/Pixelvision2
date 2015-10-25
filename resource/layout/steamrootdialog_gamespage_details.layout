@@ -6,74 +6,74 @@
 		{
 			tabposition=1
 		}
-		
+
 		DetailsBorder { controlname=Panel style="DetailsBorderPanel" zpos="-1" }
-		
-		// Header image, plus overlays 
+
+		// Header image, plus overlays
 		headerimagea { controlname="ImagePanel" style="headerimage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
 		headerimageb { controlname="ImagePanel" style="headerimage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
-		
+
 		// Header text labels
 		gametitleheader { controlname="CDetailsGameTitleHeaderPanel" zpos="2" }
-		gamesubheader { controlname="CDetailsGameSubHeaderPanel" zpos="2" }
-		
-		linkslabel { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" } 
+		gamesubheader   { controlname="CDetailsGameSubHeaderPanel" zpos="2" }
+
+		linkslabel        { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" }
 		sendguestpasslink { controlname="URLLabel" labeltext="#steam_send_guestpass" style="rightcolumnlink" tabposition=7 command="SendGuestPass" }
-		achievementslink { controlname="URLLabel" labeltext="#Steam_Achievements" style="rightcolumnlink" }
-		forumlink { controlname="URLLabel" labeltext="#Steam_Forums" style="rightcolumnlink" }
-		ogglink { controlname="URLLabel" labeltext="#Steam_OGG" style="rightcolumnlink" }
-		manuallink { controlname="URLLabel" labeltext="#Steam_Game_Manual" style="rightcolumnlink" }
-		newslink { controlname="URLLabel" labeltext="#Steam_News" style="rightcolumnlink" }
-		storelink { controlname="URLLabel" labeltext="#Steam_Game_SteamStorePage" style="rightcolumnlink" }
-		gamehublink { controlname="URLLabel" labeltext="#Steam_Game_GameHub" style="rightcolumnlink" }
-		dlclink { controlname="URLLabel" labeltext="#Steam_DLC" style="rightcolumnlink" }
-		cdkeylink { controlname="URLLabel" labeltext="#Steam_CDKeyLink" style="rightcolumnlink" }
-		guidelink { controlname="URLLabel" labeltext="#Steam_Guide" style="rightcolumnlink" }
-		guideslink { controlname="URLLabel" labeltext="#Steam_Guides" style="rightcolumnlink" }
-		supportlink { controlname="URLLabel" labeltext="#Steam_Support" style="rightcolumnlink" }
-		recommendlink { controlname="URLLabel" labeltext="#Steam_Game_RecommendGame" style="rightcolumnlink" }
-		
+		achievementslink  { controlname="URLLabel" labeltext="#Steam_Achievements" style="rightcolumnlink" }
+		forumlink         { controlname="URLLabel" labeltext="#Steam_Forums" style="rightcolumnlink" }
+		ogglink           { controlname="URLLabel" labeltext="#Steam_OGG" style="rightcolumnlink" }
+		manuallink        { controlname="URLLabel" labeltext="#Steam_Game_Manual" style="rightcolumnlink" }
+		newslink          { controlname="URLLabel" labeltext="#Steam_News" style="rightcolumnlink" }
+		storelink         { controlname="URLLabel" labeltext="#Steam_Game_SteamStorePage" style="rightcolumnlink" }
+		gamehublink       { controlname="URLLabel" labeltext="#Steam_Game_GameHub" style="rightcolumnlink" }
+		dlclink           { controlname="URLLabel" labeltext="#Steam_DLC" style="rightcolumnlink" }
+		cdkeylink         { controlname="URLLabel" labeltext="#Steam_CDKeyLink" style="rightcolumnlink" }
+		guidelink         { controlname="URLLabel" labeltext="#Steam_Guide" style="rightcolumnlink" }
+		guideslink        { controlname="URLLabel" labeltext="#Steam_Guides" style="rightcolumnlink" }
+		supportlink       { controlname="URLLabel" labeltext="#Steam_Support" style="rightcolumnlink" }
+		recommendlink     { controlname="URLLabel" labeltext="#Steam_Game_RecommendGame" style="rightcolumnlink" }
+
 		// Right column tags
-		tagslabel { controlname="Label" labeltext="#Steam_Tags" style="rightcolumnheadertext" }
+		tagslabel    { controlname="Label" labeltext="#Steam_Tags" style="rightcolumnheadertext" }
 		edittagslink { controlname="URLLabel" labeltext="#steam_details_edittags" style="rightcolumnlink" }
-		
+
 		// Body contents
-		welcomedetails { controlname="CGamesPage_Details_Welcome" zpos="1" }
-		dlcdetails { controlname="CGamesPage_Details_DLC" zpos="1" }
-		friendsdetails { controlname="CGamesPage_Details_Friends" zpos="1" }
-		clouddetails { controlname="CGamesPage_Details_Cloud" zpos="1" }
+		welcomedetails        { controlname="CGamesPage_Details_Welcome" zpos="1" }
+		dlcdetails            { controlname="CGamesPage_Details_DLC" zpos="1" }
+		friendsdetails        { controlname="CGamesPage_Details_Friends" zpos="1" }
+		clouddetails          { controlname="CGamesPage_Details_Cloud" zpos="1" }
 		communityfilesdetails { controlname="CGamesPage_Details_CommunityFiles" zpos="1" }
-		achievementsdetails { controlname="CGamesPage_Details_Achievements" zpos="1" }
-		newsdetails { controlname="CGamesPage_Details_News" zpos="1" }
-		nonsteamdetails { controlname="CGamesPage_Details_NonSteam" zpos="1" }
-		screenshotsdetails { controlname="CGamesPage_Details_Screenshots" zpos="1" }
-		
+		achievementsdetails   { controlname="CGamesPage_Details_Achievements" zpos="1" }
+		newsdetails           { controlname="CGamesPage_Details_News" zpos="1" }
+		nonsteamdetails       { controlname="CGamesPage_Details_NonSteam" zpos="1" }
+		screenshotsdetails    { controlname="CGamesPage_Details_Screenshots" zpos="1" }
+
 		// Empty list contents
 		emptylisttext { controlname="RichText" style="emptylisttext" }
 	}
-	
+
 	colors
 	{
-		ListPanel.PostSectionLeading	10
+		ListPanel.PostSectionLeading 10
 	}
-	
+
 	styles
 	{
 		HeaderBG {}
-		
+
 		CGamesListPanel
 		{
 			padding-left=1
 			render_bg {}
 			render {}
 		}
-		
+
 		emptylisttext
 		{
 			textcolor="Text"
 			render_bg {}
 		}
-		
+
 		CGamesPage_Details
 		{
 			inset="0 0 0 0"
@@ -88,7 +88,7 @@
 				2="gradient( x0 + 3, y1 - 12, x1 - 2, y1 - 2 , None, BlackTr )"
 			}
 		}
-		
+
 		// Some overrides for our listpanel
 		"GamesPage_Details ListPanel"
 		{
@@ -96,28 +96,28 @@
 			render_bg {}
 			render {}
 		}
-		
+
 		"GamesPage_Details ListPanel"
 		{
 			padding-left=4
 			padding-right=2
 		}
-		
+
 		"GamesPage_Details ListPanelInterior"
 		{
 			inset="1 1 0 0"
 			bgcolor="none"
-			render_bg {} 
+			render_bg {}
 			render {}
 		}
-		
+
 		"GamesPage_Details ListPanelInterior:scrollbar"
-		{     
+		{
 			inset="1 1 -2 0"
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		ListPanelSectionHeader
 		{
 			inset="2 0 0 0"
@@ -132,14 +132,14 @@
 				0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, DialogBGL, none )"
 			}
 		}
-		
+
 		"GamesPage_Details ListPanelDragger"
 		{
 			bgcolor="none"
 			render_bg {}
 			render {}
 		}
-		
+
 		"GamesPage_Details ListPanelColumnHeader" [!$OSX]
 		{
 			inset="2 2 0 0"
@@ -150,37 +150,37 @@
 			}
 			render {}
 		}
-		
+
 		"GamesPage_Details ListPanelColumnHeader" [$OSX]
 		{
 			inset="2 2 0 0"
 			bgcolor="none"
 			render {}
 		}
-		
-		"CGamesListPanel ListPanelColumnSelectButton"   
+
+		"CGamesListPanel ListPanelColumnSelectButton"
 		{
-       		inset="-3 3 0 0"
-        	render
+			inset="-3 3 0 0"
+			render
 			{
 				5="image( x0 + 2, y0 + 3, x1, y1, graphics/gear )"
-        	}   
-        	render_bg {}
+			}
+			render_bg {}
 		}
-		
-		"CGamesListPanel ListPanelColumnSelectButton:Hover"   
+
+		"CGamesListPanel ListPanelColumnSelectButton:Hover"
 		{
-        	render
+			render
 			{
 				5="image( x0 + 2, y0 + 3, x1, y1, graphics/gear_hover )"
-        	}
+			}
 		}
-		
+
 		headerimage
 		{
 			bgcolor="0 0 0 0"
 		}
-		
+
 		rightcolumnheadertext
 		{
 			inset="-9 0 0 0"
@@ -192,7 +192,7 @@
 			padding-top=12
 			padding-left=10
 		}
-		
+
 		rightcolumnheadertext-red
 		{
 			inset="-9 0 0 0"
@@ -204,7 +204,7 @@
 			padding-top=12
 			padding-left=10
 		}
-		
+
 		rightcolumnheadertext-green
 		{
 			inset="-9 0 0 0"
@@ -216,7 +216,7 @@
 			padding-top=12
 			padding-left=10
 		}
-		
+
 		rightcolumnheadertext-blue
 		{
 			inset="-9 0 0 0"
@@ -228,7 +228,7 @@
 			padding-top=12
 			padding-left=10
 		}
-		
+
 		rightcolumnlink
 		{
 			inset="-9 0 0 0"
@@ -238,12 +238,12 @@
 			padding-top=0
 			padding-bottom=0
 		}
-		
+
 		rightcolumnlink:hover
 		{
 			textcolor=White
 		}
-		
+
 		rightcolumntag
 		{
 			inset="-9 0 0 0"
@@ -253,68 +253,68 @@
 			padding-top=0
 			padding-bottom=0
 		}
-		
+
 		DetailsBorderPanel
 		{
 			bgcolor = none
-			render_bg 
+			render_bg
 			{
 				// Outer Border
-				1="fill( x0    , y0    , x1    , y0 + 1, ScreenB )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , ScreenB )"	// Bottom
-				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB )"	// Right
-				
+				1="fill( x0    , y0    , x1    , y0 + 1, ScreenB )" // Top
+				2="fill( x0    , y1 - 1, x1    , y1    , ScreenB )" // Bottom
+				3="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ScreenB )" // Left
+				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, ScreenB )" // Right
+
 				// Inner Border
-				1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, Black )"	// Top
-				2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, Black )"	// Bottom
-				3="fill( x0 + 1, y0 + 2, x0 + 2, y1 - 2, Black )"	// Left
-				4="fill( x1 - 2, y0 + 2, x1 - 1, y1 - 2, Black )"	// Right
+				1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, Black )" // Top
+				2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, Black )" // Bottom
+				3="fill( x0 + 1, y0 + 2, x0 + 2, y1 - 2, Black )" // Left
+				4="fill( x1 - 2, y0 + 2, x1 - 1, y1 - 2, Black )" // Right
 			}
 		}
 	}
-	
+
 	layout
 	{
-		region	{ name="list" y=2 x=1 width=275 height=max margin-top=1 margin-bottom=1 }
-		region	{ name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=2 margin-bottom=2 margin-right=-1}
-		region	{ name="headertext" region=details y=40 x=32 width=1456 height=max margin-right=20 } // width=1156 (default) width=max (old)
-		region	{ name="rightcolumn" region=details y=155 height=max width=1456 margin-right=-7 overflow=allow-vertical } // width=1156 (default) width=max (old)
-		region  { name="detailsbody" region=details y=159 width=1456 margin-right=143 overflow=allow-vertical } // width=1156 (default) width=max (old)
-		
+		region { name="list" y=2 x=1 width=275 height=max margin-top=1 margin-bottom=1 }
+		region { name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=2 margin-bottom=2 margin-right=-1}
+		region { name="headertext" region=details y=40 x=32 width=1456 height=max margin-right=20 } // width=1156 (default) width=max (old)
+		region { name="rightcolumn" region=details y=155 height=max width=1456 margin-right=-7 overflow=allow-vertical } // width=1156 (default) width=max (old)
+		region { name="detailsbody" region=details y=159 width=1456 margin-right=143 overflow=allow-vertical } // width=1156 (default) width=max (old)
+
 		// Empty list text, which goes across regions
-		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10 }
-		
+		place { control=emptylisttext x=0 y=0 width=max height=max margin=10 }
+
 		// Games list on left
-		place 	{ control=GamesList region=list width=275 height=max margin=0 }
-		
+		place { control=GamesList region=list width=275 height=max margin=0 }
+
 		// Body contents
-		place	{ control=welcomedetails,friendsdetails,clouddetails,communityfilesdetails,achievementsdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails region=detailsbody dir=down width=max margin-right=0 margin-top=25 margin-left=5 spacing=10 margin-bottom=10 }
-		
+		place { control=welcomedetails,friendsdetails,clouddetails,communityfilesdetails,achievementsdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails region=detailsbody dir=down width=max margin-right=0 margin-top=25 margin-left=5 spacing=10 margin-bottom=10 }
+
 		// Details border
-		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
-		
-		// Main header image is at the bottom, then one of three color overlays is visible, and finally the 
+		place { control=DetailsBorder y=1 x=1 width=max height=max }
+
+		// Main header image is at the bottom, then one of three color overlays is visible, and finally the
 		// horizontal fade out gradient on the top.  We have an a and a b image, which we crossfade between.
 		// Align to top-right for wide displays
-		place 	{ control=headerimagea width=1024 height=550 x=120 y=2 align=top-center }
-		place 	{ control=headerimageb width=1024 height=550 x=120 y=2 align=top-center }
-		
+		place { control=headerimagea width=1024 height=550 x=120 y=2 align=top-center }
+		place { control=headerimageb width=1024 height=550 x=120 y=2 align=top-center }
+
 		// Header text
-		place 	{ control=gametitleheader region=headertext dir=down height=46 }
-		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down y=-1 }
-		
+		place { control=gametitleheader region=headertext dir=down height=46 }
+		place { control=gamesubheader start=gametitleheader region=headertext dir=down y=-1 }
+
 		// Buttons and links on the right
-		place	
-		{ 
+		place
+		{
 			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
-			region=rightcolumn 
-			dir=down 
+			region=rightcolumn
+			dir=down
 			width=125
 			margin=10
 			margin-top=20
 			align=right
-			spacing=3 
+			spacing=3
 		}
 	}
 }
