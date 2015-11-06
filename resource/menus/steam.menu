@@ -57,6 +57,8 @@
 		Settings			[!$OSX]		{	text="#steam_menu_settings"				command="Settings" }
 		Divider				[!$OSX]		{}
 		UserForums						{	text="#steam_forums"					command="Forums" }
+		Divider							{}
+		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 	}
 	
 	Profile
