@@ -51,6 +51,7 @@
 		
 		Divider							{}
 		
+		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 		UserForums						{	text="#steam_forums"					command="Forums" }
 		Support							{	text="#steam_menu_support"				command="Support" }
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
