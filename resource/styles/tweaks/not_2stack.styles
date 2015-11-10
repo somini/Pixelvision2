@@ -1,0 +1,7 @@
+"resource/styles/tweaks/not_2stack.styles"
+{
+	colors
+	{
+		Notifications.StackSize       "2"     // Controls how many panels we will stack before background queuing
+	}
+}

@@ -1,0 +1,7 @@
+"resource/styles/tweaks/not_4stack.styles"
+{
+	colors
+	{
+		Notifications.StackSize       "4"     // Controls how many panels we will stack before background queuing
+	}
+}

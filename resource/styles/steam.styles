@@ -121,7 +121,9 @@ steam.styles
 		FillBG2="66 70 74 255"
 
 		MenuBG1="33 37 42 255" //"87 91 95 255" //gradient colors
+		MenuBG1Trans="33 37 42 120" //"87 91 95 255" //gradient colors
 		MenuBG2="56 60 64 255"
+		MenuBG2Trans="56 60 64 255"
 
 		Divider="60 66 72 255"
 		DividerD="16 17 18 255"
@@ -173,7 +175,9 @@ steam.styles
 		BMask="5 5 5 255"
 		FriendBG="40 44 48 77"
 		ScreenB="60 66 72 155"
+		ScreenBTr="60 66 72 77"
 		ScreenB2="60 66 72 125"
+		ScreenB2Tr="60 66 72 62"
 		ScreenB3="34 37 40 255"
 		ScreenB4="42 47 51 255"
 		MultiplyB="17 19 20 255"
