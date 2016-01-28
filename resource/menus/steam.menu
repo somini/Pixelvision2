@@ -59,6 +59,8 @@
 		UserForums						{	text="#steam_forums"					command="Forums" }
 		Divider							{}
 		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
+		Divider							{}
+		Console							{	text="Console"		shellcmd="steam://open/console" }
 	}
 	
 	Profile
