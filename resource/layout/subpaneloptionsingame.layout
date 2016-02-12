@@ -4,7 +4,7 @@
 	{
 		TitleLabel { controlname=label labeltext="#Steam_SettingsInGameTitle" style=highlight }
 		EnableOverlayCheck {	ControlName=CheckButton labelText="#Overlay_SettingsEnable" }
-		EnableSCTenfootOverlayCheck [!$OSX&&!$LINUX] {	ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }
+		EnableSCTenfootOverlayCheck {	ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }
 		HotKeySelector {	ControlName=HotKeyEntry	}
 		ScreenshotHotKeySelector { ControlName=HotKeyEntry }
 		DescriptionLabel	{ ControlName=Label labeltext="#Overlay_SettingsDescription" wrap=1  }
