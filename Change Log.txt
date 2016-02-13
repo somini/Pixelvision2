@@ -2,7 +2,12 @@ PixelVision2 Change log
 
 Made possible thanks to Pulseh
 
-Continued by Mr. late
+Continued by Mr. late, Shazam, somini
+
+v2016-1302 (13th of February 2016)
+
+- Added new checkbox found in the latest Steam beta for "Use the Big Picture Overlay..."
+- Miscellaneous changes to the settings menu
 
 v2015-2503 (25th of March 2015)
 

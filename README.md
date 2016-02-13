@@ -3,7 +3,7 @@ PixelVision²
 
 Made possible thanks to Pulseh
 
-Continued by Mr. late
+Continued by Mr. late, Shazam, somini
 
 Outstanding issues
 -----
