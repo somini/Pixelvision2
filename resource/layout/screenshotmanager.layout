@@ -315,8 +315,8 @@
 		place { control="SSDate" start="SSDetails" dir=down margin-top=21 margin-left=8 align=left }
 		place { control="SSSize,SSSizeOriginal" start="SSDate" margin-right=19 align=right }
 		
-		place { control="publish_caption" region="details" x=0 align=bottom margin-bottom=45 height=50 margin-right=0 width=max  }
-		place { control="publish_charsleft" region="details" x=3 align=bottom margin-bottom=32 width=215 height=20 }
+		place { control="publish_caption" region="details" x=0 align=bottom margin-bottom=55 height=50 margin-right=0 width=max  }
+		place { control="publish_charsleft" region="details" x=3 align=bottom margin-bottom=32 width=215 height=23 }
 		
 		place { control="null_placer" region="details" width=1 align=bottom margin-bottom=6 }
 		place { control="delete_button,details_button,publish_button" start="null_placer" region="details" align=right x=5 margin-bottom=9 margin-right=1 spacing=5 }
