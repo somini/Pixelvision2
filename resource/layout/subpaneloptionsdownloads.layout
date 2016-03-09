@@ -63,21 +63,21 @@
 	
 	layout
 	{
-		region { name=box margin-top=8 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
 		
-		place { controls="LibrariesLabel" region=box margin-top=8 dir=down }
-		place { controls="ManageInstalledApps" region=box start=LibrariesLabel margin-top=8 width=235 height=25 dir=down }
-		place { controls="ManageInstalledappsLabel" region=box start=ManageInstalledApps margin-top=8 width=max dir=down }		
+		place { controls="LibrariesLabel" region=box margin-top=10 dir=down }
+		place { controls="ManageInstalledApps" region=box start=LibrariesLabel margin-top=10 width=235 height=25 dir=down }
+		place { controls="ManageInstalledappsLabel" region=box start=ManageInstalledApps margin-top=10 width=max dir=down }		
 		
-		place { controls="Divider1" region=box start=ManageInstalledappsLabel dir=down margin-top=15 width=max }
+		place { controls="Divider1" region=box start=ManageInstalledappsLabel dir=down margin-top=10 width=max }
 		
-		place { controls="RegionLabel" region=box start=Divider1 dir=down margin-top=15 }
-		place { controls="DownloadRegionCombo" region=box start=RegionLabel margin-top=8 height=25 width=235 dir=down }
-		place { controls="RegionInfoLabel" region=box start=DownloadRegionCombo margin-top=8 width=max dir=down }
+		place { controls="RegionLabel" region=box start=Divider1 dir=down margin-top=10 }
+		place { controls="DownloadRegionCombo" region=box start=RegionLabel margin-top=10 height=25 width=235 dir=down }
+		place { controls="RegionInfoLabel" region=box start=DownloadRegionCombo margin-top=10 width=max dir=down }
 	
-		place { controls="Divider2" region=box start=RegionInfoLabel dir=down width=max margin-top=15 }
+		place { controls="Divider2" region=box start=RegionInfoLabel dir=down width=max margin-top=10 }
 				
-		place { controls="RestrictionsLabel" region=box start=Divider2 dir=down margin-top=15 }
+		place { controls="RestrictionsLabel" region=box start=Divider2 dir=down margin-top=10 }
 		
 		place { controls="AutoUpdateTimeRestrictCheckbox" region=box start=RestrictionsLabel dir=down margin-top=4 }
 		place { controls="AutoUpdateTimeRestrictStartLabel" region=box start=AutoUpdateTimeRestrictCheckbox dir=down margin-top=4 }
@@ -86,15 +86,15 @@
 		place { controls="AutoUpdateTimeRestrictEnd" region=box start=AutoUpdateTimeRestrictEndLabel dir=right margin-left=10 width=78 }
 		
 		place { controls="ThrottleRatesLabel" region=box start=RestrictionsLabel dir=down margin-top=13 margin-left=260 }
-		place { controls="ThrottleRates" region=box start=ThrottleRatesLabel dir=down width=235 height=25 margin-top=8 }
+		place { controls="ThrottleRates" region=box start=ThrottleRatesLabel dir=down width=235 height=25 margin-top=10 }
 		
-		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=8 }
+		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=10 }
 		place { controls="AllowDownloadsDuringGameplayInfo" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down margin-top=0 width=450 }
 		
-		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayInfo dir=down margin-top=8 }
+		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayInfo dir=down margin-top=10 }
 		place { controls="ThrottleDownloadsWhileStreamingInfo" region=box start=ThrottleDownloadsWhileStreamingCheckbox dir=down margin-top=0 width=450 }
 		
-		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingInfo dir=down margin-top=8 }
+		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingInfo dir=down margin-top=10 }
 
 
 	}
