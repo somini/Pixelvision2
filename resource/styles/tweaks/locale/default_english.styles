@@ -19,11 +19,10 @@
 				4="fill( x0, y1 - 76, x1, y1, DialogBG )"
 				
 				// Navigation Icons
-				6="image( x0 + 84 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
-				7="image( x0 + 192, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
-				8="image( x0 + 312, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
-				9="image( x0 + 474, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
-				
+				6="image( x0 + 80 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
+				7="image( x0 + 206, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
+				8="image( x0 + 355, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
+				9="image( x0 + 557, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 			}
 		}
 	}
