@@ -61,9 +61,9 @@
 		
 		place { controls=TitleLabel region=top }
 		place { controls=DescriptionLabel width=max region=top start=TitleLabel dir=down margin-top=8 }
-		place { controls=EnableOverlayCheck region=top start=DescriptionLabel dir=down height=20 margin-top=10 }
-		place [!$OSX&&!$LINUX] { controls=EnableSCTenfootOverlayCheck region=top start=EnableOverlayCheck dir=down height=20 }
-		place [!$OSX&&!$LINUX] { controls=EnableVRDesktopGameTheaterCheck region=top start=EnableSCTenfootOverlayCheck dir=down height=20 }
+		place { controls=EnableOverlayCheck region=top start=DescriptionLabel dir=down height=20 margin-top=10 margin-left=-3 }
+		place [!$OSX&&!$LINUX] { controls=EnableSCTenfootOverlayCheck region=top start=EnableOverlayCheck dir=down height=20 margin-left=-3 }
+		place [!$OSX&&!$LINUX] { controls=EnableVRDesktopGameTheaterCheck region=top start=EnableSCTenfootOverlayCheck dir=down height=20 margin-left=-3 }
 	
 		place { controls=HotKeySelectorLabel,HotKeySelector dir=down spacing=5 width=max region=topleft start=EnableVRDesktopGameTheaterCheck margin-top=20 }
 		
