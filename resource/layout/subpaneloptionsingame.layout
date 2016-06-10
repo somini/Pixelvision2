@@ -61,10 +61,11 @@
 		
 		place { controls=TitleLabel region=top }
 		place { controls=DescriptionLabel width=max region=top start=TitleLabel dir=down margin-top=8 }
-		place { controls=EnableOverlayCheck region=top start=DescriptionLabel dir=down height=20 margin-top=10 margin-left=-3 }
 
-		place { controls=EnableSCTenfootOverlayCheck region=top start=EnableOverlayCheck dir=down height=20 }
-		place { controls=EnableVRDesktopGameTheaterCheck region=top start=EnableSCTenfootOverlayCheck dir=down height=20 }
+		place { controls=EnableOverlayCheck region=top start=DescriptionLabel dir=down height=20 margin-top=10 margin-left=-3 }
+		place { controls=EnableSCTenfootOverlayCheck region=top start=EnableOverlayCheck dir=down height=20 margin-left=-3 }
+		place { controls=EnableVRDesktopGameTheaterCheck region=top start=EnableSCTenfootOverlayCheck dir=down height=20 margin-left=-3 }
+
 		place { controls=HotKeySelectorLabel,HotKeySelector dir=down spacing=5 width=max region=topleft start=EnableVRDesktopGameTheaterCheck margin-top=20 }
 		
 		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
