@@ -68,7 +68,8 @@
 
 		place { controls=HotKeySelectorLabel,HotKeySelector dir=down spacing=5 width=max region=topleft start=EnableVRDesktopGameTheaterCheck margin-top=20 }
 		
-		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
+		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
+		place { controls=ShowIngameFPSContrastCheck dir=down spacing=5 start=ShowIngameFPSCombo height=20 margin-left=-3 margin-top=9 region=topleft }
 			
 		place { controls=ScreenshotLabel region=topright start=HotKeySelectorLabel }
 		place { controls=ScreenshotHotKeySelector,SetScreenshotFolderButton 
