@@ -4,12 +4,12 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late, shazam, somini
 
-v2016-0806 (8th of June 2016
+v2016-0806 (8th of June 2016)
 
 -Fixed a missing button in download settings menu for using bits per second instead of bytes
 -Fixed a misaligned button in In-Game settings menu to use the desktop game theathe
 
-v2016-1202 (12th of February 2016)
+v2016-1302 (13th of February 2016)
 
 - Added new checkbox found in the latest Steam beta for "Use the Big Picture Overlay..."
 - Miscellaneous changes to the settings menu
