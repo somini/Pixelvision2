@@ -316,11 +316,11 @@
 		place { control="SSSize,SSSizeOriginal" start="SSDate" margin-right=19 align=right }
 		
 		place { control="publish_caption" region="details" x=0 align=bottom margin-bottom=55 height=50 margin-right=0 width=max  }
-		place { control="publish_charsleft" region="details" x=3 align=bottom margin-bottom=32 width=215 height=23 }
+		place { control="publish_charsleft" region="details" x=3 align="bottom-right" margin-bottom=35 height=20 margin-right=5 }
 		
-		place { control="null_placer" region="details" width=1 align=bottom margin-bottom=6 }
+		place { control="null_placer" region="details" width=-1 align=bottom-left margin-bottom=5 }
 		place { control="delete_button,details_button,publish_button" start="null_placer" region="details" align=right x=5 margin-bottom=9 margin-right=1 spacing=5 }
-		place { control="spoiler_checkbox" start="null_placer" region="details" align=left margin-bottom=8 }
+		place { control="spoiler_checkbox" start="null_placer" region="details" align=bottom margin-bottom=30 margin-right=7 spacing=5 }
 		
 		place { control="details_caption" region="details" x=4 align=bottom margin-bottom=35 height=57 width=max margin-right=4 }
 		
