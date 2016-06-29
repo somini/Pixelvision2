@@ -4,6 +4,10 @@ Made possible thanks to Pulseh
 
 Continued by Mr. late, Shazam, somini
 
+v2016-2906 (29th of June 2016)
+
+-Changed the screenshot manager layout to fix possibly issues when using other languages than English
+
 v2016-0806 (8th of June 2016)
 
  - Fixed a missing button in download settings menu for using bits per second instead of bytes
