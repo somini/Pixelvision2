@@ -91,11 +91,15 @@
 		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStartLabel dir=down margin-top=10 }
 		place { controls="AllowDownloadsDuringGameplayInfo" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down margin-top=0 width=450 }
 
-		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayInfo dir=down margin-top=10 }
+		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down margin-top=10 }
 		place { controls="ThrottleDownloadsWhileStreamingInfo" region=box start=ThrottleDownloadsWhileStreamingCheckbox dir=down margin-top=0 width=450 }
 
-		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingInfo dir=down margin-top=10 }
+		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingCheckbox dir=down margin-top=10 }
 
-
+		place { controls="Divider3" region=box start=DownloadRatesInBitsCheckbox dir=down width=max margin-top=10 }
+		
+		place { controls="FlushDownloadConfig" region=box start=Divider3 margin-top=15 width=235 height=25 dir=down }
+		place { controls="FlushDownloadConfigLabel" region=box start=FlushDownloadConfig margin-top=10 width=max dir=down }
+		
 	}
 }
