@@ -42,7 +42,8 @@
 		place { controls=DescriptionLabel height=40 width=max region=top start=TitleLabel dir=down margin-top=8 }
 		place { controls=OverlayHomePageLabel,OverlayHomePage, dir=down spacing=5 margin-top=20 width=max region=topleft }
 		place { controls=Divider1 region=bottom width=max margin-top=8 }
-		place { controls=ClearAllCookiesButton height=24 width=240 region=bottom start=Divider1 dir=down margin-top=15 }
+		place { controls=ClearWebCacheButton height=24 width=240 region=bottom start=Divider1 dir=down margin-top=15 }
+		place { controls=ClearAllCookiesButton height=24 width=240 region=bottom start=ClearWebCacheButton dir=down margin-top=15 }
 		
 	}
 }
