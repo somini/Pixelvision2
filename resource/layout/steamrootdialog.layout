@@ -57,7 +57,7 @@
 		{
 			ControlName=MenuButton
 			style="inbox_button"
-			textAlignment=west
+			textAlignment=east
 		}
 		
 		add_game
@@ -443,7 +443,7 @@
 			{
 				0="image( x0 - 18, y0 - 2, x1, y1, graphics/harrow_hover )"
 				1="image( x0 - 5, y0, x1, y1, graphics/inbox_empty )"
-				2="image( x0 + 9, y0, x1, y1, graphics/inbox )"
+				2="image( x0 + 14, y0, x1, y1, graphics/inbox )"
 			}
 			render {}
 		}
@@ -454,7 +454,7 @@
 			{
 				0="image( x0 - 18, y0 - 2, x1, y1, graphics/harrow_hover )"
 				1="image( x0 - 5, y0, x1, y1, graphics/inbox_empty_hover )"
-				2="image( x0 + 9, y0, x1, y1, graphics/inbox_hover )"
+				2="image( x0 + 14, y0, x1, y1, graphics/inbox_hover )"
 			}
 		}
 
@@ -464,7 +464,7 @@
 			{
 				0="image( x0 - 18, y0 - 2, x1, y1, graphics/harrow_hover )"
 				1="image( x0 - 5, y0, x1, y1, graphics/inbox_empty_hover )"
-				2="image( x0 + 9, y0, x1, y1, graphics/inbox_hover )"
+				2="image( x0 + 14, y0, x1, y1, graphics/inbox_hover )"
 			}
 		}
 
@@ -626,7 +626,7 @@
 		
 		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right y=78 height=23 margin-right=9 width=109 }
 		
-		place { control="InboxButton" height=12 y=52 margin-right=51 align=right }
+		place { control="InboxButton" height=12 y=52 margin-right=56 align=right }
 		place { control="ParentalLockButton" align=right end-right="account_URL" margin-top=35 margin-right=50 height=26 }
 		place { control="SupportAlert" y=3 align=right end-right="ParentalLockButton" margin-right=10 height=26 }
 		
@@ -640,8 +640,8 @@
 		place { control="add_game" align=bottom margin-bottom=2 margin-left=7 }
 		
 		place { control="FriendPanel" height=48 width=48 align=right margin-right=-3 margin-top=23 }
-		place { control="online_friends" height=12 y=51 align=right margin-right=101 }
-		place { control="view_friends" height=12 y=51 align=right margin-right=101 }
+		place { control="online_friends" height=12 y=51 align=right margin-right=106 }
+		place { control="view_friends" height=12 y=51 align=right margin-right=106 }
 		
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=30 }
