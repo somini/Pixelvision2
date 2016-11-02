@@ -21,4 +21,4 @@ The file called `SegoeWP.zip` should have the following SHA256 Checksum:
 
 Third Party Tools/Modifications
 -----
-- [PixelVision² Updater Tool](https://github.com/Bluscream/PixelVision2-Updater) created by [WittyAdrian](http://steamcommunity.com/id/WittyAdrian/).
+
