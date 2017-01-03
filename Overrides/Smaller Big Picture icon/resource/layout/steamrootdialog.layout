@@ -96,7 +96,7 @@
 		{
 			"ControlName"	"Label"
 			"fieldName"		"account_balance_seperator"
-			"labelText"		"|"
+			"labelText"		""
 			style="online_friends"
 		}
 		
@@ -622,7 +622,7 @@
 		place [$OSX]  { control="account_URL, universe_label" align=right margin-top=9 margin-right=15 spacing=7 }
 		
 		place { control="account_balance" y=35 align=right end-right="account_URL" margin-right=10 }
-		place { control="account_balance_seperator" align=right margin-right=20 margin-top=30 }
+		place { control="account_balance_seperator" width=0 height=0 align=right margin-right=20 margin-top=30 }
 		
 		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right y=78 height=23 margin-right=9 width=30 }
 		
