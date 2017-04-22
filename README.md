@@ -14,7 +14,12 @@ Fonts
 The skin requires a set of fonts installed on your system, of the SegoeWP family.
 You can download them [here][fonts].
 
-It should have the following sha256sum:
-`b07d48afc0c36636de66bd72de62faa02ed79c438e7172ecc7bb89efd1d5319b SegoeWP.zip`
+CRC-32: 1616ac72
+
+   MD4: 1936e15c27a076116d000637a0b5d15e
+   
+   MD5: adaed62ead549d862dc348bd56cc9d39
+   
+ SHA-1: f2323868bacd25842617e626b7f26bd94c63dc51
 
 [fonts]: http://www.mediafire.com/file/k4makp2pk726bmb/Fonts.zip
