@@ -1,0 +1,121 @@
+"resource/layout/settingssubstreaming.layout"
+{
+	controls
+	{
+		"DescriptionLabel"
+		{
+			ControlName="Label"
+			fieldName="DescriptionLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_Description"
+		}
+		"RemoteClientList"
+		{
+			ControlName="ListPanel"
+			style="RemoteClientList"
+			tall=140
+		}
+		"EnableStreaming" { ControlName="CheckButton" fieldName="EnableStreaming" labelText="#Steam_Settings_Streaming_EnableStreaming" }
+
+		"SetPIN" { ControlName="Button" fieldName="SetPIN" command="SetPIN" labelText="#Steam_Settings_Streaming_SetPIN" }
+
+		"HostDivider" { ControlName="divider" }
+		"HostLabel"
+		{
+			ControlName="Label"
+			fieldName="HostLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_HostLabel"
+		}
+		
+		"UnsupportedPlatform"
+		{
+			ControlName="Label"
+			fieldName="UnsupportedPlatform"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_UnsupportedPlatform"
+		}
+		
+		"AdvancedHostOptions" { ControlName="Button" fieldName="AdvancedHostOptions" command="AdvancedHostOptions" labelText="#Steam_Settings_Streaming_AdvancedHostOptions" }
+
+		"ClientDivider" { ControlName="divider" }
+		"ClientLabel"
+		{
+			ControlName="Label"
+			fieldName="ClientLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_ClientLabel"
+		}
+		
+		"ClientDivider1" { ControlName="divider" }
+		
+		"QualityFast" { ControlName="RadioButton" fieldName="QualityFast" labelText="#Steam_Settings_Streaming_QualityFast" }
+		"QualityBalanced" { ControlName="RadioButton" fieldName="QualityBalanced" labelText="#Steam_Settings_Streaming_QualityBalanced" }
+		"QualityBeautiful" { ControlName="RadioButton" fieldName="QualityBeautiful" labelText="#Steam_Settings_Streaming_QualityBeautiful" }
+		
+		"AdvancedClientOptions" { ControlName="Button" fieldName="AdvancedClientOptions" command="AdvancedClientOptions" labelText="#Steam_Settings_Streaming_AdvancedClientOptions" }
+		
+		"SupportInformationLabel"
+		{
+			ControlName="URLLabel"
+			fieldName="SupportInformationLabel"
+			labelText="#Steam_Settings_Streaming_StreamingSupport"
+			URLText="https://support.steampowered.com/kb_article.php?ref=3629-RIAV-1617"
+		}
+	}
+	
+	style
+	{
+	}
+	
+	layout
+	{
+		region { name=bottom margin-top=500  width=275 height=max }
+
+		place
+		{
+			control="DescriptionLabel"
+			dir=down
+			align=top
+			width=max
+			margin-left=20
+			margin-right=20
+			margin-top=20
+		}
+		
+		place
+		{
+			control="RemoteClientList"
+			dir=down
+			width=max
+			start="DescriptionLabel"
+			margin-right=20
+			margin-top=10
+		}
+		
+		place
+		{
+			control="EnableStreaming"
+			start="RemoteClientList"
+			dir=down
+			width=252
+		}
+		
+		place { control=SetPIN start="EnableStreaming" width=244 dir=right margin-top=4 }
+		place { control=HostDivider width=255 start="EnableStreaming" dir=down margin-top=4 }
+		place { control=HostLabel width=max start="HostDivider" dir=down margin-top=4 }
+		place { control=UnsupportedPlatform width=max start="HostLabel" dir=down margin-top=10 }
+		place { control=AdvancedHostOptions start="HostLabel" dir=down margin-top=10 }
+		
+		place { control=ClientDivider width=255 start="AdvancedHostOptions" margin-top=10 dir=down }
+		place { control=ClientLabel width=max start="ClientDivider" margin-top=10 dir=down }
+		
+		place { control="QualityFast" dir=down start="ClientLabel" margin-top=5 widht=max }
+		place { control="QualityBalanced" dir=right start="QualityFast" widht=max }
+		place { control="QualityBeautiful" dir=right start="QualityBalanced" widht=max }
+		
+		place { control=AdvancedClientOptions start="QualityFast" margin-top=5 dir=down }
+		
+		place { region=bottom control=SupportInformationLabel x=20 }
+	}
+}
