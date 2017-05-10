@@ -32,6 +32,7 @@
 		guideslink { controlname="URLLabel" labeltext="#Steam_Guides" style="rightcolumnlink" }
 		supportlink { controlname="URLLabel" labeltext="#Steam_Support" style="rightcolumnlink" }
 		recommendlink { controlname="URLLabel" labeltext="#Steam_Game_RecommendGame" style="rightcolumnlink" }
+		editconfiglink { controlname="URLLabel" labeltext="#steam_editcontroller" style="rightcolumnlink" }
 		
 		// Right column tags
 		tagslabel { controlname="Label" labeltext="#Steam_Tags" style="rightcolumnheadertext" }
@@ -307,7 +308,7 @@
 		// Buttons and links on the right
 		place	
 		{ 
-			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
+			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,editconfiglink,tagslabel,*taglink,edittagslink
 			region=rightcolumn 
 			dir=down 
 			width=125
