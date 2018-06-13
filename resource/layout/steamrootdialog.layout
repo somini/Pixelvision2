@@ -44,6 +44,14 @@
 			command="OpenSupportAlertWindow"
 		}
 
+		XPVistaAlert
+		{
+			ControlName=Button
+			labelText="#Steam_XPVistaAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenXPVistaAlertWindow"
+		}
 		ParentalLockButton
 		{
 			ControlName=ToggleButton
@@ -55,11 +63,24 @@
 
 		InboxButton
 		{
-			ControlName=MenuButton
+			ControlName=CInboxButton
 			style="inbox_button"
 			textAlignment=west
 		}
 
+		AnnouncementButton
+		{
+			ControlName=CAnnouncementButton
+			style="announcement_button"
+			textAlignment=west
+		}
+
+		AccountButton
+		{
+			ControlName=CAccountButton
+			style="AccountButtonStyle"
+		}
+		
 		add_game
 		{
 			"ControlName"		"MenuButton"
@@ -75,31 +96,6 @@
 			"textAlignment"   "center" [$OSX]
 		}
 
-		account_url
-		{
-			"ControlName"		"MenuButton"
-			"fieldName"		"account_url"
-			"labelText"		"#Steam_Account_Name"
-			style="AccountURLStyle"
-		}
-
-		account_balance
-		{
-			"ControlName"	"URLLabel"
-			"fieldName"		"account_balance"
-			"labelText"		""
-			"URLText"		"steam://url/StoreAccount/"
-			style="URLLabelSimple"
-		}
-
-		account_balance_seperator
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_balance_seperator"
-			"labelText"		""
-			style="online_friends"
-		}
-
 		universe_label
 		{
 			ControlName=Label
@@ -108,33 +104,61 @@
 
 		view_friends
 		{
-			ControlName=URLLabel
+			ControlName=Button
 			labelText="#Steam_ViewFriends"
-			"URLText"	"steam://open/friends"
+			command="ViewFriends"
 			style="view_friends"
 			textAlignment=east
 		}
-
-		online_friends
-		{
-			ControlName=Label
-			labelText="#Steam_OnlineFriends"
-			style="online_friends"
-			textAlignment=east
-			zpos=-1
-		}
-	}
-
-	colors
-	{
-		red_alpha1 "169 72 71 255"
-		red_alpha2 "157 36 34 255"
-		red_hover_alpha1 "229 72 71 255"
-		red_hover_alpha2 "167 36 34 255"
 	}
 
 	styles
 	{
+		CFriendPanel:hover
+		{
+		render_bg {
+			0="fill( x0, y0, x1, y1, black)"
+			   
+			   
+		}
+		}
+		
+		view_friends
+		{
+			inset="0 0 0 0"
+			image="graphics/icon_friends"
+			bgcolor=none
+			render_bg {}
+		}
+		
+		announcement_button
+		{
+				  
+					   
+				  
+				 
+				   
+						
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, dark_blue )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
+			}
+			
+		}
+		
+		RootMenu
+		{
+						 
+					   
+							   
+							   
+						  
+							  
+			bgcolor="none"
+		}
+		
 		BigPictureBG
 		{
 			inset="0 0 0 0"
@@ -365,50 +389,6 @@
 				1="gradient( x0, y0, x1, y1 + 13, titlebarfocus, none )" [$OSX]
 			}
 		}
-
-		view_friends [!$OSX]
-		{
-			textcolor="none"
-			bgcolor="none"
-		}
-
-		view_friends [$OSX]
-		{
-			textcolor="LabelFocus"
-			font-style=regular
-			padding-top=6
-			padding-left=24
-			padding-bottom=30
-			bgcolor="none"
-		}
-
-		view_friends:Hover
-		{
-			textcolor="none"
-		}
-
-		online_friends [!$OSX]
-		{
-			textcolor="Link"
-			font-family=semibold
-			font-style=outerglow,regular
-			font-outerglow-color="TextD"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
-			bgcolor="none"
-			render_bg
-			{
-				0="image( x0 - 16, y0 - 1, x0, y0 + 15, graphics/harrow_hover )"
-			}
-		}
-
-		online_friends [$OSX]
-		{
-			textcolor="label2"
-			font-style=regular
-			bgcolor="none"
-		}
-
 		support_alert
 		{
 			textcolor=white
@@ -640,11 +620,17 @@
 		place { control="add_game" align=bottom margin-bottom=2 margin-left=7 }
 
 		place { control="FriendPanel" height=48 width=48 align=right margin-right=-3 margin-top=23 }
-		place { control="online_friends" height=12 y=51 align=right margin-right=101 }
-		place { control="view_friends" height=12 y=51 align=right margin-right=101 }
-
+		place { control="view_friends" height=32 width=32 align=right margin-right=50 end-right="frame_minimize" }
+		
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=30 }
+																									place { control="AccountButton" align=right end-right="view_friends" margin-top=9 margin-right=8 height=24 }
+		place { control="InboxButton" align=right end-right="AccountButton" margin-top=9 margin-right=8 height=24 }
+		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=9 margin-right=8 height=24 width=34 }
+		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=9 margin-right=8 height=24 width=44 }
+		place { control="universe_label, XPVistaAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=9 margin-right=8 height=24 }
+		
+		region { name=bottom align=bottom width=max height=62 }					   
 
 		// hide vr button
 		place { control="startvr, exitvr" height=0 width=0 }
