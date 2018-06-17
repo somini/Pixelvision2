@@ -157,8 +157,8 @@
 	{
 		place { control="account_menu_button" align=left height=34 width=max } // span over everything
 		place { control="account_avatar" align=right height=34 width=34 }
-		place { control="account_persona" align=right end-right="account_avatar" margin-top=1 height=34}
-		place { control="account_balance" align=right height=24 end-right="account_persona"}
-		place { control="account_drop_down" align=right end-right="account_balance" margin-top=1  height=24 width=8 }
+		place { control="account_persona" align=right end-right="account_drop_down" margin-top=0 height=34}
+		place { control="account_balance" align=right height=24 margin-top=4 end-right="account_persona"}
+		place { control="account_drop_down" align=right end-right="account_avatar" margin-top=5 margin-right=3 height=24 width=8 }
 	}
 }
