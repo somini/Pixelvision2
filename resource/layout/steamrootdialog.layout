@@ -133,17 +133,22 @@
 		
 		announcement_button
 		{
-				  
-					   
-				  
-				 
-				   
-						
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1, y1, dark_blue )"
+				0="fill( x0, y0, x1, y1, none )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
+			}
+			
+		}
+		
+		announcement_button:hover
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, none )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification_hover )"
 			}
 			
 		}
@@ -565,10 +570,10 @@
 
 		FullscreenButton [!$OSX]
 		{
-			//padding-left=0
-			//padding-top=0
-			//padding-right=0
-			//padding-bottom=0
+			padding-left=0
+			padding-top=0
+			padding-right=0
+			padding-bottom=0
 		}
 
 		FullscreenButton [$OSX]
