@@ -52,6 +52,7 @@
 			textAlignment=center
 			command="OpenXPVistaAlertWindow"
 		}
+		
 		ParentalLockButton
 		{
 			ControlName=ToggleButton
@@ -90,7 +91,7 @@
 		
 		activ_key
 		{
-			ControlName=Button
+			"ControlName"	"Button"
 			labelText="#Steam_RegisterProductCode"
 			command="ActivateRetail"
 			style="ActiveKeyStyle"
@@ -125,11 +126,10 @@
 	{
 		CFriendPanel:hover
 		{
-		render_bg {
-			0="fill( x0, y0, x1, y1, black)"
-			   
-			   
-		}
+			render_bg 
+			{
+				0="fill( x0, y0, x1, y1, black)"
+			}
 		}
 		
 		view_friends
@@ -142,29 +142,28 @@
 		
 		announcement_button
 		{
-				  
-					   
-				  
-				 
-				   
-						
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1, y1, dark_blue )"
+				0="fill( x0, y0, x1, y1, none )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
 			}
 			
 		}
 		
-		RootMenu
+		announcement_button:hover
 		{
-						 
-					   
-							   
-							   
-						  
-							  
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, none )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification_hover )"
+			}
+			
+		}
+		
+		RootMenu
+		{		  
 			bgcolor="none"
 		}
 		
@@ -316,10 +315,10 @@
 			//font-size=14
 			//font-size=13 [$OSX]
 			//font-family=basefont
-			font-style=outerglow
-			font-outerglow-color="TextD"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
+			//font-style=outerglow
+			//font-outerglow-color="TextD"
+			//font-outerglow-offset=1
+			//font-outerglow-filtersize=1
 			//padding-right=30
 			//padding-left=7
 			render_bg
@@ -340,17 +339,17 @@
 		ActiveKeyStyle
 		{
 			inset="0 0 0 0"
-			textcolor="labelfocus"
+			//textcolor="labelfocus"
 			//font-size=14
 			//font-size=13 [$OSX]
 			//font-family=basefont
-			font-style=outerglow
-			font-outerglow-color="TextD"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
+			//font-style=outerglow
+			//font-outerglow-color="TextD"
+			//font-outerglow-offset=1
+			//font-outerglow-filtersize=1
 			render_bg
 			{
-				0="image( x0 - 3, y0 + 1, x1, y1, graphics/icon_add )"
+				0="image( x0 - 3, y0 + 1, x1, y1, graphics/new_button_french )"
 			}
 		}
 
@@ -591,10 +590,10 @@
 
 		FullscreenButton [!$OSX]
 		{
-			//padding-left=0
-			//padding-top=0
-			//padding-right=0
-			//padding-bottom=0
+			padding-left=0
+			padding-top=0
+			padding-right=0
+			padding-bottom=0
 		}
 
 		FullscreenButton [$OSX]
@@ -681,8 +680,8 @@
 		place [!$OSX] { control="ImageLogo" align=right x=650 y=0 width=340 height=133 margin-top=0 margin-right=0 }
 		place [$OSX] { control="ImageLogo" align=right x=650 y=0 width=340 height=133 margin-top=0 margin-right=0 }
 
-		place { control="activ_key" align=bottom margin-bottom=2 margin-left=10 }
-		place { control="add_game" align=bottom margin-bottom=2 margin-left=200 }
+		place { control="activ_key" align=bottom margin-bottom=2 margin-left=200 }
+		place { control="add_game" align=bottom margin-bottom=2 margin-left=7 }
 		
 
 		place { control="FriendPanel" height=48 width=48 align=right margin-right=-3 margin-top=23 }
