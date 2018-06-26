@@ -43,13 +43,6 @@
 			textAlignment=east
 		}
 		
-		online_friends
-		{
-			ControlName=Label
-			labelText="#Steam_OnlineFriends"
-			style="online_friends"
-			textAlignment=east
-		}	
 	}
 	
 	styles
@@ -74,9 +67,10 @@
 		
 		view_friends
 		{
-			textcolor="Text"
-			font-style=regular,uppercase
-			bgcolor="none"
+			inset="0 0 0 0"
+			image="graphics/friends_button"
+			bgcolor=none
+			render_bg {}
 		}
 		
 		view_friends:Hover
@@ -100,7 +94,7 @@
 		place { control="SteamLogo" width=1 height=1 x=9999 y=9999 }
 		place { controls="MusicPlayerButton,WebBrowserButton,SettingsButton,ScreenshotsButton" align=right dir=down spacing=7 height=40 width=100 margin-right=18 }	
 		place { control="FriendPanel" region="bottom" height=48 width=48 align=right margin-right=20 margin-top=33 }
-		place { control="view_friends" region="bottom" height=12 align=right margin-right=74 margin-top=43 }
+		place { control="view_friends" region="bottom" height=34 align=right margin-right=74 margin-top=43 }
 		place { control="online_friends" region="bottom" height=12 align=right margin-right=74 margin-top=57 }
 	}	
 }
