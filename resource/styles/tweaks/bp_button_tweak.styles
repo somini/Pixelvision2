@@ -6,8 +6,8 @@
         FullscreenButton
         {
             bgcolor=none
-            render_bg={}
-            image="graphics/icon_controller_bpm"
+            render_bg {1="image(x0+1,y0,x1,y1, graphics/icon_controller_bpm)"}
+            image=""
         }
 
 
