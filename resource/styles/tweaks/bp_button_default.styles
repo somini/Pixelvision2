@@ -5,9 +5,9 @@
         FullscreenButton
     	{
     		inset="-5 -1 0 0"
-    		image="graphics/icon_button_fullscreen"
+    		image=""
     		bgcolor=none
-    		render_bg {}
+    		render_bg {1="image(x0+1,y0,x1,y1, graphics/icon_button_fullscreen)"}
     	}
 
     	FullscreenButton:hover
