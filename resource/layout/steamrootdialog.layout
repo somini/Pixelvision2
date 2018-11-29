@@ -662,7 +662,7 @@
 		//place { control="ParentalLockButton" align=right end-right="account_URL" margin-top=35 margin-right=50 height=26 }
 		place { control="SupportAlert" y=3 align=right end-right="ParentalLockButton" margin-right=10 height=26 }
 
-		//place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=2 spacing=-6 }
+		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=2 spacing=-6 }
 
 		region { name=bottom align=bottom width=max height=75 }
 
