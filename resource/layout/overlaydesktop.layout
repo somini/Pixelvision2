@@ -15,6 +15,8 @@
 		WebSiteButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_WebSite" style=sidemenu }
 		RecommendButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Recommend" style=sidemenu }
 		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }
+		EditControllerConfig { controlname="URLLabel" labeltext="#Overlay_Taskbar_EditControllerConfig" style=sidemenu }	
+		ForceQuitButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ForceQuit" style=sidemenu }
 		
 		FriendsDetailPanel { controlname="COverlay_Details_Friends" style="detailsbox" }
 		AchievementsDetailPanel { controlname="COverlay_Details_Achievements" style="detailsbox" }
@@ -87,7 +89,7 @@
 		
 		place { controls="BroadcastDetailPanel" region=broadcastpanel width=330 height=87 spacing=10 }
 		
-		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" y=74 align=left region=overlay dir=down spacing=7 margin-left=20 width=200 }
+		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,EditControllerConfig,ForceQuitButton" y=74 align=left region=overlay dir=down spacing=7 margin-left=20 width=200 }
 		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=187 spacing=10 }
 		place { controls="CommunityHubDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel" region=detailpanels2 align=top-center width=245 height=74 spacing=10 }
 

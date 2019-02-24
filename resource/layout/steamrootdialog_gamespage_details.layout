@@ -16,6 +16,7 @@
 		// Header text labels
 		gametitleheader { controlname="CDetailsGameTitleHeaderPanel" zpos="2" }
 		gamesubheader { controlname="CDetailsGameSubHeaderPanel" zpos="2" }
+		compatsubheader { controlname="CDetailsCompatSubHeaderPanel" visible=1 zpos="2" }
 		
 		linkslabel { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" } 
 		sendguestpasslink { controlname="URLLabel" labeltext="#steam_send_guestpass" style="rightcolumnlink" tabposition=7 command="SendGuestPass" }
@@ -40,6 +41,7 @@
 		
 		// Body contents
 		welcomedetails { controlname="CGamesPage_Details_Welcome" zpos="1" }
+		rentaldetails { controlname="CGamesPage_Details_Rental" zpos="1" }
 		dlcdetails { controlname="CGamesPage_Details_DLC" zpos="1" }
 		friendsdetails { controlname="CGamesPage_Details_Friends" zpos="1" }
 		clouddetails { controlname="CGamesPage_Details_Cloud" zpos="1" }
@@ -48,7 +50,7 @@
 		newsdetails { controlname="CGamesPage_Details_News" zpos="1" }
 		nonsteamdetails { controlname="CGamesPage_Details_NonSteam" zpos="1" }
 		screenshotsdetails { controlname="CGamesPage_Details_Screenshots" zpos="1" }
-		
+		turnnotifications { controlname="CGamesPage_Details_TurnNotifications" zpos="1" visible="0" }
 		// Empty list contents
 		emptylisttext { controlname="RichText" style="emptylisttext" }
 	}
@@ -290,7 +292,18 @@
 		place 	{ control=GamesList region=list width=275 height=max margin=0 }
 		
 		// Body contents
-		place	{ control=welcomedetails,friendsdetails,clouddetails,communityfilesdetails,achievementsdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails region=detailsbody dir=down width=max margin-right=0 margin-top=25 margin-left=5 spacing=10 margin-bottom=10 }
+		place	
+		{
+			control=welcomedetails,rentaldetails,turnnotifications,friendsdetails,clouddetails,communityfilesdetails,achievementsdetails,dlcdetails,clouddetails,newsdetails,nonsteamdetails,screenshotsdetails
+			region=detailsbody 
+			dir=down 
+			width=max 
+			margin-right=0 
+			margin-top=25 
+			margin-left=5 
+			spacing=10 
+			margin-bottom=10 
+		}
 		
 		// Details border
 		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
@@ -304,6 +317,7 @@
 		// Header text
 		place 	{ control=gametitleheader region=headertext dir=down height=46 }
 		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down y=-1 }
+		place	{ control=compatsubheader start=gamesubheader region=headertext dir=right margin-left=10 }												   
 		
 		// Buttons and links on the right
 		place	
