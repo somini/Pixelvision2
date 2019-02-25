@@ -130,5 +130,7 @@
 		Divider							{}
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		About							{	text="#steam_about"						command="About" }
+		Divider							{}
+		SkinHelp						{	text="Help with PixelVision2 Skin"			command="steam://url/steamcommunity.com/groups/pixelvision2/discussions/0/1697176044369556496/"}
 	}
 }
