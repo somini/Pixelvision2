@@ -105,7 +105,7 @@
 		place { control=Pair start="EnableStreaming" width=160 dir=down margin-top=8 }
 		place { control=Unpair start="Pair" width=160 dir=right margin-left=5 margin-top=0 }
 		
-		place { control=SetPIN start="EnableStreaming" width=244 dir=right margin-top=4 }
+		place { control=SetPIN start="Unpair" width=170 dir=right margin-left=5 }
 		
 		place { control=HostDivider width=255 start="EnableStreaming" dir=down margin-top=65 }
 		place { control=HostLabel width=max start="HostDivider" dir=down margin-top=4 }
