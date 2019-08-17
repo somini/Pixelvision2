@@ -2,15 +2,15 @@
 {
 	Steam
 	{
-		text = [!$OSX]	"#steam_menu_file"		
-		text = [$OSX]	"#SteamRootAccount"	
-		
+		text = [!$OSX]	"#steam_menu_file"
+		text = [$OSX]	"#SteamRootAccount"
+
 		ChangeUser						{	text="#steam_menu_changeuser"			command="ChangeUser" }
 		GoOnline						{	text="#SteamUI_OfflineMode_GoOnline"	command="goonline" }
 		GoOffline						{	text="#SteamUI_OfflineMode_GoOffline"	command="gooffline" }
 
 		Divider							{}
-		
+
 	    // check for updates appears in the system-managed "steam" menu on the mac
 		CheckForUpdates		[!$OSX]		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		Divider				[!$OSX]	{}
@@ -20,13 +20,13 @@
 		Settings			[!$OSX]		{	text="#steam_menu_settings"				command="Settings" }
 		Divider				[!$OSX]		{}
 		Restart 			[!$OSX]		{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
-		Exit				[!$OSX]		{	text="#Steam_ExitSteam"					command="Exit" }	
+		Exit				[!$OSX]		{	text="#Steam_ExitSteam"					command="Exit" }
 	}
-	
+
 	View
 	{
 		text="#steam_menu_view"
-		
+
 		GamesDetails					{	text="#steam_menu_games_details"		shellcmd="steam://nav/games/details" }
 		GamesList						{	text="#steam_menu_games_list"			shellcmd="steam://nav/games/list" }
 		GamesGrid						{	text="#steam_menu_games_grid"			shellcmd="steam://nav/games/grid" }
@@ -37,7 +37,7 @@
 		MiniMode			[!$OSX]		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
 		LargeMode			[!$OSX]		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
 		StartVR							{	text="#steam_menu_startvr"				shellcmd="steam://run/250820" }
-		BigPictureMode					{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" } 
+		BigPictureMode					{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" }
 		Divider							{}
 		MusicDetails					{	text="#steam_menu_view_music_details"			shellcmd="steam://nav/music/details" }
 		MusicPlayer						{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
@@ -54,13 +54,12 @@
 		Divider							{}
 		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 		Divider							{}
-		Console							{	text="Console"		shellcmd="steam://open/console" }
 	}
-	
+
 	Profile
 	{
 		text="#steam_menu_profile_view"
-		
+
 		ViewProfile						{	text="#steam_menu_view_profile"			shellcmd="steam://url/SteamIDMyProfile" }
 		ViewBadges						{	text="#steam_menu_view_badges"			shellcmd="steam://url/SteamIDBadgePage" }
 		ViewGroups						{	text="#steam_menu_view_groups"			shellcmd="steam://url/SteamIDGroupsPage" }
@@ -70,11 +69,11 @@
 		ViewRecommendations				{	text="#steam_menu_view_recommendations"	shellcmd="steam://url/CommunityRecommendations" }
 		ViewWorkshop					{	text="#steam_menu_view_workshop"		shellcmd="steam://url/CommunityWorkshop" }
 	}
-	
+
 	Friends
 	{
 		text="#steam_menu_friends_view"
-		
+
 		ViewFriends						{	text="#steam_menu_view_friends"			shellcmd="steam://open/friends" }
 		Divider							{}
 		AddFriend						{	text="#steam_menu_add_friend"			shellcmd="steam://friends/add" }
@@ -96,11 +95,11 @@
 		SetProfileName					{	text="#steam_menu_set_profile"			shellcmd="steam://settings/friends" }
 		ChangeAvatar					{	text="#steam_menu_set_avatar"			shellcmd="steam://url/SteamIDEditPage" }
 	}
-	
+
 	Games
 	{
 		text="#steam_menu_games"
-		
+
 		Games							{	text="#steam_menu_view_games"			shellcmd="steam://nav/games" }
 		Divider							{}
 		ActivateRetail					{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
@@ -117,11 +116,30 @@
 		MiniMode						{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
 		LargeMode						{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
 	}
-	
-	Help
-	{
+
+	Dev {
+		text="Developer"
+		textcolor=red
+		Console							{	text="Console"		  		  shellcmd="steam://open/console" }
+		Divider							{}
+		StopHomeStream			{ text="Stop Streaming" 		shellcmd="steam://stopstreaming" }
+		Divider							{}
+		APIKey							{ text="API Key"						shellcmd="steam://openurl/https://steamcommunity.com/dev/apikey"}
+		Divider							{}
+		URIDocs							{	text="URI Protocol"				shellcmd="steam://openurl/https://developer.valvesoftware.com/wiki/Steam_browser_protocol" }
+		SteamDocs						{	text="Steam Docs"					shellcmd="steam://openurl/https://partner.steamgames.com/doc/home" }
+		WebAPIDocsXPaw			{	text="WebAPI Docs"				shellcmd="steam://openurl/https://steamapi.xpaw.me" }
+	}
+
+	Admin {
+		text="Administrator"
+
+		ServerAdministration{	text="Manage Servers"	shellcmd="steam://openurl/https://steamcommunity.com/dev/managegameservers" }
+	}
+
+	Help {
 		text="#steam_menu_help"
-		
+
 		Support							{	text="#steam_menu_support"				command="Support" }
 		Divider							{}
 		Privacy							{	text="#steam_menu_PrivacyPolicy"		shellcmd="steam://url/PrivacyPolicy" }
@@ -129,8 +147,12 @@
 		SSA								{	text="#steam_menu_SteamSubscriberAgreement"	shellcmd="steam://url/SSA" }
 		Divider							{}
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
-		About							{	text="#steam_about"						command="About" }
+		About								{	text="#steam_about"						command="About" }
+		SkinHelp						{	text="About Skin"			shellcmd="steam://openurl/https://steamcommunity.com/groups/pixelvision2/discussions/0/1697176044369556496/"}
 		Divider							{}
-		SkinHelp						{	text="Help with PixelVision2 Skin"			command="steam://url/steamcommunity.com/groups/pixelvision2/discussions/0/1697176044369556496/"}
+		SteamStatus					{ text= "Status"				shellcmd="steam://openurl/https://steamstat.us/"}
 	}
+}
+colors {
+	red="0 0 0 255"
 }
