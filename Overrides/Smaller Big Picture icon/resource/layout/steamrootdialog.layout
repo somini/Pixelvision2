@@ -621,9 +621,7 @@
 		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=56 }
 		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=-20 }
 		
-		place [!$OSX] { control="fullscreen" align=right end-right="frame_minimize" height=20 width=30 margin-right=8 margin-top=6 }
-		place [$OSX]  { control="fullscreen" align=right height=20 width=30 margin-right=16 margin-top=11 }
-		
+		place { control="fullscreen" end-right="ParentalLockButton" align=right height=20 width=24 margin-right=2 margin-top=42 }
 		place { control="AccountButton" align=right end-top="frame_minimize" margin-top=34 margin-right=8 height=34 }
 		place { control="view_friends" height=32 width=22 align=right margin-top=34 margin-right=5 end-right="AccountButton" }
 		place { control="InboxButton" align=right end-right="view_friends" margin-top=39 margin-right=8 height=24 }

@@ -622,7 +622,7 @@
 		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=56 }
 		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=-20 }
 		
-		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right y=78 height=23 margin-right=9 width=109 }
+		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right end-right="ParentalLockButton" height=23 width=109 margin-right=5 margin-top="39" }
 		
 		place { control="AccountButton" align=right end-top="frame_minimize" margin-top=34 margin-right=8 height=34 }
 		place { control="view_friends" height=32 width=22 align=right margin-top=34 margin-right=5 end-right="AccountButton" }
