@@ -53,6 +53,7 @@
 			textAlignment=center
 			command="OpenXPVistaAlertWindow"
 		}
+		
 		ParentalLockButton
 		{
 			ControlName=ToggleButton
@@ -111,26 +112,15 @@
 			style="view_friends"
 			textAlignment=east
 		}
-		
-		EOLAlert
-		{
-			ControlName=Button
-			labelText="#Steam_EOLAlert"
-			style="support_alert"
-			textAlignment=center
-			command="OpenEOLAlertWindow"
-		}
 	}
 
 	styles
 	{
 		CFriendPanel:hover
 		{
-		render_bg {
-			0="fill( x0, y0, x1, y1, black)"
-			   
-			   
-		}
+			render_bg  {
+				0="fill( x0, y0, x1, y1, black)"
+			}
 		}
 		
 		view_friends
@@ -164,13 +154,7 @@
 		}
 		
 		RootMenu
-		{
-						 
-					   
-							   
-							   
-						  
-							  
+		{		  
 			bgcolor="none"
 		}
 		
