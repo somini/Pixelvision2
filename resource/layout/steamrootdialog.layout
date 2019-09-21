@@ -130,6 +130,14 @@
 			bgcolor=none
 			render_bg {}
 		}
+
+		view_friends:hover
+		{
+			inset="0 0 0 0"
+			image="graphics/icon_friends_over"
+			bgcolor=none
+			render_bg {}
+		}
 		
 		announcement_button
 		{
