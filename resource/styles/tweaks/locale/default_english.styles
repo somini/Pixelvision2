@@ -24,6 +24,7 @@
 				8="image( x0 + 312, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
 				9="image( x0 + 474, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 			}
+		}
 
 		CSteamRootDialog [$LINUX]
 		{
@@ -43,9 +44,9 @@
 				
 				// Navigation Icons
 				6="image( x0 + 81 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
-				7="image( x0 + 210, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
-				8="image( x0 + 357, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
-				9="image( x0 + 561, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
+				7="image( x0 + 203, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
+				8="image( x0 + 338, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
+				9="image( x0 + 528, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 			}
 		}
 	}
