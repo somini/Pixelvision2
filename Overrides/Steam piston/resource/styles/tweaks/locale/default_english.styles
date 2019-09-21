@@ -45,9 +45,9 @@
 				
 				// Navigation Icons
 				6="image( x0 + 81 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
-				7="image( x0 + 203, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
-				8="image( x0 + 338, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
-				9="image( x0 + 528, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
+				7="image( x0 + 200, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
+				8="image( x0 + 335, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
+				9="image( x0 + 520, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 				10="image( x1 - 340, y0, x1, y0 + 200, graphics/piston )"			//Steam Logo				
 			}
 		}
