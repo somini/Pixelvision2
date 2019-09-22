@@ -1,0 +1,61 @@
+"resource/layout/subpaneloptionslibrary.layout"
+{
+	controls
+	{
+		TitleLabel { ControlName=label lavelText="#Steam_Settings_Library" style=highlight }
+
+		LibraryDisplaySizeLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Title" }
+		LibraryDisplaySizeAutomatic { ControlName="RadioButton" fieldName="LibraryDisplaySizeAutomatic" labelText="#Steam_Settings_Library_Size_Automatic" }
+		LibraryDisplaySizeAutomaticLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Automatic_Label" }
+		LibraryDisplaySizeSmall { ControlName="RadioButton" fieldName="LibraryDisplaySizeSmall" labelText="#Steam_Settings_Library_Size_Small" }
+		LibraryDisplaySizeMedium { ControlName="RadioButton" fieldName="LibraryDisplaySizeMedium" labelText="#Steam_Settings_Library_Size_Medium" }
+		LibraryDisplaySizeLarge { ControlName="RadioButton" fieldName="LibraryDisplaySizeLarge" labelText="#Steam_Settings_Library_Size_Large" }
+
+		LibraryLowBandwidthCheckbox { ControlName=checkbutton lavelText="#Steam_Settings_Library_LowBandwidth_Title" }
+		LibraryLowBandwidthLabel { ControlName=Label labelText="#Steam_Settings_Library_LowBandwidth_Desc" wrap=1 }
+
+		LibraryLowPerfCheckbox { ControlName=checkbutton lavelText="x#Steam_Settings_Library_LowPerf_Title" }
+		LibraryLowPerfLabel { ControlName=Label labelText="#Steam_Settings_Library_LowPerf_Desc" wrap=1 }
+	}
+	colors
+	{
+	}	
+	styles
+	{
+		highlight
+		{
+			textcolor=Text
+		}
+
+    checkbox
+		{
+			padding-top=0
+			padding-bottom=0
+		}
+	}
+	layout
+	{
+		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		region { name=top region=box margin-top=10 }
+
+    // Library Settings
+		place { controls=TitleLabel region=top } 
+
+    // Library Display Size Options
+    place { controls=LibraryDisplaySizeLabel region=top start=TitleLabel dir=down margin-top=8 }
+		
+    place { control="LibraryDisplaySizeAutomatic" start=LibraryDisplaySizeLabel dir=down } // Automatic Size
+    place { control="LibraryDisplaySizeAutomaticLabel" start=LibraryDisplaySizeAutomatic dir=right margin-top=6 } // Automatic Size Description
+    place { control="LibraryDisplaySizeSmall" start=LibraryDisplaySizeAutomatic dir=down } // Small Size
+    place { control="LibraryDisplaySizeMedium" start=LibraryDisplaySizeSmall dir=down } // Medium Size
+    place { control="LibraryDisplaySizeLarge" start=LibraryDisplaySizeMedium dir=down } // Large Size
+		
+    // Low Bandwidth Option
+    place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplaySizeLarge dir=down margin-top=15 }
+    place { control="LibraryLowBandwidthLabel" start=LibraryLowBandwidthCheckbox width=max dir=down }    
+
+    // Low Performance Option
+    place { control="LibraryLowPerfCheckbox" start=LibraryLowBandwidthLabel dir=down margin-top=15 }
+		place { control="LibraryLowPerfLabel" start=LibraryLowPerfCheckbox width=max dir=down }
+	}
+}
