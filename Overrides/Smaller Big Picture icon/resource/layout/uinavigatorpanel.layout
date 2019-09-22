@@ -868,7 +868,7 @@
 		
 		place { control="subnavgroup_library" align=left y=57 height=24 width=max margin-right=8 margin-left=8 }
 		
-		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=59 height=20 width=max spacing=4 margin-left=9 margin-right=122 }
+		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=59 height=20 width=max spacing=4 margin-left=9 margin-right=30 }
 		
 		place { control="library_search"  width=112  }	
 
@@ -881,8 +881,8 @@
 		
 		place { control="library_zoom" width=82 height=20 }
 	    
-	  place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator,label_library_view" align=right y=60 height=20 spacing=3 margin-right=115 }
-		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=60 height=20 spacing=3 margin-right=115 }
+	  place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator,label_library_view" align=right y=60 height=20 spacing=3 margin-right=90 }
+		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=60 height=20 spacing=3 margin-right=90 }
 		
 		place [!$OSX] { control="library_music_menu,library_music_add_button" align=left x=291 y=60 height=20 spacing=3 margin-right=180 }
 		place [$OSX] { control="library_music_menu,library_music_add_button" align=left x=291 y=60 height=20 spacing=3 margin-right=179 }
@@ -910,6 +910,6 @@
 		place { control=ToolsPage 			width=max height=max margin-top=1 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
 		
 		place { control=MusicPage_Details width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control="library_music_player_icon" align=right y=62 height=16 width=16 margin-right=123 }
+		place { control="library_music_player_icon" align=right y=62 height=16 width=16 margin-right=10 }
 	}
 }
