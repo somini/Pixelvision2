@@ -44,14 +44,14 @@
     // Library Display Size Options
     place { controls=LibraryDisplaySizeLabel region=top start=TitleLabel dir=down margin-top=8 }
 		
-    place { control="LibraryDisplaySizeAutomatic" start=LibraryDisplaySizeLabel dir=down } // Automatic Size
-    place { control="LibraryDisplaySizeAutomaticLabel" start=LibraryDisplaySizeAutomatic dir=right margin-top=6 } // Automatic Size Description
+    place { control="LibraryDisplaySizeAutomatic" start=LibraryDisplaySizeLabel dir=down margin-top=5 } // Automatic Size
+    place { control="LibraryDisplaySizeAutomaticLabel" start=LibraryDisplaySizeAutomatic dir=right margin-top=7 } // Automatic Size Description
     place { control="LibraryDisplaySizeSmall" start=LibraryDisplaySizeAutomatic dir=down } // Small Size
     place { control="LibraryDisplaySizeMedium" start=LibraryDisplaySizeSmall dir=down } // Medium Size
     place { control="LibraryDisplaySizeLarge" start=LibraryDisplaySizeMedium dir=down } // Large Size
 		
     // Low Bandwidth Option
-    place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplaySizeLarge dir=down margin-top=15 }
+    place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplaySizeLarge dir=down margin-top=20 }
     place { control="LibraryLowBandwidthLabel" start=LibraryLowBandwidthCheckbox width=max dir=down }    
 
     // Low Performance Option
