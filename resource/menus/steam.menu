@@ -118,26 +118,6 @@
 		LargeMode						{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
 	}
 
-	Dev {
-		text="Developer"
-		textcolor=red
-		Console							{	text="Console"		  		  shellcmd="steam://open/console" }
-		Divider							{}
-		StopHomeStream			{ text="Stop Streaming" 		shellcmd="steam://stopstreaming" }
-		Divider							{}
-		APIKey							{ text="API Key"						shellcmd="steam://openurl/https://steamcommunity.com/dev/apikey"}
-		Divider							{}
-		URIDocs							{	text="URI Protocol"				shellcmd="steam://openurl/https://developer.valvesoftware.com/wiki/Steam_browser_protocol" }
-		SteamDocs						{	text="Steam Docs"					shellcmd="steam://openurl/https://partner.steamgames.com/doc/home" }
-		WebAPIDocsXPaw			{	text="WebAPI Docs"				shellcmd="steam://openurl/https://steamapi.xpaw.me" }
-	}
-
-	Admin {
-		text="Administrator"
-
-		ServerAdministration{	text="Manage Servers"	shellcmd="steam://openurl/https://steamcommunity.com/dev/managegameservers" }
-	}
-
 	Help {
 		text="#steam_menu_help"
 
@@ -149,7 +129,7 @@
 		Divider							{}
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		About								{	text="#steam_about"						command="About" }
-		SkinHelp						{	text="About Skin"			shellcmd="steam://openurl/https://steamcommunity.com/groups/pixelvision2/discussions/0/1697176044369556496/"}
+		SkinHelp						{	text="About Skin"			shellcmd="steam://openurl/https://steamcommunity.com/groups/pixelvision2"}
 		Divider							{}
 		SteamStatus					{ text= "Status"				shellcmd="steam://openurl/https://steamstat.us/"}
 	}
