@@ -17,7 +17,10 @@
 		LibraryLowPerfCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowPerf_Title" }
 		LibraryLowPerfLabel { ControlName=Label labelText="#Steam_Settings_Library_LowPerf_Desc" wrap=1 }
 
-		LibraryDisableCommunityContentCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_DisableCommunityContent_Title" }
+		LibraryDisplayIconInGameListCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_IconInGameList_Title" }
+
+		// zpos=1 to keep the low-bandwidth label from preventing the checkbox label from being clickable
+		LibraryDisableCommunityContentCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_DisableCommunityContent_Title" zpos="1" }
 		LibraryDisableCommunityContentLabel { ControlName=Label labelText="#Steam_Settings_Library_DisableCommunityContent_Desc" wrap=1 style=disable_community_content }
 	}
 	colors
@@ -63,8 +66,10 @@
     place { control="LibraryDisplaySizeMedium" start=LibraryDisplaySizeSmall dir=down } // Medium Size
     place { control="LibraryDisplaySizeLarge" start=LibraryDisplaySizeMedium dir=down } // Large Size
 		
+		place { control=LibraryDisplayIconInGameListCheckbox start=LibraryDisplaySizeLarge dir=down width=max align=top margin-top=5 }
+
     // Low Bandwidth Option
-    place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplaySizeLarge dir=down margin-top=20 }
+    place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplayIconInGameListCheckbox dir=down margin-top=5 }
     place { control="LibraryLowBandwidthLabel" start=LibraryLowBandwidthCheckbox width=max dir=down }    
 
     // Low Performance Option
