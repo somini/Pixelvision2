@@ -7,7 +7,7 @@ Continued by Mr. late, Shazam, somini, Black4Blade
 
 Outstanding issues
 -----
-The SteamVR button is hidden while a solution is found. Check out issue [#43](https://github.com/somini/Pixelvision2/issues/43) for discussion
+The SteamVR button is hidden until a solution is found. Check out the issue [#43](https://github.com/somini/Pixelvision2/issues/43) for discussion.
 
 Fonts
 -----
