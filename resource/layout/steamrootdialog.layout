@@ -396,26 +396,69 @@
 				1="gradient( x0, y0, x1, y1 + 13, titlebarfocus, none )" [$OSX]
 			}
 		}
+		
 		support_alert
 		{
-			textcolor=white
 			font-family=semibold
+			font-size=14
+			font-weight=1000
 			font-style=none
+			textcolor=white
 			padding-left=8
 			padding-right=20
-			bgcolor="255 0 0 160"
+			
+			render {}
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, red_alpha1, red_alpha2 )"
+				0="gradient(x0, y0, x1, y1, red_alpha1, red_alpha2 )"
 			}
-			render {}
 		}
 
 		support_alert:hover
 		{
+			font-family=semibold
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=8
+			padding-right=20
+			
+			render {}
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, red_hover_alpha1, red_hover_alpha2 )"
+				0="gradient(x0, y0, x1, y1, red_hover_alpha1, red_hover_alpha2 )"
+			}
+		}
+
+		support_alert_ack
+		{
+			font-family=semibold
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=8
+			padding-right=20
+			
+			render {}
+			render_bg
+			{
+				0="gradient(x0, y0, x1, y1, red_alpha1, red_alpha2 )"
+			}
+		}
+
+		support_alert_ack:hover
+		{
+			font-family=semibold
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=8
+			padding-right=20
+			
+			render {}
+			render_bg
+			{
+				0="gradient(x0, y0, x1, y1, red_hover_alpha1, red_hover_alpha2 )"
 			}
 		}
 
@@ -636,8 +679,8 @@
 		place { control="InboxButton" align=right end-right="view_friends" margin-top=39 margin-right=8 height=24 }
 		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=38 margin-right=0 height=24 width=34 }
 		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=38 margin-right=8 height=24 width=44 }
-		place { control="universe_label, XPVistaAlert, EOLAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=9 margin-right=8 height=24 }
 		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right end-right="frame_minimize" height=23 width=109 margin-right=8 margin-top=5 }
+		place { control="universe_label, XPVistaAlert, EOLAlert, SupportAlert" spacing=8 align=right end-right="fullscreen" margin-top=5 margin-right=8 height=24 }
 
 		place { control="UINavigatorPanel" width=max height=max margin-right=-3 margin-left=-3 margin-bottom=5 margin-top=20 }
 		place { control="UIStatusPanel" width=max height=36 align=bottom }
@@ -652,7 +695,7 @@
 
 		//place { control="InboxButton" height=12 y=52 margin-right=51 align=right }
 		//place { control="ParentalLockButton" align=right end-right="account_URL" margin-top=35 margin-right=50 height=26 }
-		place { control="SupportAlert" y=3 align=right end-right="ParentalLockButton" margin-right=10 height=26 }
+		//place { control="SupportAlert" y=3 align=right end-right="ParentalLockButton" margin-right=10 height=26 }
 
 		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=2 spacing=-6 }
 
