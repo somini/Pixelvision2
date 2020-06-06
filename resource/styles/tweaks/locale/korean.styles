@@ -20,9 +20,9 @@
 				
 				// Navigation Icons
 				6="image( x0 + 84 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
-				7="image( x0 + 188, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
-				8="image( x0 + 352, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
-				9="image( x0 + 495, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
+				7="image( x0 + 186, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
+				8="image( x0 + 347, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
+				9="image( x0 + 492, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 			}
 		}
 	}

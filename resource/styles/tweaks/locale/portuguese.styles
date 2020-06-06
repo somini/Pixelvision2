@@ -21,8 +21,8 @@
 				// Navigation Icons
 				6="image( x0 + 84 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
 				7="image( x0 + 181, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library
-				8="image( x0 + 327, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
-				9="image( x0 + 499, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
+				8="image( x0 + 330, y0 + 48, x1, y1, graphics/nav_icon_community )"	// Community
+				9="image( x0 + 503, y0 + 48, x1, y1, graphics/nav_icon_news )"		// User
 			}
 		}
 	}
