@@ -29,10 +29,17 @@
 		{
 			controlname=combobox
       			editable="0"
-		}		
+		}	
 		TextFilterLabel { controlname=label labeltext="#Steam_TextFilterSettingLabel" wrap=1 style=highlight }
 		TextFilterStatus { controlname=label wrap=1 }
-		TextFilterUpdateSettingURL { controlname=urllabel labeltext="#Steam_TextFilterSettingURL" URLText="steam://url/TextFilterSettings" wrap=1 style=highlight }							
+		TextFilterUpdateSettingURL { controlname=urllabel labeltext="#Steam_TextFilterSettingURL" URLText="steam://url/TextFilterSettings" wrap=1 style=highlight }
+		Divider2 { ControlName=Divider	}
+		
+		ShareIPNetworkingLabel { ControlName=label labelText=#Steam_Settings_ShareIPNetworking_Label wrap=1 style=highlight }
+		ShareIPNetworkingInfo { ControlName=label labelText=#Steam_Settings_ShareIPNetworking_Info wrap=1 }
+		ShareIPNetworkingURL { ControlName=urllabel labelText=#Steam_Settings_ShareIPNetworking_URL URLText="#Steam_Settings_ShareIPNetworking_URLText" wrap=1 }
+		ShareIPNetworkingCombo { ControlName=combobox fieldName=ShareIPNetworkingCombo editable="0" }
+		
 	}
 	
 	colors
@@ -73,7 +80,7 @@
 
 		place { controls=HotKeySelectorLabel,HotKeySelector dir=down spacing=5 width=max region=topleft start=EnableVRDesktopGameTheaterCheck margin-top=20 }
 		
-		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
+		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=48 width=max region=topleft }
 		place { controls=ShowIngameFPSContrastCheck dir=down spacing=5 start=ShowIngameFPSCombo height=20 margin-left=-3 margin-top=9 region=topleft }
 			
 		place { controls=ScreenshotLabel region=topright start=HotKeySelectorLabel }
@@ -92,9 +99,18 @@
 		place { control=Divider1 region=bottom width=max margin-top=15 }
 		place { controls="TextFilterLabel" region=bottomleft start=Divider1 margin-top=10 width=max dir=down }
 		place { controls="TextFilterStatus" region=bottomleft start=TextFilterLabel margin-top=10 width=235 dir=down height=25 }
-		place { controls="TextFilterUpdateSettingURL" region=bottomleft start=TextFilterStatus margin-top=10 width=235 dir=down }					  
+		place { controls="TextFilterUpdateSettingURL" region=bottomleft start=TextFilterStatus margin-top=10 width=235 dir=down }
 		place { controls="PingRateLabel" region=bottomright start=Divider1 margin-top=10 width=max dir=down }
+		
 		place { controls="PingRateCombo" region=bottomright start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
-		place { controls="PingRateInfo" region=bottomright start=PingRateCombo margin-top=10 width=235 dir=down }				
+		place { control=Divider2 region=bottom margin-top=150 width=max }
+
+		place { controls="ShareIPNetworkingLabel" region=bottomleft start=Divider2 margin-top=15 width=235 dir=down }
+		place { controls="ShareIPNetworkingInfo" region=bottomleft start=ShareIPNetworkingLabel margin-top=5 width=235 dir=down }		
+		place { controls="ShareIPNetworkingURL" region=bottomleft start=ShareIPNetworkingInfo margin-top=5 width=235 dir=down }										   
+		place { controls="ShareIPNetworkingCombo" region=bottomright start=Divider2 margin-top=32 width=235 dir=down height=25}
+		
+		
+		place { controls="PingRateInfo" region=bottomright start=PingRateCombo margin-top=10 width=235 dir=down }
 	}
 }
