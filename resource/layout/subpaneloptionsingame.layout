@@ -94,7 +94,7 @@
 			region=topright }
 		place { control=ScreenshotActionLabel region=topright start=SetScreenshotFolderButton dir=down margin-top=19 }
 		place { controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down start=ScreenshotActionLabel
-			margin-top=6 margin-left=10 height=22 width=max region=topright }
+			margin-top=6 margin-left=-3 height=22 width=max region=topright }
 		
 		place { control=Divider1 region=bottom width=max margin-top=25 }
 		place { controls="TextFilterLabel" region=bottomleft start=Divider1 margin-top=10 width=max dir=down }
