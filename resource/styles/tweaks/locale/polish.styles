@@ -10,14 +10,14 @@
 				// Top Area & TitleBar
 				0="gradient( x0, y0, x1, y0 + 175, PropertySheetBG, DialogBG )"
 				1="image_tiled( x0, y0, x1, y0 + 175, graphics/client_header)"
-				
+
 				// Body
-				2="fill( x0, y0 + 175, x0 + 20, y1 - 76, DialogBG )"			
-				3="fill( x1 - 20, y0 + 175, x1, y1 - 76, DialogBG )"			
-				
+				2="fill( x0, y0 + 175, x0 + 20, y1 - 76, DialogBG )"
+				3="fill( x1 - 20, y0 + 175, x1, y1 - 76, DialogBG )"
+
 				// Bottom Area
 				4="fill( x0, y1 - 76, x1, y1, DialogBG )"
-				
+
 				// Navigation Icons
 				6="image( x0 + 84 , y0 + 49, x1, y1, graphics/nav_icon_store )"		// Store
 				7="image( x0 + 193, y0 + 48, x1, y1, graphics/nav_icon_library )"	// Library

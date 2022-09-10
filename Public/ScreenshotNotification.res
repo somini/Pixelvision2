@@ -18,7 +18,7 @@
 			"paintbackground"		"1"
 			style="Notification"
 		}
-		
+
 		"ScreenshotImage"
 		{
 			"ControlName"		"ImagePanel"
@@ -36,7 +36,7 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		
+
 		"LabelInfo"
 		{
 			"ControlName"		"Label"
@@ -57,7 +57,7 @@
 			"font"				FriendsSmall
 			"textcolor"			"Friends.OfflineColor"
 		}
-		
+
 		"LabelGame"
 		{
 			"ControlName"		"Label"
@@ -79,7 +79,7 @@
 			"textcolor"			"Friends.OnlineColor"
 		}	
 	}
-	
+
 	styles
 	{
 		Notification
@@ -89,7 +89,7 @@
 				0="gradient( x0 + 1, y0, x1 - 1, y0 + 80, DialogBG, ClientBG )"
 				1="image( x1 - 239, y0 + 1, x1 - 1, y0 + 73, graphics/not_screenshot )"
 				2="fill( x0 + 1, y0 + 80, x1 - 1, y0 + 97, Black )"
-				
+
 				6="fill( x0    , y0    , x1    , y0 + 1, ClientBG )"	// Top
 				7="fill( x0    , y1 - 1, x1    , y1    , ClientBG )"	// Bottom
 				8="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ClientBG )"	// Left
@@ -97,7 +97,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		place { control="LabelInfo" x=109 y=22 }

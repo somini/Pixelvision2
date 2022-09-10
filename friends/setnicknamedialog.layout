@@ -30,16 +30,15 @@
 			labelText		"#friends_setnickname_info"
 			wrap			"1"
 		}
-		
+
 		NicknameEdit
 		{
 			ControlName		"TextEntry"
 			tabposition		"1"
 			unicode			"1"
 		}
-		
 	}
-	
+
 	styles
 	{
 		Button
@@ -56,4 +55,3 @@
 		place { control=NicknameEdit x=20 y=77 width=345 height=24 }
 	}
 }
-

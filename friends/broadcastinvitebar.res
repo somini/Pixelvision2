@@ -9,7 +9,7 @@
 		"InviteImage"		{ ControlName="ImagePanel" image="resource/invite" mouseinputenabled=0 }
 		"CloseButton"		{ ControlName="Button" labeltext="X" command="Close" }
 	}
-	
+
 	styles
 	{
 		CBroadcastInviteBar
@@ -18,7 +18,7 @@
 			{
 				// Background
 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBGL )"
-				
+
 				// Border
 				2="fill( x0    , y0    , x1    , y0 + 1, Divider )"	// Top
 				3="fill( x0    , y1 - 1, x1    , y1    , Divider )"	// Bottom
@@ -26,20 +26,20 @@
 				5="fill( x1 - 1, y0 + 1, x1    , y1 - 1, Divider )"	// Right
 			}
 		}
-		
+
 		Button
 		{
 			bgcolor=none
 			render_bg {}
 			render {}
 		}
-		
+
 		Label
 		{
 			textcolor="label"
 		}
 	}
-	
+
 	layout
 	{
 		place { control="InviteImage" x=9 y=2 width=50 height=50 }

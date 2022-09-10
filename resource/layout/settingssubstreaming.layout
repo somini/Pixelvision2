@@ -9,14 +9,16 @@
 			wrap=1
 			labelText="#Steam_Settings_Streaming_Description"
 		}
+
 		"RemoteClientList"
 		{
 			ControlName="ListPanel"
 			style="RemoteClientList"
 			tall=140
 		}
+
 		"EnableStreaming" { ControlName="CheckButton" fieldName="EnableStreaming" labelText="#Steam_Settings_Streaming_EnableStreaming" }
-		
+
 		"P2PScopeLabel"
 		{
 			ControlName="Label"
@@ -24,7 +26,7 @@
 			wrap=1
 			labelText="#Steam_Settings_Streaming_P2PScope_Description"
 		}
-		
+
 		"P2PScope" { ControlName="ComboBox" fieldName="P2PScope" editable="0" }
 
 		"Pair" { ControlName="Button" fieldName="Pair" command="Pair" labelText="#Steam_Settings_Streaming_Pair" }
@@ -34,6 +36,7 @@
 		"SetPIN" { ControlName="Button" fieldName="SetPIN" command="SetPIN" labelText="#Steam_Settings_Streaming_SetPIN" }
 
 		"HostDivider" { ControlName="divider" }
+
 		"HostLabel"
 		{
 			ControlName="Label"
@@ -41,7 +44,7 @@
 			wrap=1
 			labelText="#Steam_Settings_Streaming_HostLabel"
 		}
-		
+
 		"UnsupportedPlatform"
 		{
 			ControlName="Label"
@@ -49,10 +52,11 @@
 			wrap=1
 			labelText="#Steam_Settings_Streaming_UnsupportedPlatform"
 		}
-		
+
 		"AdvancedHostOptions" { ControlName="Button" fieldName="AdvancedHostOptions" command="AdvancedHostOptions" labelText="#Steam_Settings_Streaming_AdvancedHostOptions" }
 
 		"ClientDivider" { ControlName="divider" }
+
 		"ClientLabelLocal"
 		{
 			ControlName="Label"
@@ -68,11 +72,11 @@
 			wrap=1
 			labelText="#Steam_Settings_Streaming_ClientLabelRemote"
 		}
-		
+
 		"QualityFast" { ControlName="RadioButton" fieldName="QualityFast" labelText="#Steam_Settings_Streaming_QualityFast" }
 		"QualityBalanced" { ControlName="RadioButton" fieldName="QualityBalanced" labelText="#Steam_Settings_Streaming_QualityBalanced" }
 		"QualityBeautiful" { ControlName="RadioButton" fieldName="QualityBeautiful" labelText="#Steam_Settings_Streaming_QualityBeautiful" }
-		
+
 		"AdvancedClientOptions" { ControlName="Button" fieldName="AdvancedClientOptions" command="AdvancedClientOptions" labelText="#Steam_Settings_Streaming_AdvancedClientOptions" }
 
 		"SupportInformationLabel"
@@ -83,11 +87,9 @@
 			URLText="https://support.steampowered.com/kb_article.php?ref=3629-RIAV-1617"
 		}
 	}
-	
-	style
-	{
-	}
-	
+
+	style {}
+
 	layout
 	{
 		place
@@ -101,7 +103,7 @@
 			margin-top=20
 			spacing=10
 		}
-		
+
 		place { control="Pair" start="RemoteClientList" width=160 dir=down margin-top=8 }
 		place { control="Unpair" start="Pair" width=160 dir=right margin-left=5 margin-top=0 }
 		place { control="SetPIN" start="Unpair" width=170 dir=right margin-left=5 }
@@ -114,6 +116,7 @@
 			width=400
 			margin-top=15
 		}
+
 		place
 		{
 			control="P2PScope"
@@ -124,25 +127,25 @@
 			margin-right=20
 			margin-top=4
 		}
-		
+
 		place { control="HostDivider"start="P2PScope" dir=down margin-top=15 width=475 }
-		
+
 		place { control="HostLabel" start="HostDivider" dir=down margin-top=10 width=max }
-		
+
 		place { control="UnsupportedPlatform" start="HostLabel" dir=down margin-top=10 width=max }
 		place { control="AdvancedHostOptions" start="HostLabel" dir=down margin-top=10 }
-		
+
 		place { control="ClientDivider" start="HostDivider" dir=down margin-top=70 width=475 }
-		
+
 		place { control="ClientLabelLocal" start="ClientDivider" dir=down margin-top=10 width=max }
 		place { control="ClientLabelRemote" start="ClientDivider" dir=down margin-top=10 width=max }
-		
+
 		place { control="QualityFast" start="ClientDivider" dir=down margin-top=30 width=100 }
 		place { control="QualityBalanced" start="QualityFast" dir=right margin-left=10 width=100 }
 		place { control="QualityBeautiful" start="QualityBalanced" dir=right margin-left=10 width=100 }
-		
+
 		place { start="QualityFast" control="AdvancedClientOptions" dir=down margin-top=10 }
-		
+
 		place { start="AdvancedClientOptions" control="SupportInformationLabel" dir=right align=right margin-top=20 margin-right=20 }
 	}
 }

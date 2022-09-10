@@ -8,7 +8,7 @@
 			y=21
 			margin-right=43		
 		}
-		
+
 		place {
 			control="DeviceName"
 			dir=down
@@ -17,7 +17,7 @@
 			start=Label1
 			y=8
 		}
-		
+
 		place {
 			control="ChangeDeviceButton"
 			dir=right
@@ -43,7 +43,7 @@
 			x=10
 			y=-1
 		}
-		
+
 		place {
 			control="Divider1"
 			dir=down
@@ -84,7 +84,7 @@
 			start=SpeakerLabel
 			y=8
 		}
-			
+
 		place {
 			control="TestMicrophone"
 			dir=right
@@ -93,7 +93,7 @@
 			start=MicrophoneVolume
 			x=100
 		}
-		
+
 		place {
 			control="MicMeter"
 			dir=down
@@ -102,7 +102,7 @@
 			height=24
 			width=160
 		}
-		
+
 		place {
 			control="MicMeter2"
 			dir=down
@@ -111,7 +111,7 @@
 			height=24
 			width=160
 		}
-		
+
 		place {
 			control="MicBoost"
 			dir=down
@@ -134,7 +134,7 @@
 			start=Divider2
 			y=16
 		}
-		
+
 		place {
 			control="TransmitMethodRadioButton1,TransmitMethodRadioButton2"
 			dir=down
@@ -142,7 +142,7 @@
 			y=4
 			spacing=-4
 		}
-		
+
 		place {
 			control="PushToTalkKeyEntry"
 			dir=down

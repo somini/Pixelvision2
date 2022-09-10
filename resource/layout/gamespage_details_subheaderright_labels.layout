@@ -5,7 +5,7 @@
 		contributioncount { controlname="Label" style="headertext" labeltext="" zpos="2" }
 		contributionlabel { controlname="Label" style="headertext2" labeltext="#steam_details_contributioncount" zpos="2" }
 	}
-	
+
 	styles
 	{
 		headertext
@@ -20,7 +20,7 @@
 			padding-bottom=0
 			padding-top=0
 		}
-		
+
 		headertext2
 		{
 			textcolor=Link
@@ -34,11 +34,11 @@
 			padding-top=0
 		}
 	}
-	
+
 	layout
 	{
 		region { name="subheaderlabels" y=0 x=0 width=max height=max }
-		
+
 		place { control=contributioncount,contributionlabel region=subheaderlabels dir=down spacing=-2 align=right }
 	}
 }

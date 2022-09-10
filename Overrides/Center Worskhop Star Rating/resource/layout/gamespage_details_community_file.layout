@@ -10,7 +10,7 @@
 		communityfile_rating_image { controlname="ImagePanel" zpos=2 image=resource/1_star style="communityfile_rating_image" }
 		friendimage { controlname="ImagePanel" zpos=2 }
 	}
-	
+
 	colors
 	{
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
@@ -21,7 +21,7 @@
 		GameDetailsCommunityFile.MaxTooltipWidth "300"
 		GameDetailsCommunityFile.MaxTooltipHeight "90"
 	}
-	
+
 	styles
 	{
 		communityfile_name
@@ -39,7 +39,7 @@
 				0="image( x0, y0 + 1, x1, y1, graphics/harrow_hover )"
 			}
 		}
-		
+
 		communityfile_image_border
 		{
 		    render_bg
@@ -50,7 +50,7 @@
 				3="fill( x1 - 3, y0    , x1    , y1    , Divider )"	// Right
 			}
 		}
-		
+
 		communityfile_rating_image_background
 		{
 			render_bg
@@ -59,7 +59,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		place { region=body control=communityfile_name x=0 y=94 width=160 }

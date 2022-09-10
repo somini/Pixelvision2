@@ -3,7 +3,7 @@
 	controls
 	{
 		TitleLabel { controlname=label labeltext="#Steam_Settings_Library" style=highlight }
-						
+
 		LibraryDisplaySizeLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Title" }
 		LibraryDisplaySizeAutomatic { ControlName="RadioButton" fieldName="LibraryDisplaySizeAutomatic" labelText="#Steam_Settings_Library_Size_Automatic" }
 		LibraryDisplaySizeAutomaticLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Automatic_Label" }
@@ -13,7 +13,7 @@
 
 		LibraryLowBandwidthCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowBandwidth_Title" }
 		LibraryLowBandwidthLabel { ControlName=Label labelText="#Steam_Settings_Library_LowBandwidth_Desc" wrap=1 }
-		
+
 		LibraryLowPerfCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowPerf_Title" }
 		LibraryLowPerfLabel { ControlName=Label labelText="#Steam_Settings_Library_LowPerf_Desc" wrap=1 }
 
@@ -23,9 +23,8 @@
 		LibraryDisableCommunityContentCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_DisableCommunityContent_Title" zpos="1" }
 		LibraryDisableCommunityContentLabel { ControlName=Label labelText="#Steam_Settings_Library_DisableCommunityContent_Desc" wrap=1 style=disable_community_content }
 	}
-	colors
-	{
-	}
+
+	colors {}
 
 	styles
 	{
@@ -34,15 +33,13 @@
 			textcolor=Text
 		}
 
-    checkbox
+		checkbox
 		{
 			padding-top=0
 			padding-bottom=0
 		}
 
-		disable_community_content
-		{
-		}
+		disable_community_content {}
 		disable_community_content:disabled
 		{
 			textcolor="TextDisabled"
@@ -54,30 +51,30 @@
 		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
 		region { name=top region=box margin-top=10 }
 
-    // Library Settings
+		// Library Settings
 		place { controls=TitleLabel region=top } 
 
-    // Library Display Size Options
-    place { controls=LibraryDisplaySizeLabel region=top start=TitleLabel dir=down margin-top=8 }
-		
-    place { control="LibraryDisplaySizeAutomatic" start=LibraryDisplaySizeLabel dir=down margin-top=5 } // Automatic Size
-    place { control="LibraryDisplaySizeAutomaticLabel" start=LibraryDisplaySizeAutomatic dir=right margin-top=7 } // Automatic Size Description
-    place { control="LibraryDisplaySizeSmall" start=LibraryDisplaySizeAutomatic dir=down } // Small Size
-    place { control="LibraryDisplaySizeMedium" start=LibraryDisplaySizeSmall dir=down } // Medium Size
-    place { control="LibraryDisplaySizeLarge" start=LibraryDisplaySizeMedium dir=down } // Large Size
-		
+		// Library Display Size Options
+		place { controls=LibraryDisplaySizeLabel region=top start=TitleLabel dir=down margin-top=8 }
+
+		place { control="LibraryDisplaySizeAutomatic" start=LibraryDisplaySizeLabel dir=down margin-top=5 } // Automatic Size
+		place { control="LibraryDisplaySizeAutomaticLabel" start=LibraryDisplaySizeAutomatic dir=right margin-top=7 } // Automatic Size Description
+		place { control="LibraryDisplaySizeSmall" start=LibraryDisplaySizeAutomatic dir=down } // Small Size
+		place { control="LibraryDisplaySizeMedium" start=LibraryDisplaySizeSmall dir=down } // Medium Size
+		place { control="LibraryDisplaySizeLarge" start=LibraryDisplaySizeMedium dir=down } // Large Size
+
 		place { control=LibraryDisplayIconInGameListCheckbox start=LibraryDisplaySizeLarge dir=down width=max align=top margin-top=5 }
 
-    // Low Bandwidth Option
-    place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplayIconInGameListCheckbox dir=down margin-top=5 }
-    place { control="LibraryLowBandwidthLabel" start=LibraryLowBandwidthCheckbox width=max dir=down }    
+		// Low Bandwidth Option
+		place { control="LibraryLowBandwidthCheckbox" start=LibraryDisplayIconInGameListCheckbox dir=down margin-top=5 }
+		place { control="LibraryLowBandwidthLabel" start=LibraryLowBandwidthCheckbox width=max dir=down }
 
-    // Low Performance Option
-    place { control="LibraryLowPerfCheckbox" start=LibraryLowBandwidthLabel dir=down margin-top=15 }
+		// Low Performance Option
+		place { control="LibraryLowPerfCheckbox" start=LibraryLowBandwidthLabel dir=down margin-top=15 }
 		place { control="LibraryLowPerfLabel" start=LibraryLowPerfCheckbox width=max dir=down }
 
 		// Disable Community Content Option
-		place { control=LibraryDisableCommunityContentCheckbox start=LibraryLowPerfLabel dir=down margin-top=15  }
+		place { control=LibraryDisableCommunityContentCheckbox start=LibraryLowPerfLabel dir=down margin-top=15 }
 		place { control=LibraryDisableCommunityContentLabel start=LibraryDisableCommunityContentCheckbox dir=down width=max align=top }
 	}
 }

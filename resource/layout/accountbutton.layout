@@ -17,7 +17,6 @@
 			"style"			"AccountDropDownStyleOffline"
 		}
 
-
 		account_balance
 		{
 			"ControlName"	"Label"
@@ -60,7 +59,7 @@
 			padding-left=12
 			textcolor=Friends.OnlineColor
 			render_bg
-		  	{
+			{
 				0="gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.OnlineColor, DialogBG )"
 			}
 		}
@@ -71,32 +70,32 @@
 			padding-left=12
 			textcolor=Friends.InGameColor
 			render_bg
-		  	{
+			{
 				0="gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.InGameColor, DialogBG )"
 			}
 		}
-		
+
 		AccountDropDownStyleOffline
 		{
 			render_bg
-		  	{
+			{
 				1="image( x0, y0+10, x1, y1, graphics/dropdown_offline )"
 			}
 			
 		}
-		
+
 		AccountDropDownStyleOnline
 		{
 			render_bg
-		  	{
+			{
 				1="image( x0, y0 + 10, x1, y1, graphics/dropdown_online )"
 			}
 		}
-		
+
 		AccountDropDownStyleInGame
 		{
 			render_bg
-		  	{
+			{
 				1="image( x0, y0+10, x1, y1, graphics/dropdown_ingame )"
 			}
 		}
@@ -104,7 +103,7 @@
 		AccountButtonStyle
 		{
 			render_bg
-		  	{
+			{
 				// background fill
 				0="fill( x0, y0, x1, y1, none )"
 			}
@@ -113,7 +112,7 @@
 		AccountButtonStyle:hover
 		{
 			render_bg
-		  	{
+			{
 				// background fill
 				0="fill( x0, y0, x1, y1, darkblue )"
 			}
@@ -134,19 +133,19 @@
 
 		AccountBalanceStyle [$OSX]
 		{
-		      textcolor="labeldisabled"
-		      bgcolor="none"
-		      font-family=basefont
-		      font-size=13
-		      font-weight=400
-		      font-style=regular
-		      inset="0 1 0 0"
+			textcolor="labeldisabled"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-weight=400
+			font-style=regular
+			inset="0 1 0 0"
 		}
-		
+
 		AccountMenuButtonStyle
 		{
 			render_bg
-		  	{
+			{
 				// background fill
 				// 0="fill( x0, y0, x1, y1, darkblue )"
 			}

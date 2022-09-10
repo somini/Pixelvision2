@@ -7,7 +7,7 @@
 		StatusComplete { controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
 		StatusProgressbar { controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 }
 	}
-	
+
 	styles
 	{
 		SlimProgressBar
@@ -18,20 +18,20 @@
 			}
 			render
 			{
-				1="fill( x0 - 1, y0 - 1, x1 + 1, y0    , BlackTr2 )"	// Top
-				2="fill( x0 - 1, y1    , x1 + 1, y1 + 1, BlackTr2 )"	// Bottom
-				3="fill( x0 - 1, y0    , x0    , y1    , BlackTr2 )"	// Left
-				4="fill( x1    , y0    , x1 + 1, y1    , BlackTr2 )"	// Right
+				1="fill( x0 - 1, y0 - 1, x1 + 1, y0    , BlackTr2 )" // Top
+				2="fill( x0 - 1, y1    , x1 + 1, y1 + 1, BlackTr2 )" // Bottom
+				3="fill( x0 - 1, y0    , x0    , y1    , BlackTr2 )" // Left
+				4="fill( x1    , y0    , x1 + 1, y1    , BlackTr2 )" // Right
 			}
 		}
 	}
-	
+
 	layout
 	{
 		region { name="ProgressRegion" y=18 width=max height=28 align=top margin=0 margin-bottom=1 }
 	 	region { name="statusRegion" width=max height=44 align=bottom margin=6 margin-bottom=8 } 
-		
+
 		place { control=StatusProgressbar region="ProgressRegion" width=320 height=2 margin-top=4 align="top-center" }
-		place { control="StatusDownloading, StatusPaused, StatusComplete"  align="right" spacing=3 margin-top=15 margin-right=10 }
+		place { control="StatusDownloading, StatusPaused, StatusComplete" align="right" spacing=3 margin-top=15 margin-right=10 }
 	}
 }

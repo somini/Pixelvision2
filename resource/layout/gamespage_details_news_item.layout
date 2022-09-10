@@ -7,7 +7,7 @@
 		newsitem_body { controlname="RichText" style="newsitem_body" }
 		newsitem_more { controlname="URLLabel" style="more_link" labeltext="#steam_newscontinued" }
 	}
-	
+
 	colors
 	{
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
@@ -19,7 +19,7 @@
 		RichText.InsetX "0"
 		RichText.InsetY "3" 
 	}
-	
+
 	styles
 	{
 		title_label
@@ -27,13 +27,13 @@
 			textcolor="Text"
 			font-family=semibold
 		}
-		
+
 		date_and_author
 		{
 			textcolor="labeldisabled"
 			font-family=semibold
 		}
-		
+
 		newsitem_body
 		{
 			textcolor="Text"
@@ -41,25 +41,25 @@
 			font-family=basefont
 			render_bg {}
 		}
-		
+
 		"newsitem_body url"
 		{
 			selectedtextcolor="Label"
 			font-style="underline"
 		}
-		
+
 		"newsitem_body url:hover"
 		{
 			textcolor="text"
 		}
-		
+
 		"newsitem_body bold"
 		{
 			font-weight=1000
 			textcolor="Label"
 			selectedtextcolor="Label"	
 		}
-		
+
 		more_link
 		{
 			textcolor="labeldisabled"
@@ -75,7 +75,7 @@
 				0="image( x1 + 3, y0 + 3, x1 + 13, y1, graphics/mlink )"
 			}
 		}
-		
+
 		more_link:hover
 		{
 			textcolor="text"
@@ -86,7 +86,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		region { name=body margin=0 width=max }
