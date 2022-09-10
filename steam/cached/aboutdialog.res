@@ -19,7 +19,7 @@
 			"settitlebarvisible"		"1"
 			"title"		"#Steam_About_Title"
 		}
-		
+
 		"Label1"
 		{
 			"ControlName"		"Label"
@@ -38,7 +38,7 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		
+
 		"Button1"
 		{
 			"ControlName"		"Button"
@@ -60,7 +60,7 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		
+
 		"Label2"
 		{
 			"ControlName"		"Label"
@@ -79,7 +79,7 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		
+
 		"Label3"
 		{
 			"ControlName"		"Label"
@@ -98,11 +98,11 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		
-		"URLLabel1"
+
+		"WebsiteURL"
 		{
 			"ControlName"		"URLLabel"
-			"fieldName"		"URLLabel1"
+			"fieldName"		"WebsiteURL"
 			"xpos"		"25"
 			"ypos"		"138"
 			"wide"		"296"
@@ -118,7 +118,7 @@
 			"wrap"		"0"
 			"URLText"		"http://www.steampowered.com"
 		}
-		
+
 		"GreyStrip"
 		{
 			"ControlName"		"ImagePanel"
@@ -138,7 +138,7 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		
+
 		"Label4"
 		{
 			"ControlName"		"Label"
@@ -158,7 +158,7 @@
 			"wrap"		"0"
 		}
 	}
-	
+
 	styles
 	{
 		Frame
@@ -168,5 +168,10 @@
 				1="image( x0 + 15, y1 - 66, x1, y1, graphics/about_version )"
 			}
 		}
+	}
+
+	layout
+	{
+		place { control=WebsiteURL x=25 y=140 }
 	}
 }

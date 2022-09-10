@@ -16,14 +16,11 @@
 		{
 			bgcolor=backgroundstartsubtle
 		}
+
 		RichTextSimple
 		{
-			render
-			{
-			}
-			render_bg
-			{
-			}
+			render {}
+			render_bg {}
 		}
 	}
 

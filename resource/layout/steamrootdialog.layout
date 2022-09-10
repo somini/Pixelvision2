@@ -4,7 +4,7 @@
 	{
 		"fullscreen"
 		{
-			"ControlName"		"Button"
+			"ControlName"	"Button"
 			style="FullscreenButton"
 			command="fullscreen"
 			tooltiptext="#tooltip_view_fullscreen"
@@ -12,7 +12,7 @@
 
 		"New"
 		{
-			"ControlName"		"URLLabel"
+			"ControlName"	"URLLabel"
 			style="new_label"
 			"URLText"		"http://store.steampowered.com/uiupdate"
 			zpos=-2
@@ -20,19 +20,19 @@
 
 		"UINavigatorPanel"
 		{
-			"ControlName"		"CUINavigatorPanel"
+			"ControlName"	"CUINavigatorPanel"
 			zpos=-2
 		}
 
 		"UIStatusPanel"
 		{
-			"ControlName"		"CUIStatusPanel"
+			"ControlName"	"CUIStatusPanel"
 			zpos=-2
 		}
 
 		"MenuBar"
 		{
-			"ControlName"		"MenuBar"
+			"ControlName"	"MenuBar"
 			style=RootMenu
 		}
 
@@ -53,7 +53,7 @@
 			textAlignment=center
 			command="OpenXPVistaAlertWindow"
 		}
-		
+
 		ParentalLockButton
 		{
 			ControlName=ToggleButton
@@ -82,10 +82,10 @@
 			ControlName=CAccountButton
 			style="AccountButtonStyle"
 		}
-		
+
 		add_game
 		{
-			"ControlName"		"MenuButton"
+			"ControlName"	"MenuButton"
 			labelText="#steam_client_add_game"
 			style="AddGameButton"
 		}
@@ -94,8 +94,8 @@
 		{
 			ControlName=Label
 			style="ClientTitle"
-			"textAlignment"   "west"
-			"textAlignment"   "center" [$OSX]
+			"textAlignment" "west"
+			"textAlignment" "center" [$OSX]
 		}
 
 		universe_label
@@ -118,11 +118,11 @@
 	{
 		CFriendPanel:hover
 		{
-			render_bg  {
+			render_bg {
 				0="fill( x0, y0, x1, y1, black)"
 			}
 		}
-		
+
 		view_friends
 		{
 			inset="0 0 0 0"
@@ -138,7 +138,7 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		announcement_button
 		{
 			render_bg
@@ -147,9 +147,8 @@
 				0="fill( x0, y0, x1, y1, none )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
 			}
-			
 		}
-		
+
 		announcement_button:hover
 		{
 			render_bg
@@ -158,14 +157,13 @@
 				0="fill( x0, y0, x1, y1, none )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification_hover )"
 			}
-			
 		}
-		
+
 		RootMenu
-		{		  
+		{
 			bgcolor="none"
 		}
-		
+
 		BigPictureBG
 		{
 			inset="0 0 0 0"
@@ -368,12 +366,12 @@
 			textcolor="textdisabled"
 			font-size=15
 			font-family=basefont
-      		bgcolor="none"
+			bgcolor="none"
 		}
 
 		ClientTitle:FrameFocus [$OSX]
 		{
-   			textcolor="texthover"
+			textcolor="texthover"
 		}
 
 		FrameTitle
@@ -396,7 +394,7 @@
 				1="gradient( x0, y0, x1, y1 + 13, titlebarfocus, none )" [$OSX]
 			}
 		}
-		
+
 		support_alert
 		{
 			font-family=semibold
@@ -406,7 +404,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -422,7 +419,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -438,7 +434,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -454,7 +449,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -470,7 +464,6 @@
 			font-style=none
 			textcolor=white
 			padding-right=16
-
 			render {}
 			render_bg
 			{
@@ -488,7 +481,6 @@
 			textcolor=white
 			//padding-top=3
 			padding-right=16
-
 			render {}
 			render_bg
 			{
@@ -501,7 +493,7 @@
 		{
 			render_bg
 			{
-				//0="fill(  x0, y0, x1, y1, darkblue )"
+				//0="fill( x0, y0, x1, y1, darkblue )"
 				13="image( x1-24, y0+4, x1, y1, graphics/inbox_hover )"
 			}
 		}
@@ -511,7 +503,7 @@
 			render_bg
 			{
 				// background fill
-				//0="fill(  x0, y0, x1, y1, green6 )"
+				//0="fill( x0, y0, x1, y1, green6 )"
 				1="image( x1-24, y0+4, x1 -2, y1 + 2, graphics/inbox_hover )"
 
 			}
@@ -546,13 +538,14 @@
 				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_active_hover )"
 			}
 		}
+
 		inbox_button_active:selected
 		{
 			render_bg
 			{
 				// background fill
 
-				//0="fill(  x0, y0, x1, y1, green6 )"
+				//0="fill( x0, y0, x1, y1, green6 )"
 				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_active_hover )"
 			}
 		}
@@ -672,7 +665,7 @@
 	{
 		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=56 }
 		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=-20 }
-		
+
 		// Account Side Menu Buttons (Right to Left)
 		place { control="AccountButton" align=right end-top="frame_minimize" margin-top=34 margin-right=8 height=34 }
 		place { control="view_friends" height=32 width=22 align=right margin-top=34 margin-right=5 end-right="AccountButton" }
@@ -697,7 +690,7 @@
 		//place { control="ParentalLockButton" align=right end-right="account_URL" margin-top=35 margin-right=50 height=26 }
 		//place { control="SupportAlert" y=3 align=right end-right="ParentalLockButton" margin-right=10 height=26 }
 
-		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=2 spacing=-6 }
+		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=6 margin-right=2 spacing=-6 }
 
 		region { name=bottom align=bottom width=max height=75 }
 
@@ -707,12 +700,11 @@
 		place { control="add_game" align=bottom margin-bottom=2 margin-left=7 }
 
 		place { control="FriendPanel" height=48 width=48 align=right margin-right=-3 margin-top=23 }
-		
+
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=30 }
-		
-		
-		region { name=bottom align=bottom width=max height=62 }					   
+
+		region { name=bottom align=bottom width=max height=62 }
 
 		// hide vr button
 		place { control="startvr, exitvr" height=0 width=0 }

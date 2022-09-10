@@ -6,7 +6,7 @@
 		workshop_banner { controlname="ImagePanel" image=resource/workshop_banner zpos=-1 style="workshop_banner" }
 		workshop_description { controlname="RichText" style="workshop_description" text="#steam_community_files_info" }
 	}
-	
+
 	colors
 	{
 		WorkshopDetailsPanel.ExtraVerticalSpacing "120"
@@ -14,14 +14,14 @@
 		RichText.InsetX "0"
 		RichText.InsetY "3"
 	}
-	
+
 	styles
 	{
 		RichText
 		{
 			font-size=14
 		}
-		
+
 		workshop_description
 		{
 			textcolor="Label"
@@ -31,7 +31,7 @@
 			render_bg {}
 		}
 	}
-	
+
 	layout
 	{
 		place { region=body control=workshop_description x=0 y=55 width=180 height=36 }

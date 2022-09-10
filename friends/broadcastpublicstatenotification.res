@@ -18,7 +18,7 @@
 			"paintbackground"		"1"
 			"style" "Notification"
 		}
-		
+
 		"BroacdastImageStart"
 		{
 			"ControlName"		"ImagePanel"
@@ -38,7 +38,7 @@
 			"scaleImage"		"0"
 			"image"  "graphics/stream_notification"
 		}
-		
+
 		"BroadcastImageEnd"
 		{
 			"ControlName"		"ImagePanel"
@@ -101,7 +101,7 @@
 			"wrap"				"1"
 		}
 	}
-	
+
 	styles
 	{
 		Notification
@@ -111,7 +111,7 @@
 				0="gradient( x0 + 1, y0, x1 - 1, y0 + 80, DialogBG, ClientBG )"
 				1="image( x1 - 239, y0 + 1, x1 - 1, y0 + 73, graphics/not_ingame )"
 				2="fill( x0 + 1, y0 + 80, x1 - 1, y0 + 97, Black )"
-				
+
 				6="fill( x0    , y0    , x1    , y0 + 1, ClientBG )"	// Top
 				7="fill( x0    , y1 - 1, x1    , y1    , ClientBG )"	// Bottom
 				8="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ClientBG )"	// Left
@@ -119,7 +119,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		place { control=DarkenedRegion height=0 }

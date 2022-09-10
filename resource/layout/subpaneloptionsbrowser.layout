@@ -3,49 +3,44 @@
 	controls
 	{
 		TitleLabel { controlname=label labeltext="#Steam_Settings_BrowserTitle" style=highlight }
-		DescriptionLabel	{ ControlName=Label labeltext="#Overlay_SettingsBrowserDesc" wrap=1  }
+		DescriptionLabel { ControlName=Label labeltext="#Overlay_SettingsBrowserDesc" wrap=1 }
 		Divider1 { ControlName=Divider	}
 
 		OverlayHomePageLabel { ControlName=Label labelText="#Overlay_SettingsHomepageLabel" }
 		OverlayHomePage { ControlName=TextEntry }
-		
-		ClientBrowserAuthHomePage { ControlName=CheckButton fieldName="ClientBrowserAuthHomePage" }
-		
-		ClearAllCookiesButton { ControlName=Button labelText="#Steam_SettingsBrowserClearAllCookies" 	command=ClearCookies }
 
+		ClientBrowserAuthHomePage { ControlName=CheckButton fieldName="ClientBrowserAuthHomePage" }
+
+		ClearAllBrowserDataButton { ControlName=Button labelText="#Steam_SettingsBrowserDeleteAllData" 	command=ClearAllBrowserData }
 	}
-	
-	colors
-	{
-	}	
-	
+
+	colors {}	
+
 	styles
 	{
 		highlight
 		{
 			textcolor=Text
 		}	
-		
+
 		checkbox
 		{
 			padding-top=0
 			padding-bottom=0
 		}
 	}
-	
+
 	layout
 	{
 		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
 		region { name=top region=box margin-top=10 }
 		region { name=topleft region=top y=30 width=235 margin-right=20 }
-		
+
 		place { controls=TitleLabel region=top }
 		place { controls=DescriptionLabel height=40 width=max region=top start=TitleLabel dir=down margin-top=8 }
 		place { controls=OverlayHomePageLabel,OverlayHomePage, dir=down spacing=5 margin-top=20 width=max region=topleft }
 		place { controls=ClientBrowserAuthHomePage dir=down start=OverlayHomePage dir=down }
 		place { controls=Divider1 start=ClientBrowserAuthHomePage dir=down width=max margin-top=8 }
-		place { controls=ClearWebCacheButton height=24 width=240 start=Divider1 dir=down margin-top=15 }
-		place { controls=ClearAllCookiesButton height=24 width=240 start=ClearWebCacheButton dir=down margin-top=15 }
-		
+		place { controls=ClearAllBrowserDataButton height=24 width=200 start=Divider1 dir=down margin-top=15 }
 	}
 }

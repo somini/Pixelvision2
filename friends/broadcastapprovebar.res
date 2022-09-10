@@ -2,16 +2,16 @@
 {
 	controls
 	{
-		"BABar"				{	ControlName="BABar"																			}
-		"InviteLabel"		{	ControlName="Label"			labeltext="#Friends_BroadcastApprove"	mouseinputenabled=0		}
-		"GameLabel"			{	ControlName="Label"			labeltext="%game%"						mouseinputenabled=0		}
-		"ApproveLabel"		{	ControlName="URLLabel"		labeltext="#Friends_BroadcastApprove_Approve"					}
-		"OrLabel"			{	ControlName="Label"			labeltext="#Friends_BroadcastApprove_Or"						}
-		"IgnoreLabel"		{	ControlName="URLLabel"		labeltext="#Friends_BroadcastApprove_Ignore"					}
-		"InviteImage"		{	ControlName="ImagePanel" 	image="resource/invite"					mouseinputenabled=0		}
-		"CloseButton"		{	ControlName="Button"		labeltext="X"	command="Close"									}
+		"BABar"			{ ControlName="BABar" }
+		"InviteLabel"	{ ControlName="Label"		labeltext="#Friends_BroadcastApprove" mouseinputenabled=0 }
+		"GameLabel"		{ ControlName="Label"		labeltext="%game%" mouseinputenabled=0 }
+		"ApproveLabel"	{ ControlName="URLLabel"	labeltext="#Friends_BroadcastApprove_Approve" }
+		"OrLabel"		{ ControlName="Label"		labeltext="#Friends_BroadcastApprove_Or" }
+		"IgnoreLabel"	{ ControlName="URLLabel"	labeltext="#Friends_BroadcastApprove_Ignore" }
+		"InviteImage"	{ ControlName="ImagePanel"	image="resource/invite" mouseinputenabled=0 }
+		"CloseButton"	{ ControlName="Button"		labeltext="X" command="Close" }
 	}
-	
+
 	styles
 	{
 		CBroadcastApproveBar
@@ -20,7 +20,7 @@
 			{
 				// Background
 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBGL )"
-				
+
 				// Border
 				2="fill( x0    , y0    , x1    , y0 + 1, Divider )"	// Top
 				3="fill( x0    , y1 - 1, x1    , y1    , Divider )"	// Bottom
@@ -28,25 +28,25 @@
 				5="fill( x1 - 1, y0 + 1, x1    , y1 - 1, Divider )"	// Right
 			}
 		}
-		
+
 		Button
 		{
 			bgcolor=none
 			render_bg {}
 			render {}
 		}
-		
+
 		Label
 		{
 			textcolor="label"
 		}
-		
+
 		URLLabel
 		{
 			textcolor="label"
 		}
 	}
-	
+
 	layout
 	{
 		place { control="InviteImage" x=9 y=2 width=50 height=50 }

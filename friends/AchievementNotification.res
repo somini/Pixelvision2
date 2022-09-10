@@ -18,7 +18,7 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		
+
 		"DarkenedRegion"
 		{
 			"controlname"	"imagepanel"
@@ -30,7 +30,7 @@
 			"fillcolor"	"ClientBG"
 			"zpos"		"-1"
 		}
-		
+
 		"AchievementIcon"
 		{
 			"ControlName"		"ImagePanel"
@@ -48,7 +48,7 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		
+
 		"IconBorder"
 		{
 			"ControlName"		"Panel"
@@ -65,7 +65,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		
+
 		"LabelTitle"
 		{
 			"ControlName"		"Label"
@@ -83,9 +83,9 @@
 			"labelText"		"%title%"
 			"textAlignment"		"center"
 			"wrap"		"1"
-			"font"		FriendsSmall
+			"font"		"FriendsSmall"
 		}
-		
+
 		"LabelDescription"
 		{
 			"ControlName"		"Label"
@@ -103,10 +103,10 @@
 			"labelText"		"%text%"
 			"textAlignment"		"north-west"
 			"wrap"		"1"
-			"font"		FriendsSmall
+			"font"		"FriendsSmall"
 		}
 	}
-	
+
 	styles
 	{
 		Notification
@@ -115,7 +115,7 @@
 			{
 				0="gradient( x0 + 1, y0, x1 - 1, y0 + 80, DialogBG, ClientBG )"
 				1="image( x1 - 239, y0 + 1, x1 - 1, y0 + 93, graphics/not_achievement )"
-				
+
 				6="fill( x0    , y0    , x1    , y0 + 1, ClientBG )"	// Top
 				7="fill( x0    , y1 - 1, x1    , y1    , ClientBG )"	// Bottom
 				8="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ClientBG )"	// Left
@@ -123,7 +123,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		place { control=DarkenedRegion height=0 }

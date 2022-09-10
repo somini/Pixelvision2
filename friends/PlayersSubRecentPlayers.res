@@ -17,7 +17,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		
+
 		"AddFriendButton"
 		{
 			"ControlName"		"Button"
@@ -37,16 +37,13 @@
 			"Default"		"0"
 		}
 	}
-	
-	styles
-	{
-		
-	}
-	
+
+	styles {}
+
 	layout
 	{
 		place { control="PlayersList" x=0 y=0 width=max height=max margin-top=-2 margin-bottom=31 }
-		
+
 		region { name=bottom align=bottom width=max height=31 }
 		place { control="AddFriendButton" region=bottom align=top-center height=24 margin=3 }
 	}

@@ -4,11 +4,11 @@
 	{
 		icon { controlname="ImagePanel" scaleimage=1 }
 		name { controlname=label style=name }
-		
+
 		Background { controlname="ImagePanel" style=Background visible=1 }
 		IconBackground { controlname="ImagePanel" style=IconBackground visible=1 }
 	}
-	
+
 	styles
 	{
 		name
@@ -16,27 +16,27 @@
 			textcolor=text
 			font-style="none"
 		}
-		
+
 		name:hover
 		{
 			font-style="underline"
 		}
-		
+
 		Background
 		{
 			bgcolor="FriendBG"
 		}
-		
+
 		IconBackground
 		{
 			bgcolor="0 0 0 255"
 		}
 	}
-	
+
 	layout
 	{
 		region { name=body width=max height=max }
-		
+
 		place { control="Background" region=body x=39 y=0 width=max height=max }
 		place { control="IconBackground" region=body y=0 x=0 width=35 height=35 }
 		place { control="icon" region=body y=1 x=1 width=33 height=33 }

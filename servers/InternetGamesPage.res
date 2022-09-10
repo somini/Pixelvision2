@@ -17,7 +17,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		
+
 		"ConnectButton"
 		{
 			"ControlName"		"Button"
@@ -38,7 +38,7 @@
 			"Command"		"connect"
 			"Default"		"1"
 		}
-		
+
 		"RefreshButton"
 		{
 			"ControlName"		"Button"
@@ -59,7 +59,7 @@
 			"Command"		"GetNewList"
 			"Default"		"0"
 		}
-		
+
 		"RefreshQuickButton"
 		{
 			"ControlName"		"Button"
@@ -80,7 +80,7 @@
 			"Command"		"refresh"
 			"Default"		"0"
 		}
-		
+
 		"AddServerButton"
 		{
 			"ControlName"		"Button"
@@ -101,7 +101,7 @@
 			"Command"		"AddServerByName"
 			"Default"		"0"
 		}
-		
+
 		"gamelist"
 		{
 			"ControlName"		"ListPanel"
@@ -118,7 +118,7 @@
 			"paintbackground"		"1"
 			margin-right=8
 		}
-		
+
 		"Filter"
 		{
 			"ControlName"		"ToggleButton"
@@ -138,7 +138,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"FilterString"
 		{
 			"ControlName"		"Label"
@@ -157,7 +157,7 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		
+
 		"GameFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -178,7 +178,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"LocationFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -199,7 +199,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"MapFilter"
 		{
 			"ControlName"		"TextEntry"
@@ -220,7 +220,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"PingFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -241,7 +241,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"SecureFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -262,7 +262,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"ServerEmptyFilterCheck"
 		{
 			"ControlName"		"CheckButton"
@@ -282,7 +282,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"ServerFullFilterCheck"
 		{
 			"ControlName"		"CheckButton"
@@ -302,7 +302,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"NoPasswordFilterCheck"
 		{
 			"ControlName"		"CheckButton"
@@ -323,12 +323,9 @@
 			"Default"		"0"
 		}
 	}
-	
-	styles
-	{
-		
-	}
-	
+
+	styles {}
+
 	layout
 	{
 		region { name="bottom" align=bottom width=max height=35 margin=0 margin-left=4}

@@ -12,7 +12,7 @@
 
 		"New"
 		{
-			"ControlName"		"URLLabel"
+			"ControlName"	"URLLabel"
 			style="new_label"
 			"URLText"		"http://store.steampowered.com/uiupdate"
 			zpos=-2
@@ -20,19 +20,19 @@
 
 		"UINavigatorPanel"
 		{
-			"ControlName"		"CUINavigatorPanel"
+			"ControlName"	"CUINavigatorPanel"
 			zpos=-2
 		}
 
 		"UIStatusPanel"
 		{
-			"ControlName"		"CUIStatusPanel"
+			"ControlName"	"CUIStatusPanel"
 			zpos=-2
 		}
 
 		"MenuBar"
 		{
-			"ControlName"		"MenuBar"
+			"ControlName"	"MenuBar"
 			style=RootMenu
 		}
 
@@ -53,7 +53,7 @@
 			textAlignment=center
 			command="OpenXPVistaAlertWindow"
 		}
-		
+
 		ParentalLockButton
 		{
 			ControlName=ToggleButton
@@ -82,10 +82,10 @@
 			ControlName=CAccountButton
 			style="AccountButtonStyle"
 		}
-		
+
 		add_game
 		{
-			"ControlName"		"MenuButton"
+			"ControlName"	"MenuButton"
 			labelText="#steam_client_add_game"
 			style="AddGameButton"
 		}
@@ -122,7 +122,7 @@
 				0="fill( x0, y0, x1, y1, black)"
 			}
 		}
-		
+
 		view_friends
 		{
 			inset="0 0 0 0"
@@ -138,7 +138,7 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		announcement_button
 		{
 			render_bg
@@ -149,7 +149,7 @@
 			}
 			
 		}
-		
+
 		announcement_button:hover
 		{
 			render_bg
@@ -160,12 +160,12 @@
 			}
 			
 		}
-		
+
 		RootMenu
 		{		  
 			bgcolor="none"
 		}
-		
+
 		BigPictureBG
 		{
 			inset="0 0 0 0"
@@ -396,7 +396,7 @@
 				1="gradient( x0, y0, x1, y1 + 13, titlebarfocus, none )" [$OSX]
 			}
 		}
-		
+
 		support_alert
 		{
 			font-family=semibold
@@ -406,7 +406,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -422,7 +421,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -438,7 +436,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -454,7 +451,6 @@
 			textcolor=white
 			padding-left=8
 			padding-right=20
-			
 			render {}
 			render_bg
 			{
@@ -470,7 +466,6 @@
 			font-style=none
 			textcolor=white
 			padding-right=16
-
 			render {}
 			render_bg
 			{
@@ -488,7 +483,6 @@
 			textcolor=white
 			//padding-top=3
 			padding-right=16
-
 			render {}
 			render_bg
 			{
@@ -546,6 +540,7 @@
 				1="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_active_hover )"
 			}
 		}
+
 		inbox_button_active:selected
 		{
 			render_bg
@@ -672,7 +667,7 @@
 	{
 		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=56 }
 		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=-20 }
-		
+
 		// Account Side Menu Buttons (Right to Left)
 		place { control="AccountButton" align=right end-top="frame_minimize" margin-top=34 margin-right=8 height=34 }
 		place { control="view_friends" height=32 width=22 align=right margin-top=34 margin-right=5 end-right="AccountButton" }
@@ -707,11 +702,10 @@
 		place { control="add_game" align=bottom margin-bottom=2 margin-left=7 }
 
 		place { control="FriendPanel" height=48 width=48 align=right margin-right=-3 margin-top=23 }
-		
+
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=30 }
-		
-		
+
 		region { name=bottom align=bottom width=max height=62 }					   
 
 		// hide vr button

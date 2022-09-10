@@ -7,22 +7,22 @@
 			controlname="COverlay_Details_News" 
 			style=detailsbox
 		}
-		
+
 		TitleText { controlname="label" labeltext="#Overlay_Taskbar_News" style=detailsboxtitle }
-		
+
 		ViewNewsButton
 		{
 			controlname=button
 			labeltext="#Overlay_Friends_ViewNews"
 		}
 	}
-	
+
 	colors
 	{
 		linkidle="255 255 255 51"
 		linkover="255 255 255 128"
 	}
-	
+
 	styles
 	{
 		DetailsBox
@@ -31,7 +31,7 @@
 			render_bg {}
 			render {}
 		}
-		
+
 		Button
 		{
 			inset=2
@@ -45,7 +45,7 @@
 				1="image( x0 + 4, y0 + 5, x1, y1, graphics/icon_ol_news )"
 			}
 		}
-		
+
 		Button:hover
 		{
 			textcolor=linkover
@@ -54,19 +54,19 @@
 				0="image( x0 + 4, y0 + 5, x1, y1, graphics/icon_ol_news_over )"
 			}
 		}
-		
+
 		Headline
 		{
 			textcolor="Text"
 		}
 	}
-	
+
 	layout
 	{
 		region { name=box margin-top=2 margin-left=10 margin-right=10 width=max height=max }
 		region { name=news region=box margin-top=35 margin-bottom=30 width=max height=max }
 		region { name=bottom region=box align=bottom width=max height=35 }
-		
+
 		place { control="TitleText" region=box align=top-center }
 		place { control=*newsitem region=news dir=down height=43 width=max }
 		place { controls=ViewNewsButton region=bottom align=top-center height=35 }

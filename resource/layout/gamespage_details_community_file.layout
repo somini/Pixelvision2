@@ -42,7 +42,7 @@
 
 		communityfile_image_border
 		{
-		    render_bg
+			render_bg
 			{
 				0="fill( x0    , y0    , x1    , y0 + 3, Divider )"	// Top
 				1="fill( x0    , y1 - 3, x1    , y1    , Divider )"	// Bottom

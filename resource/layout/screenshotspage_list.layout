@@ -6,7 +6,7 @@
 		ShowOnDiskButton { controlname="URLLabel" labeltext="#Steam_Screenshots_ShowOnDisk" command="ShowOnDisk" }
 		ShowOnlineButton { controlname="URLLabel" labeltext="#Steam_Screenshots_ShowOnline" command="ShowOnline"}
 	}
-	
+
 	styles
 	{
 		titlelabel
@@ -16,7 +16,7 @@
 			textcolor=Label
 		}
 	}
-	
+
 	layout
 	{
 		region { name="body" y=7 width=max overflow=scroll-vertical }

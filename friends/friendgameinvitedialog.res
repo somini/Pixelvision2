@@ -34,7 +34,7 @@
 			"linespacing"   "48"
 			style="FriendsList"
 		}
-		
+
 		"CloseButton"
 		{
 			"ControlName"   "Button"
@@ -70,7 +70,7 @@
 				2="fill( x0 + 0, y1 + 1, x1 - 2, y1 + 2, Divider )"	// Bottom
 				3="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 1, Divider )"	// Left
 				4="fill( x1 - 3, y0 + 1, x1 - 2, y1 + 1, Divider )"	// Right
-				
+
 				// Inner Border
 				5="fill( x0 + 1, y0 + 1, x1 - 3, y0 + 2, Black )"	// Top
 				6="fill( x0 + 1, y1 - 0, x1 - 3, y1 + 1, Black )"	// Bottom
@@ -78,7 +78,7 @@
 				8="fill( x1 - 4, y0 + 2, x1 - 3, y1 - 0, Black )"	// Right
 			}
 		}
-		
+
 		FriendsPanel
 		{			
 			bgcolor="none"
@@ -87,7 +87,7 @@
 				0="fill( x0, y0, x1, y1, DialogBG )"
 			}
 		}		
-		
+
 		RootMenu
 		{
 			bgcolor="none"
@@ -112,7 +112,7 @@
 			textcolor="texthover"
 		}
 	}
- 	
+ 
  	layout
  	{
 		place { control="frame_captiongrip" margin=2 width=max height=38 }

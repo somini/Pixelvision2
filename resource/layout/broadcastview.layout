@@ -4,7 +4,7 @@
 	{		
 		closebutton { ControlName="Button" style="CloseButtonStyle" command="CloseBroadcastView" }
 	} 
-		
+
 	styles
 	{
 		CloseButtonStyle
@@ -16,7 +16,7 @@
 			padding-left=0
 			padding-right=0
 		}
-	
+
 		CloseButtonStyle:Hover
 		{
 			bgcolor="none"

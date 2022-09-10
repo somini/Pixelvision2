@@ -6,7 +6,7 @@
 		{
 			controlname="EditablePanel"
 		}
-		
+
 		GameGroupsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_GameGroups" style=sidemenu }
 		ChatRoomButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ChatRoom" style=sidemenu }
 		DLCButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_DLC" style=sidemenu }
@@ -17,7 +17,7 @@
 		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }
 		EditControllerConfig { controlname="URLLabel" labeltext="#Overlay_Taskbar_EditControllerConfig" style=sidemenu }	
 		ForceQuitButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ForceQuit" style=sidemenu }
-		
+
 		FriendsDetailPanel { controlname="COverlay_Details_Friends" style="detailsbox" }
 		AchievementsDetailPanel { controlname="COverlay_Details_Achievements" style="detailsbox" }
 		NewsDetailPanel { controlname="COverlay_Details_News" style="detailsbox" }
@@ -33,7 +33,7 @@
 		TwoWeeksText { controlname=label style=TimeStrings }
 		ForeverText { controlname=label style=TimeStrings }
 	}
-	
+
 	styles
 	{
 		sidemenu
@@ -46,7 +46,7 @@
 				0="image( x0 + 3, y0, x1, y1, graphics/harrow_hover )"
 			}
 		}
-		
+
 		sidemenu:hover
 		{
 			textcolor=Text
@@ -77,7 +77,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		region { name=overlay width=max align=top-center margin-top=10 margin-bottom=10 } //width=1010 on default
@@ -86,9 +86,9 @@
 		region { name="broadcastpanel" region=detailpanelsoverlay align=bottom width=max height=382 }
 		region { name="detailpanels" region=detailpanelsoverlay align=bottom width=max height=285 }
 		region { name="detailpanels2" region=detailpanelsoverlay align=bottom width=max height=80 }
-		
+
 		place { controls="BroadcastDetailPanel" region=broadcastpanel width=330 height=87 spacing=10 }
-		
+
 		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,EditControllerConfig,ForceQuitButton" y=74 align=left region=overlay dir=down spacing=7 margin-left=20 width=200 }
 		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=187 spacing=10 }
 		place { controls="CommunityHubDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel" region=detailpanels2 align=top-center width=245 height=74 spacing=10 }

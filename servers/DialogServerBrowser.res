@@ -16,7 +16,7 @@
 			"enabled"		"1"
 			"tabPosition"		"0"
 		}
-		
+
 		"GameTabs"
 		{
 			"ControlName"		"PropertySheet"
@@ -31,7 +31,7 @@
 			"enabled"		"1"
 			"tabPosition"		"1"
 		}
-		
+
 		"StatusLabel"
 		{
 			"ControlName"		"Label"
@@ -51,7 +51,7 @@
 			style="status"
 		}
 	}
-	
+
 	styles
 	{
 		status
@@ -64,7 +64,7 @@
 			font-outerglow-filtersize=1
 		}
 	}
-	
+
 	layout
 	{
 		place { control="GameTabs" width=max height=max x=1 y=18 margin=8 margin-right=9 margin-bottom=16 }
