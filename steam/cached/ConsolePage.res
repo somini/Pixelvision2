@@ -14,9 +14,9 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintbackground"		"1"
-		
 		style=ConsolePage
 	}
+
 	"CompletionList"
 	{
 		"ControlName"		"Menu"
@@ -33,6 +33,7 @@
 		"tabPosition"		"0"
 		"paintbackground"		"1"
 	}
+
 	"entry"
 	{
 		"ControlName"		"TabCatchingTextEntry"
@@ -53,6 +54,7 @@
 		"NumericInputOnly"		"0"
 		"unicode"		"1"
 	}
+
 	"console"
 	{
 		"ControlName"		"CConsoleHistory"
@@ -70,7 +72,7 @@
 		"maxchars"		"-1"
 		"ScrollBar"		"1"
 	}
-	
+
 	styles
 	{
 		ConsolePage
@@ -78,7 +80,7 @@
 			bgcolor=DialogBG
 			render_bg {}
 		}
-		
+
 		TabCatchingTextEntry
 		{
 			inset-left=4
@@ -101,7 +103,7 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		place { control=Console width=max height=max margin-left=1 margin-top=1 margin-bottom=29 }

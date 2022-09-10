@@ -5,7 +5,7 @@
 		IMEEntry { controlname=TextEntry default=1 unicode=1 tabposition=1 style="IMEEntry" }
 		Close { controlname=Button command="Close" style="CloseButtonSm" }
 	}
-	
+
 	styles
 	{
 		IMEEntry
@@ -16,14 +16,14 @@
 			render_bg
 			{
 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 0, DialogBG )"	// Background
-				1="fill( x0 + 0, y0 + 0, x1 - 0, y0 + 1, Divider  )"	// Top
-				2="fill( x0 + 0, y1 - 0, x1 - 0, y1 + 1, Divider  )"	// Bottom
-				3="fill( x0 + 0, y0 + 1, x0 + 1, y1 - 0, Divider  )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1 - 0, y1 - 0, Divider  )"	// Right
+				1="fill( x0 + 0, y0 + 0, x1 - 0, y0 + 1, Divider )"		// Top
+				2="fill( x0 + 0, y1 - 0, x1 - 0, y1 + 1, Divider )"		// Bottom
+				3="fill( x0 + 0, y0 + 1, x0 + 1, y1 - 0, Divider )"		// Left
+				4="fill( x1 - 1, y0 + 1, x1 - 0, y1 - 0, Divider )"		// Right
 			}
 			render {}
 		}
-		
+
 		CloseButtonSm
 		{
 			inset="0 0 0 0"
@@ -31,14 +31,14 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		CloseButtonSm:hover
 		{
 			image="graphics/win32_win_close_hover"
 			render_bg {}
 		}
 	}
-	
+
 	layout
 	{
 		place { control="IMEEntry" width=320 height=max align=left y=0 margin-right=3 margin-left=3 margin-top=2 margin-bottom=2}

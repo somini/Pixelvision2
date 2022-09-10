@@ -8,7 +8,7 @@
 		"LockImage" { ControlName="ImagePanel" }
 		"MenuButton" { ControlName= "CChatTitlePanelAffordance" style="menuButtonStyle" }
 	}
-	
+
 	styles
 	{
 		menuButtonStyle
@@ -19,7 +19,7 @@
 			padding-right=5
 			padding-left=6
 		}
-		
+
 		menuButtonStyle:hover
 		{
 			render_bg
@@ -27,13 +27,13 @@
 				0="image( x0 + 3, y0 - 3, x0 + 19, y0 + 13, resource/friend_arrow_hover )"
 			}
 		}
-		
+
 		statuslabel
 		{
 			font-style="lowercase"
 		}
 	}
-	
+
 	layout
 	{
 		place {	control="AvatarImage" x=2 y=9 align=left dir=right spacing=8 }

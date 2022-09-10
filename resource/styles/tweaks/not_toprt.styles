@@ -2,7 +2,7 @@
 {
 	colors
 	{
-		Notifications.PanelPosition     "TopRight"
-		Notifications.PanelPosition     "TopRight" [$OSX]
+		Notifications.PanelPosition		"TopRight"
+		Notifications.PanelPosition		"TopRight" [$OSX]
 	}
 }

@@ -9,7 +9,7 @@
 		Previous { controlname=Button command="previous" style="PrevButtonSm" }
 		SearchThisPage { controlname=Label labeltext="#vgui_HTMLSearchThisPage" style="" }
 	}
-	
+
 	styles
 	{
 		FindEntry
@@ -18,14 +18,14 @@
 			render_bg
 			{
 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 0, DialogBG )"	// Background
-				1="fill( x0 + 0, y0 + 0, x1 - 0, y0 + 1, Divider  )"	// Top
-				2="fill( x0 + 0, y1 - 0, x1 - 0, y1 + 1, Divider  )"	// Bottom
-				3="fill( x0 + 0, y0 + 1, x0 + 1, y1 - 0, Divider  )"	// Left
-				4="fill( x1 - 1, y0 + 1, x1 - 0, y1 - 0, Divider  )"	// Right
+				1="fill( x0 + 0, y0 + 0, x1 - 0, y0 + 1, Divider )"		// Top
+				2="fill( x0 + 0, y1 - 0, x1 - 0, y1 + 1, Divider )"		// Bottom
+				3="fill( x0 + 0, y0 + 1, x0 + 1, y1 - 0, Divider )"		// Left
+				4="fill( x1 - 1, y0 + 1, x1 - 0, y1 - 0, Divider )"		// Right
 			}
 			render {}
 		}
-		
+
 		CloseButtonSm // Search Button: Close
 		{
 			inset="0 0 0 0"
@@ -33,12 +33,12 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		CloseButtonSm:hover
 		{
 			image="graphics/win32_win_close_hover"
 		}
-		
+
 		NextButtonSm // Search Button: Next
 		{
 			inset="0 0 0 0"
@@ -46,12 +46,12 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		NextButtonSm:hover
 		{
 			image="graphics/find_icon_down_hover"
 		}
-		
+
 		PrevButtonSm // Search Button: Previous
 		{
 			inset="0 0 0 0"
@@ -59,13 +59,13 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		PrevButtonSm:hover
 		{
 			image="graphics/find_icon_up_hover"
 		}
 	}
-	
+
 	layout
 	{
 		place { control="FindEntry" width=180 align=left y=6 margin-right=26 margin-left=98 }

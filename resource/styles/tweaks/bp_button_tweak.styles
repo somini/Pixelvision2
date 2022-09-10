@@ -1,35 +1,33 @@
 "resource/styles/tweaks/bp_button_tweak.styles"
 {
-    styles
-    {
+	styles
+	{
+		FullscreenButton
+		{
+			bgcolor=none
+			render_bg {1="image(x0+1,y0+2,x1,y1, graphics/icon_controller_bpm)"}
+			image=""
+		}
 
-        FullscreenButton
-        {
-            bgcolor=none
-            render_bg {1="image(x0+1,y0+2,x1,y1, graphics/icon_controller_bpm)"}
-            image=""
-        }
+		FullscreenButton:hover
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/icon_controller_bpm_over"
+		}
 
+		FullscreenButton:active
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/icon_controller_bpm_down"
+		}
 
-        FullscreenButton:hover
-        {
-            bgcolor=none
-            render_bg={}
-            image="graphics/icon_controller_bpm_over"
-        }
-
-        FullscreenButton:active
-        {
-            bgcolor=none
-            render_bg={}
-            image="graphics/icon_controller_bpm_down"
-        }
-
-        FullscreenButton:disabled
-        {
-            bgcolor=none
-            render_bg={}
-            image="graphics/icon_controller_bpm_disabled"
-        }
-    }
+		FullscreenButton:disabled
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/icon_controller_bpm_disabled"
+		}
+	}
 }

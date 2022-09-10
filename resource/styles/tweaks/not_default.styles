@@ -2,7 +2,7 @@
 {
 	colors
 	{
-		Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
-		Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
+		Notifications.PanelPosition		"BottomRight"		// Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+		Notifications.PanelPosition		"TopRight" [$OSX]	// the dock is on the bottom for OSX, so instead pop top right like other apps do
 	}
 }

@@ -17,7 +17,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		
+
 		"ConnectButton"
 		{
 			"ControlName"		"Button"
@@ -38,7 +38,7 @@
 			"Command"		"connect"
 			"Default"		"1"
 		}
-		
+
 		"RefreshButton"
 		{
 			"ControlName"		"Button"
@@ -59,7 +59,7 @@
 			"Command"		"GetNewList"
 			"Default"		"0"
 		}
-		
+
 		"RefreshQuickButton"
 		{
 			"ControlName"		"Button"
@@ -80,7 +80,7 @@
 			"Command"		"refresh"
 			"Default"		"0"
 		}
-		
+
 		"AddServerButton"
 		{
 			"ControlName"		"Button"
@@ -101,7 +101,7 @@
 			"Command"		"AddServerByName"
 			"Default"		"0"
 		}
-		
+
 		"gamelist"
 		{
 			"ControlName"		"ListPanel"
@@ -117,7 +117,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		
+
 		"Filter"
 		{
 			"ControlName"		"ToggleButton"
@@ -137,7 +137,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"FilterString"
 		{
 			"ControlName"		"Label"
@@ -156,7 +156,7 @@
 			"textAlignment"		"west"
 			"wrap"		"0"
 		}
-		
+
 		"GameFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -177,7 +177,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"LocationFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -198,7 +198,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"MapFilter"
 		{
 			"ControlName"		"TextEntry"
@@ -219,7 +219,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"PingFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -240,7 +240,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"SecureFilter"
 		{
 			"ControlName"		"ComboBox"
@@ -261,7 +261,7 @@
 			"NumericInputOnly"		"0"
 			"unicode"		"0"
 		}
-		
+
 		"ServerEmptyFilterCheck"
 		{
 			"ControlName"		"CheckButton"
@@ -281,7 +281,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"ServerFullFilterCheck"
 		{
 			"ControlName"		"CheckButton"
@@ -301,7 +301,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"NoPasswordFilterCheck"
 		{
 			"ControlName"		"CheckButton"
@@ -321,7 +321,7 @@
 			"wrap"		"0"
 			"Default"		"0"
 		}
-		
+
 		"GameFilterLabel"
 		{
 			"ControlName"		"Label"
@@ -340,7 +340,7 @@
 			"textAlignment"		"east"
 			"wrap"		"0"
 		}
-		
+
 		"LocationFilterLabel"
 		{
 			"ControlName"		"Label"
@@ -359,7 +359,7 @@
 			"textAlignment"		"east"
 			"wrap"		"0"
 		}
-		
+
 		"MapFilterLabel"
 		{
 			"ControlName"		"Label"
@@ -378,7 +378,7 @@
 			"textAlignment"		"east"
 			"wrap"		"0"
 		}
-		
+
 		"PingFilterLabel"
 		{
 			"ControlName"		"Label"
@@ -397,7 +397,7 @@
 			"textAlignment"		"east"
 			"wrap"		"0"
 		}
-		
+
 		"SecureFilterLabel"
 		{
 			"ControlName"		"Label"
@@ -417,12 +417,9 @@
 			"wrap"		"0"
 		}
 	}
-	
-	styles
-	{
-		
-	}
-	
+
+	styles {}
+
 	layout
 	{
 		region { name="bottom" align=bottom width=max height=35 margin=0 margin-left=4 }

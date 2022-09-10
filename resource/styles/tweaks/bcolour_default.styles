@@ -10,28 +10,28 @@
 			bgcolor="none"
 			render_bg {}
 		}
-		
+
 		FrameCloseButton:hover
 		{
 			image="graphics/win32_win_close_hover"
 			image="graphics/osx_close_hov" [$OSX]
 		}
-		
+
 		FrameCloseButton:framefocus [$OSX]
 		{
 			image="graphics/osx_close_def"
 		}
-		
+
 		FrameCloseButton:framefocus:hover [$OSX]
 		{
 			image="graphics/osx_close_hov"
 		}
-		
+
 		FrameCloseButton:active [$OSX]
 		{
 			image="graphics/osx_close_down"
 		}
-		
+
 		HomeButton // Browser Home Button
 		{
 			inset="-5 0 0 0"
@@ -39,22 +39,22 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		HomeButton:hover
 		{
 			image="graphics/browser_home_hover"
 		}
-		
+
 		HomeButton:active
 		{
 			image="graphics/browser_home_hover"
 		}
-		
+
 		HomeButton:disabled
 		{
 			image="graphics/browser_home_disabled"
 		}
-		
+
 		ReloadButton // Browser Refresh Button
 		{
 			inset="-5 0 0 0"
@@ -62,22 +62,22 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		ReloadButton:hover
 		{
 			image="graphics/browser_refresh_hover"
 		}
-		
+
 		ReloadButton:active
 		{
 			image="graphics/browser_refresh_hover"
 		}
-		
+
 		ReloadButton:disabled
 		{
 			image="graphics/browser_refresh_disabled"
 		}
-		
+
 		StopButton // Browser Stop Button
 		{
 			inset="-5 0 0 0"
@@ -85,17 +85,17 @@
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		StopButton:hover
 		{
 			image="graphics/browser_stop_hover"
 		}
-		
+
 		StopButton:active
 		{
 			image="graphics/browser_stop_hover"
 		}
-		
+
 		StopButton:disabled
 		{
 			image="graphics/browser_stop_disabled"

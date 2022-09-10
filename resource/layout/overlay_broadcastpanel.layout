@@ -3,30 +3,29 @@
 	controls
 	{
 		TitleText { controlname="label" labeltext="#Overlay_Broadcast_Panel_Title" style=detailsboxtitle }
-		InstructionText { controlname="label" labeltext="#Overlay_Broadcast_Panel_Text"  style=highlight }
-		
+		InstructionText { controlname="label" labeltext="#Overlay_Broadcast_Panel_Text" style=highlight }
+
 		ShowBroadcast { controlname="Button" labeltext="#Overlay_Broadcast_ShowBroadcast" command="ShowBroadcast" }
 		ShowChat { controlname="Button" labeltext="#Overlay_Broadcast_ShowChat" command="ShowChat" }
 		StopBroadcast { controlname="Button" labeltext="#Overlay_Broadcast_Stop" command="StopBroadcast" }
 		ShowSettings { controlname="Button" labeltext="#Overlay_Broadcast_ShowSettings" command="ShowSettings" }
 	}
-	
+
 	colors
 	{
 		linkidle="255 255 255 51"
 		linkover="255 255 255 128"
 	}
-	
+
 	styles
 	{
-
 		DetailsBox
 		{
 			bgcolor="BlackTr1"
 			render_bg {}
 			render {}
 		}
-		
+
 		Button
 		{
 			inset=2
@@ -37,25 +36,25 @@
 			render_bg {}
 			render {}
 		}
-		
+
 		Button:hover
 		{
 			textcolor=linkover
 		}
-		
+
 		Highlight
 		{
 			textcolor=highlight2r
 		}
 	}
-	
+
 	layout
 	{
 		region { name=box margin-top=2 margin-left=10 margin-right=10 width=max height=max }
-		region { name=actions y=35  margin-top=10 margin-left=10 margin-right=10 width=max height=124 }
-		
+		region { name=actions y=35 margin-top=10 margin-left=10 margin-right=10 width=max height=124 }
+
 		place { control="TitleText" region=box align=top-center }
 		place { control="InstructionText" region=box align=top-center margin-top=32 }
-		place { control="ShowBroadcast,ShowChat,ShowSettings,StopBroadcast" region="actions" spacing=10 align=bottom  margin-bottom=5 }
+		place { control="ShowBroadcast,ShowChat,ShowSettings,StopBroadcast" region="actions" spacing=10 align=bottom margin-bottom=5 }
 	}
 }

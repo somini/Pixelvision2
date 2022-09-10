@@ -4,26 +4,26 @@
 	{
 		GamesList { controlname=Panel style="DetailsBorderPanel" tabposition=1 }
 		CGamesPage_Mini	{ title="#Steam_Root_Title" }
-		library_filters	   { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=filters }
-		library_search	   { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
-		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=filters }
-		
+		library_filters	{ ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=filters }
+		library_search { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
+		label_search_icon { ControlName=Label style="LibrarySearchIcon" group=filters }
+
 		"subnavgroup_library"
 		{
-			"ControlName"		"imagepanel"
+			"ControlName"	"imagepanel"
 			style="grouper"
 			group="library"
 			zpos="-4"
 		}
 	}
-	
+
 	styles
 	{
 		"CGamesPage_Mini FrameTitle"
 		{
 			render_bg {}
 		}
-		
+
 		"CGamesPage_Mini ListPanelColumnSelectButton"
 		{
 			inset="-3 3 0 0"
@@ -33,7 +33,7 @@
 				0="image( x0 + 1, y0 + 5, x1, y1, graphics/gear )"
 			}
 		}
-		
+
 		"CGamesPage_Mini ListPanelColumnSelectButton:hover"
 		{
 			render
@@ -41,7 +41,7 @@
 				0="image( x0 + 1, y0 + 5, x1, y1, graphics/gear_hover )"
 			}
 		}
-		
+
 		"CGamesPage_Mini ListPanel"
 		{
 			padding-left=4
@@ -49,21 +49,21 @@
 			render_bg{}
 			render {}
 		}
-		
+
 		"CGamesPage_Mini ListPanelInterior"
-		{     
+		{
 			inset="3 1 -2 0"
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		"CGamesPage_Mini ListPanelInterior:scrollbar"
-		{     
+		{
 			inset="3 1 -2 0"
 			bgcolor=none
 			render_bg {}
 		}
-		
+
 		grouper
 		{
 			bgcolor=none
@@ -73,7 +73,7 @@
 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBG )"
 			}
 		}
-		
+
 		CGamesPage_Mini 
 		{		
 			bgcolor="DialogBG"
@@ -82,65 +82,65 @@
 				1="image_tiled( x0, y0, x1, y0 + 175, graphics/client_header_mini )"
 			}
 		}
-		
+
 		menubar
 		{
 			bgcolor=none
 		}
-		
+
 		"menubar menubutton"
 		{
 			inset="0 0 0 0"
 			padding-right=0
 			padding-left=-4
 		}
-		
+
 		TextEntry
 		{
 			bgcolor="none"
 			render {}
-	    }
-	    
-	    TextEntry:hover
+		}
+
+		TextEntry:hover
 		{
 			textcolor="TextHover"
 		}
-	    
-	    TextEntry:active
+
+		TextEntry:active
 		{
 			textcolor="TextHover"
-	    }
-	    
-	    TextEntry:selected
+		}
+
+		TextEntry:selected
 		{
 			textcolor="TextHover"
-	    }
-		
-	    LibrarySearch
+		}
+
+		LibrarySearch
 		{
 			textcolor="text"
 			font-family=basefont
 			font-weight=400
 			padding-left=0
 		}
-		
+
 		LibrarySearch:empty
 		{
 			textcolor="LabelDisabled"
 			font-style=italic
 		}
-		
+
 		LibrarySearch:hover
 		{	
 			textcolor="texthover"	
 		}
-		
+
 		LibrarySearch:empty:hover
 		{
 			textcolor="texthover"
 			font-style=italic
 		}
-		
+
 		LibrarySearchIcon
 		{
 			inset="-2 0 0 0"
@@ -150,7 +150,7 @@
 			bgcolor="none"
 			render_bg={}
 		}
-		
+
 		NavLabel2
 		{
 			inset="2 0 0 0"
@@ -158,20 +158,20 @@
 			font-weight=400
 			font-style=regular
 		}
-		
+
 		ListPanelColumnheader
 		{
 			bgcolor=none
 			render_bg {}
 			render {}
 		}
-		
+
 		"CGamesPage_Mini CGameFilterMenuButton"
 		{
 			inset="3 0 0 0"
 			padding-left="-3"
 		}
-		
+
 		DetailsBorderPanel
 		{
 			inset="-1 0 0 0"
@@ -188,7 +188,7 @@
 				2="fill( x0    , y1    , x1    , y1 + 1, ScreenB )"	// Bottom
 				3="fill( x0    , y0 + 1, x0 + 1, y1    , ScreenB )"	// Left
 				4="fill( x1 - 1, y0 + 1, x1    , y1    , ScreenB )"	// Right
-				
+
 				// Inner Border
 				5="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, Black )"	// Top
 				6="fill( x0 + 1, y1 - 1, x1 - 1, y1    , Black )"	// Bottom
@@ -197,20 +197,20 @@
 			}
 		}
 	}
-	
+
  	layout
  	{
 		place { control="frame_captiongrip" margin=2 width=max height=31 }
 		place [!$OSX] { control="MenuBar" margin-left=0 height=24 margin-top=2 margin-right=44 }
-		
+
 		place { control="subnavgroup_library" align=top-center y=36 height=24 width=max margin-right=5 margin-left=5 }
-		
+
 		place { control="gameslist" align=left margin-left=6 margin-right=6 margin-top=64 margin-bottom=18 width=max height=max }
-		
-		place { control="library_search"  width=80 }
+
+		place { control="library_search" width=80 }
 		place [!$OSX] { control="label_search_icon,library_search" align=left y=39 height=17 spacing=1 x=14 }
-		place  [$OSX] { control="label_search_icon,library_search" align=left y=33 height=17 spacing=1 x=13 }
-		
+		place [$OSX]  { control="label_search_icon,library_search" align=left y=33 height=17 spacing=1 x=13 }
+
 		place { control="library_filters" align=right margin-left=10 margin-right=11 margin-top=37 height=22 spacing=1 }
- 	}
+	}
 }

@@ -1,14 +1,14 @@
 gameoverlay.styles
 {
 	include "resource/styles/steam.styles"
-	
+
 	colors 
 	{
 		mostly_black "0 0 0 240"
 		semi_black "0 0 0 128"
 		semi_gray "32 32 32 220"
 	}
-	
+
 	styles 
 	{		
 		detailsbox
@@ -22,19 +22,19 @@ gameoverlay.styles
 				4="fill( x1 - 1, y0 + 1, x1    , y1 - 1, Divider )"	// Right
 			}		
 		}	
-		
+
 		detailsboxtitle
 		{
 			font-size=28
 			font-family=basefont
 			font-style=uppercase
 		}
-		
+
 		FrameMinimizeButton
 		{
 			image=""
 		}
-		
+
 		FrameMaximizeButton
 		{
 			image=""

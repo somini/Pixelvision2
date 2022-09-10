@@ -9,43 +9,40 @@
 		library_music_menu { ControlName=MenuButton labelText="#Music_Nav_Menu_Artists" style="NavLabel2" showDownArrow=0 align=left group=music }
 		library_music_add_button { ControlName=Button labelText="" tooltiptext="#Music_Playlist_Details_Menu_Add" style="MusicAddButton" group=music_add_button visible=true }
 		library_music_player_icon { ControlName=Button labelText="" tooltiptext="#music_tooltip_view_player" style="MusicPlayerIcon" align=right group=music }
-		
+
 		frame_title
 		{
 			ControlName=Label
 			
 			style="ClientTitle"
-			"textAlignment"   "west"
-			"textAlignment"   "center" [$OSX]
+			"textAlignment"	"west"
+			"textAlignment"	"center" [$OSX]
 		}
-		
+
 		"subnavgroup_library"
 		{
-			"ControlName"		"imagepanel"
+			"ControlName"	"imagepanel"
 			style="grouper"
-			
 			zpos="-2"
 		}
 	}
-	
+
 	colors
 	{
 		dialogbgtrans="38 38 38 100"
 		searchbg="12 13 14 255"
 	}
-	
+
 	styles
 	{
 		CMusicLibraryPanel
 		{
 			bgcolor=DialogBG
-			
 			minimum-width = 296
 			minimum-height = 300
-			
 			render_bg{}
 		}
-		
+
 		ClientTitle [!$OSX]
 		{
 			font-family=basefont
@@ -54,7 +51,7 @@
 			textcolor="labeldisabled"
 			bgcolor="none"
 		}
-		
+
 		ClientTitle [$OSX]
 		{
 			font-family=basefont
@@ -64,7 +61,7 @@
 			bgcolor="none"
 			inset="0 6 0 0"
 		}
-		
+
 		ClientTitle:FrameFocus [!$OSX]
 		{
 			font-family=basefont
@@ -73,7 +70,7 @@
 			textcolor="texthover"
 			bgcolor="none"
 		}
-		
+
 		ClientTitle:FrameFocus [$OSX]
 		{
 			font-family=basefont
@@ -83,7 +80,7 @@
 			bgcolor="none"
 			inset="0 6 0 0"
 		}
-		
+
 		LibrarySearch
 		{
 			padding-left=0
@@ -92,41 +89,41 @@
 			textcolor="text"
 			render {}
 		}
-		
+
 		LibrarySearch:empty
 		{			
 			font-style=italic
 			textcolor="LabelDisabled"
 		}
-		
+
 		LibrarySearch:hover
 		{			
 			textcolor="texthover"
 		}
-		
+
 		LibrarySearch:empty:hover
 		{			
 			font-style=italic
 			textcolor="texthover"
 		}
-		
+
 		LibrarySearch:disabled
 		{
 			font-style=italic
 			textcolor="None"
 		}
-		
+
 		LibrarySearchIcon
 		{
 			bgcolor="none"
 			inset="10 0 0 0"
-			render_bg 
+			render_bg
+			image="graphics/icon_button_search"
 			{
 				0="fill(x0 + 8, y0 - 4, x1 - 3, y1 + 2, searchbg)"
 			}
-			image="graphics/icon_button_search"
 		}
-		
+
 		LibrarySearchIcon:disabled
 		{
 			bgcolor="none"
@@ -134,7 +131,7 @@
 			render_bg {}
 			image="none"
 		}
-		
+
 		MusicAddButton
 		{
 			font-size=14
@@ -147,7 +144,7 @@
 				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse )"
 			}
 		}
-		
+
 		MusicAddButton:hover
 		{
 			textcolor="white"
@@ -156,7 +153,7 @@
 				0="image( x0, y0 + 5, x1, y1, graphics/icon_collapse_over )"
 			}
 		}
-		
+
 		MusicPlayerIcon
 		{
 			bgcolor="none"
@@ -167,7 +164,7 @@
 			padding-right=-1
 			padding-top=-1
 		}
-		
+
 		MusicPlayerIcon:hover
 		{
 			bgcolor="none"
@@ -178,7 +175,7 @@
 			padding-right=-1
 			padding-top=-1
 		}
-		
+
 		MusicPlayerIcon:selected
 		{
 			bgcolor="none"
@@ -189,7 +186,7 @@
 			padding-right=-1
 			padding-top=-1
 		}
-		
+
 		NavLabel2 [!$OSX]
 		{
 			inset="0 0 0 0"
@@ -199,7 +196,7 @@
 			textcolor="labelfocus"
 			font-style="uppercase"
 		}
-		
+
 		NavLabel2 [$OSX]
 		{
 			inset="0 0 0 0"
@@ -209,7 +206,7 @@
 			textcolor="labelfocus"
 			font-style="uppercase"
 		}
-		
+
 		NavLabel2:hover
 		{
 			inset="0 0 0 0"
@@ -219,7 +216,7 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=3
 		}
-		
+
 		NavLabel2:selected
 		{
 			inset="0 0 0 0"
@@ -229,7 +226,7 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=3
 		}
-		
+
 		grouper
 		{
 			bgcolor=none
@@ -240,19 +237,19 @@
 			}
 		}
 	}
-	
+
 	layout
 	{
 		region { name=searchrow x= 3 y=30 }
 		region { name=details y=60 width=max }
-		
+
 		place { control="subnavgroup_library" align=top-center y=30 height=28 width=max margin-right=3 margin-left=10 }
-		
+
 		place { control=label_search_icon region=searchrow y=6 }
 		place { control=library_search region=searchrow y=2 x=24 width=258 }
-		
+
 		place { control=library_music_menu,library_music_add_button region=searchrow x=287 y=3 }
-		place { control="library_music_player_icon"  region=searchrow align=right y=6 height=18 width=18 margin-right=14 }
-		place {	control="MusicPage_Details_Content"	region=details x=10 y=0 width=max height=max	margin-bottom=40 margin-right=10}
+		place { control="library_music_player_icon" region=searchrow align=right y=6 height=18 width=18 margin-right=14 }
+		place {	control="MusicPage_Details_Content"	region=details x=10 y=0 width=max height=max margin-bottom=40 margin-right=10 }
 	}
 }

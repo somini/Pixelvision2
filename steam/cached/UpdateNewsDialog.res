@@ -19,7 +19,7 @@
 			"settitlebarvisible"		"1"
 			"title"		"#Steam_UpdateNewsMultiple_Title"
 		}
-		
+
 		"HTMLSellPage"
 		{
 			"ControlName"		"HTML"
@@ -35,7 +35,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"1"
 		}
-		
+
 		"NextButton"
 		{
 			"ControlName"		"Button"
@@ -56,7 +56,7 @@
 			"Default"		"1"
 			"selected"		"0"
 		}
-		
+
 		"PrevButton"
 		{
 			"ControlName"		"Button"
@@ -77,7 +77,7 @@
 			"Default"		"0"
 			"selected"		"0"
 		}
-		
+
 		"BgRect"
 		{
 			"ControlName"		"ImagePanel"
@@ -97,7 +97,7 @@
 			"gradientVertical"		"0"
 			"scaleImage"		"0"
 		}
-		
+
 		"CloseButton"
 		{
 			"ControlName"		"Button"
@@ -119,7 +119,7 @@
 			"Default"		"0"
 		}
 	}
-	
+
 	styles
 	{
 		"CProductMarketingDialog Button"
@@ -127,7 +127,7 @@
 			font-family=basefont
 		}
 	}
-	
+
 	layout
 	{
 		place { control="HTMLSellPage" align=left x=8 y=34 width=max height=max margin-right=8 margin-bottom=42 }

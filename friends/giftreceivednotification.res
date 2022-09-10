@@ -18,7 +18,7 @@
 			"paintbackground"		"1"
 			style="notification"
 		}
-		
+
 		"GiftImage"
 		{
 			"ControlName"		"ImagePanel"
@@ -37,7 +37,7 @@
 			"scaleImage"		"0"
 			"image" "graphics/icon_toast_gift"
 		}
-		
+
 		"NotificationClickPanel"
 		{
 			"ControlName"		"CNotificationClickPanel"
@@ -54,7 +54,7 @@
 			"tabPosition"		"0"
 			"paintbackground"		"0"
 		}
-		
+
 		"LabelSender"
 		{
 			"ControlName"		"Label"
@@ -72,9 +72,9 @@
 			"labelText"		"%name%"
 			"textAlignment"		"north-west"
 			"wrap"		"0"
-			"font"		FriendsSmall
+			"font"		"FriendsSmall"
 		}
-		
+
 		"LabelInfo"
 		{
 			"ControlName"		"Label"
@@ -92,9 +92,9 @@
 			"labelText"		"#friends_giftreceived_info"
 			"textAlignment"		"north-west"
 			"wrap"		"0"
-			"font"		FriendsSmall
+			"font"		"FriendsSmall"
 		}
-		
+
 		"DarkenedRegion"
 		{
 			"controlname"	"imagepanel"
@@ -106,7 +106,7 @@
 			"fillcolor"	"Black"
 			"zpos"		"-1"
 		}
-		
+
 		"LabelHotkey"
 		{
 			"ControlName"		"Label"
@@ -124,10 +124,10 @@
 			"labelText"		"#Friends_InviteNotification_Hotkey"
 			"textAlignment"		"center"
 			"wrap"		"0"
-			"font"		FriendsSmall
+			"font"		"FriendsSmall"
 		}
 	}
-	
+
 	styles
 	{
 		Notification
@@ -137,7 +137,7 @@
 				0="gradient( x0 + 1, y0, x1 - 1, y0 + 80, DialogBG, ClientBG )"
 				1="image( x1 - 239, y0 + 1, x1 - 1, y0 + 73, graphics/not_new_gift )"
 				2="fill( x0 + 1, y0 + 80, x1 - 1, y0 + 97, Black )"
-				
+
 				6="fill( x0    , y0    , x1    , y0 + 1, ClientBG )"	// Top
 				7="fill( x0    , y1 - 1, x1    , y1    , ClientBG )"	// Bottom
 				8="fill( x0    , y0 + 1, x0 + 1, y1 - 1, ClientBG )"	// Left
