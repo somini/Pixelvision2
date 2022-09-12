@@ -26,9 +26,7 @@
 	View
 	{
 		text="#steam_menu_view"
-		GamesDetails					{	text="#steam_menu_games_details"		shellcmd="steam://nav/games/details" }
-		GamesList						{	text="#steam_menu_games_list"			shellcmd="steam://nav/games/list" }
-		GamesGrid						{	text="#steam_menu_games_grid"			shellcmd="steam://nav/games/grid" }
+		
 		Media							{	text="#steam_menu_media"				shellcmd="steam://nav/media" }
 		Tools							{	text="#steam_menu_tools"				shellcmd="steam://nav/tools" }
 		HiddenGames						{	text="#steam_menu_hidden_games"		shellcmd="steam://nav/library/collection/hidden" }
