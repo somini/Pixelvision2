@@ -11,21 +11,18 @@
 
 		ThrottleCheckbox { controlname=checkbutton labeltext=#Steam_ThrottleRatesLabel }
 		ThrottleRateCurrent { controlname=label }
-		ThrottleRateEditLabel { controlname=label labeltext=#SteamUI_ThrottleEditLabel }
 		ThrottleRateEdit { controlname=textentry }
 		ThrottleRateEditSuffix { controlname=label }
-		ThrottleRateApply 
-		{ 
-			controlname=button 
-			labeltext = #SteamUI_ThrottleApplyChange
-			command=ChangeThrottleValue
-		}
 
 		DownloadRegionCombo
 		{
 			controlname=combobox
 			editable="0"
 		}
+
+		PeerContentLabel { controlname=label labeltext=#Steam_PeerContentTitle style=highlight group="PeerContentEnabled"}
+		PeerContentCombo	{ controlname=combobox editable="0"	group="PeerContentEnabled"}
+		PeerContentInfoLabel { controlname=label labeltext=#Steam_PeerContentInfo wrap=1 group="PeerContentEnabled" }
 
 		ManageInstalledApps
 		{
@@ -49,8 +46,10 @@
 		ThrottleDownloadsWhileStreamingCheckbox { controlname=checkbutton labeltext=#Steam_ThrottleDownloadsWhileStreaming }
 		DownloadRatesInBitsCheckbox { controlname=checkbutton labeltext=#Steam_DownloadRatesInBits }
 
-		Divider1 { ControlName=Divider	}
-		Divider2 { ControlName=Divider	}
+
+		Divider1 { ControlName=Divider }
+		Divider2 { ControlName=Divider }
+		Divider3 { ControlName=Divider group="PeerContentEnabled" }	
 	}
 
 	colors {}
@@ -94,10 +93,9 @@
 		place { controls="ThrottleCheckbox" region=box start=RestrictionsLabel dir=down margin-top=4 margin-left=265 }
 		place { controls="ThrottleRateCurrent" region=box start=ThrottleCheckbox dir=down width=235 height=25 margin-top=4 margin-left=3 }
 
-		place { controls="ThrottleRateEditLabel" region=box start=ThrottleRateCurrent dir=down width=175 height=25 }
-		place { controls="ThrottleRateEdit" region=box start=ThrottleRateEditLabel dir=down width=125 height=25 }
+
+		place { controls="ThrottleRateEdit" region=box start=ThrottleCheckbox dir=down width=125 height=25 }
 		place { controls="ThrottleRateEditSuffix" region=box start=ThrottleRateEdit dir=right margin-left=4 margin-top=5 }
-		place { controls="ThrottleRateApply" region=box start=ThrottleRateEdit dir=down width=70 height=25 margin-top=4 }
 		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStart dir=down margin-top=10 margin-left=-27 }
 
 		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down margin-top=10 }
@@ -108,5 +106,13 @@
 
 		place { controls="FlushDownloadConfig" region=box start=Divider3 margin-top=15 width=235 height=25 dir=down }
 		place { controls="FlushDownloadConfigLabel" region=box start=FlushDownloadConfig margin-top=10 width=max dir=down }
+
+		place { controls="PeerContentLabel" region=box start=Divider3 dir=down margin-top=10 width=max }
+		place { controls="PeerContentCombo" region=box start=PeerContentLabel dir=down margin-top=10 width=235 }
+		place { controls="PeerContentInfoLabel" region=box start=PeerContentCombo dir=down margin-top=10 width=max }
+
+
+
+
 	}
 }
