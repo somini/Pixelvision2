@@ -903,11 +903,11 @@
 		place { control=GamesPage_List 				width=max height=max margin-top=1 margin-left=0 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
 		place { control=GamesPage_Details 			width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
 		place { control=GamesPage_Grid 				width=max height=max margin-top=1 margin-left=0 margin-right=9 margin-bottom=20 start=LibraryAnchor dir=down }
-		place { control=WebPanel 					width=max height=max margin-top=1 margin-left=1 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
+		place { control=WebPanel 					width=max height=max margin-top=1 margin-left=9 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
 		place { control=BroadcastPage				width=max height=max margin-top=3 margin-left=3 margin-right=11 margin-bottom=23 start=LibraryAnchor dir=down }
 		place { control=BroadcastPageMin			width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
-		place { control=ConsolePage					width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
+		place { control=ConsolePage					width=max height=max margin-top=36 margin-left=13 margin-right=13 margin-bottom=26 start=LibraryAnchor dir=down }
 
 		place { control=NewLibraryPage				width=max height=max margin-top=0 margin-left=1 margin-right=9 margin-bottom=21 start=subnavgroup_library dir=down }
 
