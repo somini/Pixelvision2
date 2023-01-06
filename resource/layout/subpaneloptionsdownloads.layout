@@ -13,6 +13,13 @@
 		ThrottleRateCurrent { controlname=label }
 		ThrottleRateEdit { controlname=textentry }
 		ThrottleRateEditSuffix { controlname=label }
+		ThrottleRateEditLabel { controlname=label labeltext=#SteamUI_ThrottleEditLabel }
+		ThrottleRateApply 
+		{ 
+			controlname=button 
+			labeltext = #SteamUI_ThrottleApplyChange
+			command=ChangeThrottleValue
+		}
 
 		DownloadRegionCombo
 		{
@@ -91,11 +98,12 @@
 		place { controls="AutoUpdateTimeRestrictEnd" region=box start=AutoUpdateTimeRestrictEndLabel dir=right margin-left=10 width=78 }
 
 		place { controls="ThrottleCheckbox" region=box start=RestrictionsLabel dir=down margin-top=4 margin-left=265 }
-		place { controls="ThrottleRateCurrent" region=box start=ThrottleCheckbox dir=down width=235 height=25 margin-top=4 margin-left=3 }
+		place { controls="ThrottleRateCurrent" region=box start=ThrottleCheckbox dir=right width=235 height=25 margin-top=2 margin-left=-5 }
+		place { controls="ThrottleRateEditLabel" region=box start=ThrottleCheckbox dir=down width=-1 height=-1}
 
-
-		place { controls="ThrottleRateEdit" region=box start=ThrottleCheckbox dir=down width=125 height=25 }
+		place { controls="ThrottleRateEdit" region=box start=ThrottleCheckbox dir=down width=125 height=25 margin-left=3 }
 		place { controls="ThrottleRateEditSuffix" region=box start=ThrottleRateEdit dir=right margin-left=4 margin-top=5 }
+		place { controls="ThrottleRateApply" region=box start=ThrottleRateEdit dir=down width=70 height=25 margin-top=4 }
 		place { controls="AllowDownloadsDuringGameplayCheckbox" region=box start=AutoUpdateTimeRestrictStart dir=down margin-top=10 margin-left=-27 }
 
 		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=box start=AllowDownloadsDuringGameplayCheckbox dir=down margin-top=10 }
