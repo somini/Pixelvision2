@@ -4,7 +4,7 @@
 	{
 		"subnavgroup_library"
 		{
-			"ControlName"	"imagepanel"
+			"ControlName"		"imagepanel"
 			style="grouper"
 			group="library"
 			zpos="-4"
@@ -12,37 +12,34 @@
 
 		"PageLoadThrobber"
 		{
-			"ControlName"	"ThrobberImagePanel"
+			"ControlName"		"ThrobberImagePanel"
 			style="Panel_transparent"
 			zpos="-2"
 			"group" "urlthrobber"
 		}
-
 		"Back"
 		{
-			"ControlName"	"Button"
+			"ControlName"		"Button"
 			style="BackButton"
 			command="Back"
 		}
-
 		"Forward"
 		{
-			"ControlName"	"Button"
+			"ControlName"		"Button"
 			style="ForwardButton"
 			command="Forward"
 		}
 
 		"refresh"
 		{
-			"ControlName"	"Button"
+			"ControlName"		"Button"
 			command="Refresh"
 			style="ReloadButton"
 			group="Refresh"
 		}
-
 		"Stop"
 		{
-			"ControlName"	"Button"
+			"ControlName"		"Button"
 			command="Stop"
 			style="StopButton"
 			group="stop"
@@ -50,123 +47,125 @@
 
 		"label_store"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_store"
 			style="CUINavButton"
 		}
 
 		"label_library"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_library"
 			style="CUINavButton"
 		}
 
 		"label_news"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_news"
 			style="CUINavButton"
 		}
-
 		"label_community"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_community"
 			style="CUINavButton"
 		}
-
 		"label_me"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"ME"
 			style="CuiNavButton"
 		}
-
 		"label_community_friends"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_friends"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_groups"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_groups"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_forums"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_discussions"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_profile"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_profile"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_gamehubs"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_gamehubs"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_workshop"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_workshop"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_greenlight"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_greenlight"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_marketplace"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"#steam_nav_marketplace"
 			style="CUINavButton2"
 			group="community"
 			zpos=1
 		}
-
 		"label_community_new"
 		{
-			"ControlName"	"Label"
+			"ControlName"		"Label"
 			"labelText"		"NEW"
 			style="CUINavButtonNew"
 		}
-
 		"URLBar"
 		{
-			"ControlName"	"TextEntry"
+			"ControlName"		"TextEntry"
 			style="TextEntryURL"
 			group="url"
+		}
+		"URLAnchor"
+		{
+			"ControlName" "Label"
+			"labelText" ""
+			group="url"
+			zpos="-5"
+		}
+		"LibraryAnchor"
+		{
+			"ControlName" "Label"
+			"labelText" ""
+			group="library"
+			zpos="-5"
 		}
 
 		"WebPanel"
@@ -176,7 +175,7 @@
 
 		library_filters { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=library align=right }
 		library_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
-		label_search_icon { ControlName=Label style="LibrarySearchIcon" group=library zpos="4" }
+		label_search_icon{ ControlName=Label style="LibrarySearchIcon" group=library zpos="4" }
 
 		label_library_zoom { ControlName=Label labelText="#steam_library_zoom"	style="NavLabelZoom" group=zoom }
 		library_zoom { ControlName=Slider showbar="1" showticks="0" style=zoomslider group=zoom zpos="4" }
@@ -191,8 +190,6 @@
 		library_music_add_button {	ControlName=Button labelText=""	tooltiptext="#Music_Playlist_Details_Menu_Add" style="MusicAddButton" group=music_add_button visible=false }
 		library_music_player_icon { ControlName=URLLabel style="MusicPlayerIcon" tooltiptext="#music_tooltip_view_player" URLtext="steam://open/musicplayer" align=right group=music }
 
-		emailreminderbar { zpos=1 }
-		phonereminderbar { zpos=1 }
 
 		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }		
 		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage" group="urlsec" }
@@ -532,47 +529,6 @@
 			render_bg {}
 		}
 
-		ViewListButton
-		{
-			inset="1 0 0 0"
-			image="graphics/icon_button_list"
-			padding-left=0
-			padding-right=0
-			bgcolor="none"
-			render_bg {}
-		}
-
-		ViewListButton:hover
-		{
-			image="graphics/icon_button_list_over"
-		}
-
-		ViewListButton:active
-		{
-			image="graphics/icon_button_list_down"
-		}
-
-		ViewListButton:selected
-		{
-			image="graphics/icon_button_list_down"
-			render_bg
-			{
-				// Background 
-				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, Focus )"
-
-				// Border
-				1="fill( x0    , y0    , x1    , y0 + 1, Black )"	// Top
-				2="fill( x0    , y1 - 1, x1    , y1    , Black )"	// Bottom
-				3="fill( x0    , y0    , x0 + 1, y1    , Black )"	// Left
-				4="fill( x1 - 1, y0    , x1    , y1    , Black )"	// Right
-			}
-		}
-
-		ViewListButton:disabled
-		{
-			image="graphics/icon_button_list_disabled"
-		}
-
 		ViewGridButton
 		{
 			inset="1 0 0 0"
@@ -612,6 +568,47 @@
 		ViewGridButton:disabled
 		{
 			image="graphics/icon_button_grid_disabled"
+		}
+
+		ViewListButton
+		{
+			inset="1 0 0 0"
+			image="graphics/icon_button_list"
+			padding-left=0
+			padding-right=0
+			bgcolor="none"
+			render_bg {}
+		}
+
+		ViewListButton:hover
+		{
+			image="graphics/icon_button_list_over"
+		}
+
+		ViewListButton:active
+		{
+			image="graphics/icon_button_list_down"
+		}
+
+		ViewListButton:selected
+		{
+			image="graphics/icon_button_list_down"
+			render_bg
+			{
+				// Background 
+				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, Focus )"
+
+				// Border
+				1="fill( x0    , y0    , x1    , y0 + 1, Black )"	// Top
+				2="fill( x0    , y1 - 1, x1    , y1    , Black )"	// Bottom
+				3="fill( x0    , y0    , x0 + 1, y1    , Black )"	// Left
+				4="fill( x1 - 1, y0    , x1    , y1    , Black )"	// Right
+			}
+		}
+
+		ViewListButton:disabled
+		{
+			image="graphics/icon_button_list_disabled"
 		}
 
 		WebPanelStyle
@@ -881,7 +878,7 @@
 		place { control="library_search" width=112 }	
 
 		place [!$OSX] { control="label_search_icon,library_search" align=left y=61 height=17 spacing=1 x=13 }
-		place [$OSX]  { control="label_search_icon,library_search" align=left y=61 height=17 spacing=1 x=12 }
+		place [$OSX] { control="label_search_icon,library_search" align=left y=61 height=17 spacing=1 x=12 }
 
 		region { name="dropdown" width=200 x=82 y=60 height=20 }
 
@@ -897,27 +894,27 @@
 
 		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=59 height=20 spacing=4 margin-right=10 width=20 }
 
-		place { control=emailreminderbar margin-top=85 margin-left=8 margin-right=8 width=max height=48 }
-		place { control=phonereminderbar margin-top=85 margin-left=8 margin-right=8 width=max height=80 }
+		place { control=URLAnchor align=left y=54 height=28 width=max }
+		place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down }
 
 		// Content Pages - These are all pushed down by the email reminder bar (above) if it's visible
-		place { control=DownloadsPage 				width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control=ScreenshotsPage 			width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control=GamesPage_List 				width=max height=max margin-top=1 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
-		place { control=GamesPage_Details 			width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
-		place { control=GamesPage_Grid 				width=max height=max margin-top=1 margin-left=0 margin-right=9 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control=WebPanel 					width=max height=max margin-top=1 margin-left=1 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
-		place { control=BroadcastPage				width=max height=max margin-top=3 margin-left=3 margin-right=11 margin-bottom=23 start=phonereminderbar dir=down }
+		place { control=DownloadsPage 				width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=LibraryAnchor dir=down }
+		place { control=ScreenshotsPage 			width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=LibraryAnchor dir=down }
+		place { control=GamesPage_List 				width=max height=max margin-top=1 margin-left=0 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
+		place { control=GamesPage_Details 			width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
+		place { control=GamesPage_Grid 				width=max height=max margin-top=1 margin-left=0 margin-right=9 margin-bottom=20 start=LibraryAnchor dir=down }
+		place { control=WebPanel 					width=max height=max margin-top=1 margin-left=9 margin-right=9 margin-bottom=21 start=LibraryAnchor dir=down }
+		place { control=BroadcastPage				width=max height=max margin-top=3 margin-left=3 margin-right=11 margin-bottom=23 start=LibraryAnchor dir=down }
 		place { control=BroadcastPageMin			width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
-		place { control=ConsolePage					width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
+		place { control=ConsolePage					width=max height=max margin-top=36 margin-left=13 margin-right=13 margin-bottom=26 start=LibraryAnchor dir=down }
 
 		place { control=NewLibraryPage				width=max height=max margin-top=0 margin-left=1 margin-right=9 margin-bottom=21 start=subnavgroup_library dir=down }
 
-		place { control=MediaPage 					width=max height=max margin-top=1 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control=ToolsPage 					width=max height=max margin-top=1 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
+		place { control=MediaPage 					width=max height=max margin-top=1 margin-left=0 margin-right=8 margin-bottom=20 start=LibraryAnchor dir=down }
+		place { control=ToolsPage 					width=max height=max margin-top=1 margin-left=0 margin-right=8 margin-bottom=20 start=LibraryAnchor dir=down }
 
-		place { control=MusicPage_Details 			width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
+		place { control=MusicPage_Details 			width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=LibraryAnchor dir=down }
 		place { control="library_music_player_icon" width=16 height=16 margin-right=10 y=62 align=right }
 	}
 }
