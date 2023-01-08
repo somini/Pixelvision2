@@ -873,7 +873,7 @@
 
 		place { control="subnavgroup_library" align=left y=57 height=24 width=max margin-right=8 margin-left=8 }
 
-		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=59 height=20 width=max spacing=4 margin-left=9 margin-right=30 }
+		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=59 height=20 width=max spacing=4 margin-left=10 }
 
 		place { control="library_search" width=112 }	
 
